@@ -65,9 +65,9 @@ tags:
     description: | 
       The state of HTTP APIs.   
 
-  - name: Persons
+  - name: People
     description: | 
-      The state of persons.
+      The state of people.
 
   - name: Plan
     description: | 
@@ -87,28 +87,28 @@ tags:
 
 paths:
 
-  /persons:
+  /people:
     post:
-      operationId: submitPersonState
-      summary: Submit Person State
+      operationId: submitPeopleState
+      summary: Submit People State
       description: Submits the state of an person.
       tags:
-        - Persons
+        - People
       requestBody:
         required: true
         description: A valid person schema.
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Person'
+              $ref: '#/components/schemas/People'
             examples:
-              PersonOne:
-                $ref: '#/components/examples/PersonOne'    
-              PersonTwo:
-                $ref: '#/components/examples/PersonTwo'                                                      
+              PeopleOne:
+                $ref: '#/components/examples/PeopleOne'    
+              PeopleTwo:
+                $ref: '#/components/examples/PeopleTwo'                                                      
       responses:
         '201':
-          description: Person State Submitted
+          description: People State Submitted
           content:
             application/json:
               schema:
@@ -527,7 +527,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'   
 
-  /experiences:
+  /experience:
     post:
       operationId: submitExperience
       summary: Submit Experience State
@@ -707,15 +707,15 @@ components:
 
   examples:
 
-    PersonOne:
-      description: Person one.
+    PeopleOne:
+      description: People one.
       value:
         name: Kin Lane
         email: info@apievangelist.com
         role: API Evangelist
 
-    PersonTwo:
-      description: Person two.
+    PeopleTwo:
+      description: People two.
       value:
         name: Tim Lane
         email: info@apievangelist.com
@@ -990,7 +990,7 @@ components:
 
   schemas:     
 
-    Person:
+    People:
       type: object
       description: State of the people.
       required:
@@ -1008,14 +1008,26 @@ components:
           type: string
           description: Your email.
           minLength: 1
-          maxLength: 1500
+          maxLength: 500
           example: info@apievangelist.com
         role:
           type: string
           description: Your role.
           minLength: 10
           maxLength: 250          
-          example: Evangelist     
+          example: Evangelist   
+        linkedIn:
+          type: string
+          description: Your LinkedIn URL.
+          minLength: 10
+          maxLength: 500          
+          example: https://www.linkedin.com/in/kinlane/     
+        other:
+          type: string
+          description: Other information (People).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.                       
 
     Organization:
       type: object
@@ -1024,6 +1036,12 @@ components:
         - industries
         - employees
       properties:
+        email:
+          type: string
+          description: Your email (Organization).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com    
         industries:
           type: array
           items:
@@ -1039,6 +1057,12 @@ components:
           minLength: 1
           maxLength: 500000
           example: 100
+        other:
+          type: string
+          description: Other information (Organization).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     Access:
       type: object
@@ -1048,6 +1072,12 @@ components:
         - partner
         - public
       properties:
+        email:
+          type: string
+          description: Your email (Access).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         internal:
           type: integer
           description: How many internal APIs.
@@ -1066,6 +1096,12 @@ components:
           minLength: 0
           maxLength: 50000     
           example: 50
+        other:
+          type: string
+          description: Other information (Access).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     Distribution:
       type: object
@@ -1073,6 +1109,12 @@ components:
       required:
         - publicPortal
       properties:
+        email:
+          type: string
+          description: Your email (Distribution).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         publicPortal:
           type: integer
           description: How many public API portals.
@@ -1090,7 +1132,13 @@ components:
           description: How many API gateways.
           minLength: 0
           maxLength: 25     
-          example: 2          
+          example: 2    
+        other:
+          type: string
+          description: Other information (Distribution).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.                  
 
     Authentication:
       type: object
@@ -1101,6 +1149,12 @@ components:
         - jwt
         - oauth
       properties:
+        email:
+          type: string
+          description: Your email (Authentication).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         basicAuth:
           type: boolean
           description: Do you use BasicAuth to authenticate with HTTP APIs?
@@ -1116,7 +1170,13 @@ components:
         oauth:
           type: boolean
           description: Do you use OAuth to authenticate with HTTP APIs?
-          example: true         
+          example: true    
+        other:
+          type: string
+          description: Other information (Authentication).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.                 
 
     HttpApi:
       type: object
@@ -1127,6 +1187,12 @@ components:
         - consumeCount
         - consumePercentage
       properties:
+        email:
+          type: string
+          description: Your email (HTTP API).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         producedCount:
           type: integer
           description: How many HTTP APIs do you produce?
@@ -1182,7 +1248,13 @@ components:
         openApiRespository:
           type: boolean
           description: Do you publish OpenAPI to a repository?
-          example: true                                           
+          example: true  
+        other:
+          type: string
+          description: Other information (HTTP APIs).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.                                                     
 
     GraphQlApi:
       type: object
@@ -1193,6 +1265,12 @@ components:
         - consumeCount
         - consumePercentage
       properties:
+        email:
+          type: string
+          description: Your email (GraphQL API).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         producedCount:
           type: integer
           description: How many GraphQL APIs do you produce?
@@ -1225,6 +1303,12 @@ components:
           type: boolean
           description: Do you use GraphQL externally?
           example: true  
+        other:
+          type: string
+          description: Other information (GraphQL APIs).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     EventDriven:
       type: object
@@ -1239,6 +1323,12 @@ components:
         - kafkaPublish
         - kafkaSubscribe        
       properties:
+        email:
+          type: string
+          description: Your email (Event-Driven).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         webhooksPublish:
           type: integer
           description: How many Webhooks to you publish?
@@ -1318,7 +1408,13 @@ components:
         asyncApiRespository:
           type: boolean
           description: Do you publish AsyncAPI to a repository?
-          example: true   
+          example: true 
+        other:
+          type: string
+          description: Other information (Event-Driven APIs).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.              
 
     Schema:
       type: object
@@ -1331,6 +1427,12 @@ components:
         - registry
         - repository
       properties:
+        email:
+          type: string
+          description: Your email (Schema).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         data:
           type: boolean
           description: Do you use JSON Schema to define data?
@@ -1354,7 +1456,13 @@ components:
         repository:
           type: boolean
           description: Do you publish JSON Schema to repository?
-          example: true   
+          example: true 
+        other:
+          type: string
+          description: Other information (Schema).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.              
 
     Contract:
       type: object
@@ -1365,6 +1473,12 @@ components:
         - portal
         - repository
       properties:
+        email:
+          type: string
+          description: Your email (Contract).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         discovery:
           type: boolean
           description: Do you use APIs.json for discovery?
@@ -1381,6 +1495,12 @@ components:
           type: boolean
           description: Do you publish APIs.json to repository?
           example: true 
+        other:
+          type: string
+          description: Other information (Contract).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     Experience:
       type: object
@@ -1392,6 +1512,12 @@ components:
         - reliability
         - consistency
       properties:
+        email:
+          type: string
+          description: Your email (Experience).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         discovery:
           type: integer
           description: How much of a priority is API discovery?
@@ -1421,7 +1547,13 @@ components:
           description: How much of a priority is API consistency?
           example: 10 
           minLength: 3
-          maxLength: 3                                          
+          maxLength: 3  
+        other:
+          type: string
+          description: Other information (Experience).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.                                                    
 
     Properties:
       type: object
@@ -1433,6 +1565,12 @@ components:
         - testing
         - security
       properties:
+        email:
+          type: string
+          description: Your email (Properties).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         documentation:
           type: integer
           description: How much of a priority is API documentation?
@@ -1462,7 +1600,13 @@ components:
           description: How much of a priority is API security?
           example: 10 
           minLength: 3
-          maxLength: 3    
+          maxLength: 3   
+        other:
+          type: string
+          description: Other information (Properties).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.             
 
     Plan:
       type: object
@@ -1474,6 +1618,12 @@ components:
         - usage
         - report
       properties:
+        email:
+          type: string
+          description: Your email (Plan).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         applications:
           type: boolean
           description: Do you require an application to be defined to access APIs?
@@ -1494,6 +1644,12 @@ components:
           type: boolean
           description: Do you report API usage data with consumers?
           example: true 
+        other:
+          type: string
+          description: Other information (Plan).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     Governance:
       type: object
@@ -1507,6 +1663,12 @@ components:
         - pipelines
         - gateway
       properties:
+        email:
+          type: string
+          description: Your email (Governance).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com      
         rules:
           type: boolean
           description: Do you govern your APIs using rules?
@@ -1535,6 +1697,12 @@ components:
           type: boolean
           description: Do you validate JSON Schema at the API gateway?
           example: true 
+        other:
+          type: string
+          description: Other information (Governance).
+          minLength: 10
+          maxLength: 250          
+          example: Something additional I wanted to say.            
 
     Submitted:
       type: object
