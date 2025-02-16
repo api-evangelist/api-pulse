@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
 
-  title: State of the API Economy
+  title: State of the API Economy - Publish
   description: |
     This is an API for managing the state of APIs.
   
@@ -724,6 +724,8 @@ components:
     OrganizationOne:
       description: Organization one.
       value:
+        countries: 
+          - US
         industries: 
           - Software Delivery
         employees: 1
@@ -731,6 +733,8 @@ components:
     OrganizationTwo:
       description: Organization two.
       value:
+        countries: 
+          - US      
         industries: 
           - Blog
         employees: 1   
@@ -915,15 +919,17 @@ components:
         quality: 10
         reliability: 10   
         consistency: 10  
+        communication: 10  
 
     ExperienceTwo:
       description: Experience two.
       value:
-        discovery: 10
-        onboarding: 10
-        quality: 10
-        reliability: 10   
-        consistency: 10  
+        discovery: 8
+        onboarding: 8
+        quality: 8
+        reliability: 8   
+        consistency: 8  
+        communication: 8  
 
     PropertiesOne:
       description: Properties one.
@@ -1041,7 +1047,16 @@ components:
           description: Your email (Organization).
           minLength: 1
           maxLength: 500
-          example: info@apievangelist.com    
+          example: info@apievangelist.com  
+        countries:
+          type: array
+          items:
+            type: string
+          minItems: 1
+          maxItems: 10
+          description: A valid ISO 3166 country.
+          example: 
+            - US            
         industries:
           type: array
           items:
@@ -1511,6 +1526,7 @@ components:
         - quality
         - reliability
         - consistency
+        - communication
       properties:
         email:
           type: string
@@ -1548,6 +1564,12 @@ components:
           example: 10 
           minLength: 3
           maxLength: 3  
+        communication:
+          type: integer
+          description: How much of a priority is API communication?
+          example: 10 
+          minLength: 3
+          maxLength: 3           
         other:
           type: string
           description: Other information (Experience).
@@ -1642,7 +1664,7 @@ components:
           example: true            
         report:
           type: boolean
-          description: Do you report API usage data with consumers?
+          description: Do you report on API usage data with consumers?
           example: true 
         other:
           type: string
