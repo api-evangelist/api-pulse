@@ -1,19 +1,19 @@
 # API Pulse
-This is a proposed schema for publishing to the API Pulse that captures a snapshot of how APIs are used across industries. 
+This is a proposed schema for publishing to the API Pulse that captures a snapshot of how APIs are being used across industries around the globe.
 
 ## Background
-The API industry is in need of data that helps share how everyone is using APIs, but prioritizes the following elements.
+The API industry is in need of data that helps share how everyone is using APIs, abd prioritizes the following dimensions of our API operations.
 
-- **Vendor Neutral**
-- **API-First**
-- **Across Industries**
-- **Across Countries**
-- **Across Signals**
-- **Twice Year Reports**
-- **Ongoing Pulse Checks**
+- **Vendor Neutral** - You aren't be sold to.
+- **API-First** - Defined as an API first.
+- **Across Industries** - Industry granularity.
+- **Across Countries** - Not just the United States.
+- **Across Signals** - Key signals we need.
+- **Bi-Annual Reports** - Twice a year reports.
+- **Ongoing Pulse Checks** - Ability to check-in anytime.
 
 ## Goals
-The goal of the API Pulse is to help organizations and individuals understand better understand the industries around them.
+The goal of the API Pulse is to help organizations and individuals understand better understand the industries they operate within and where they are headed.
 
 - **Position in Existing Industries**
 - **State of Existing Industries**
@@ -21,7 +21,7 @@ The goal of the API Pulse is to help organizations and individuals understand be
 - **Introduction to Common Practices**
 
 ## Schema
-The schema is currently defined as an OpenAPI 3.1 with JSON Schem which provides a machine-readable draft of the following signals.
+The schema for the API pulse is currently defined as an OpenAPI 3.1 that uses the latest draft of JSON Schema to define the schema for each API pulse signal and how the can be submitted.
 
 ### People ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L899))
 Pulse of the people.
@@ -194,6 +194,12 @@ Pulse of API governance.
  - **gateway** - Do you validate JSON Schema at the API gateway?
  - **other** - Other information (Governance).
 
+## Accounts
+The goal of this pulse is to allow you to use your personal or professional email to contribute the signals for the API pulse that matter to you without setting up yet another account or expect you to use an existing service.
+
+## Emails
+Your email is only used to verify your pulse signals are coming from you, provide you access to regular API pulse checks, and send you monthly newsletter--your email will not be sold or shared with any partners. 
+
 ## Checks
 A separate schema will provided for checking the API pulse in an ongoing way, allowing those who contribute to the API pulse to check where they stand as individual and organization withint he industries they contribute to.
 
@@ -206,3 +212,5 @@ Feedback on the API Pulse schema can be made via three separate channels, allowi
 - GitHub Issues - Submit an issue with any quesitons or comments.
 - Pull Request - Submit  a pull request making changes you want.
 - Email - info@apievangelist.com - Drop us an email with questions.
+
+Ideally feedback and questions remain accessible as issues and pull requests, but we understand not everyone will want to work out in the open and invite email communications, but please make sure and check the issues before emailing.
