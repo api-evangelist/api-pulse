@@ -1,0 +1,51 @@
+---
+$id: https://example.com/product-schema.json
+$schema: https://json-schema.org/draft/2020-12/schema
+title: People
+description: Pulse of the people.
+type: object
+required:
+  - name
+  - email
+  - role
+  - countries
+properties:
+  name:
+    type: string
+    description: Your name.
+    minLength: 5
+    maxLength: 250
+    example: Kin Lane
+  email:
+    type: string
+    description: Valid email address.
+    minLength: 1
+    maxLength: 500
+    example: info@apievangelist.com
+  role:
+    type: string
+    description: Role of the person.
+    minLength: 10
+    maxLength: 250          
+    example: Evangelist   
+  linkedIn:
+    type: string
+    description: Valid LinkedIn URL.
+    minLength: 10
+    maxLength: 500          
+    example: https://www.linkedin.com/in/kinlane/     
+  countries:
+    type: array
+    items:
+      type: string
+    minItems: 1
+    maxItems: 10
+    description: A valid ISO 3166 country.
+    example: 
+      - US           
+  other:
+    type: string
+    description: Other information (People).
+    minLength: 10
+    maxLength: 250          
+    example: Something additional I wanted to say.  

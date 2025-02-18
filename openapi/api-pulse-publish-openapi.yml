@@ -1,9 +1,9 @@
 openapi: 3.1.0
 info:
 
-  title: State of the API Economy - Publish
+  title: API Pulse Publishing
   description: |
-    This is an API for managing the state of APIs.
+    This is the  API for publishing to the API pulse.
   
   version: 0.1.0
 
@@ -19,84 +19,84 @@ info:
     identifier: CC-BY-NC-SA-4.0
 
 externalDocs:
-  description: State of API Evangelist
-  url: http://state.apievangelist.com
+  description: API Pulse
+  url: http://pulse.apievangelist.com
 
 servers:
 
-  - url: https://state-api.apievangelist.com
+  - url: https://pulse-api.apievangelist.com
     description: Production
 
 tags:
 
   - name: Access
     description: | 
-      The state of API access.     
+      The pulse of API access.     
 
   - name: Authentication
     description: | 
-      The state of API authentication.    
+      The pulse of API authentication.    
 
   - name: Contract
     description: | 
-      The state of contract.        
+      The pulse of API contracts.        
 
   - name: Distribution
     description: | 
-      The state of API distribution.           
+      The pulse of API distribution.           
 
   - name: Event-Driven APIs
     description: | 
-      The state of Event-Driven APIs.   
+      The pulse of Event-Driven APIs.   
 
   - name: Experience
     description: | 
-      The state of API experience.
+      The pulse of API experience.
 
   - name: Governance
     description: | 
-      The state of API governance.   
+      The pulse of API governance.   
 
   - name: GraphQL APIs
     description: | 
-      The state of GraphQL APIs.
+      The pulse of GraphQL APIs.
 
   - name: HTTP APIs
     description: | 
-      The state of HTTP APIs.   
+      The pulse of HTTP APIs.   
 
   - name: People
     description: | 
-      The state of people.
+      The pulse of API people.
 
   - name: Plan
     description: | 
-      The state of API plan.     
+      The pulse of API plans.     
 
   - name: Properties
     description: | 
-      The state of API properties.    
+      The pulse of API properties.    
 
   - name: Organizations
     description: | 
-      The state of organizations.
+      The pulse of organizations.
 
   - name: Schema
     description: | 
-      The state of schema.                                                                
+      The pulse of schema.                                                                
 
 paths:
 
   /people:
     post:
-      operationId: submitPeopleState
-      summary: Submit People State
-      description: Submits the state of an person.
+      operationId: submitPeoplePulse
+      summary: Submit People Pulse
+      description: Submits the pulse of API people.
       tags:
         - People
       requestBody:
         required: true
-        description: A valid person schema.
+        description: A valid people schema.
         content:
           application/json:
             schema:
@@ -108,7 +108,7 @@ paths:
                 $ref: '#/components/examples/PeopleTwo'                                                      
       responses:
         '201':
-          description: People State Submitted
+          description: People Pulse Submitted
           content:
             application/json:
               schema:
@@ -118,14 +118,6 @@ paths:
                   $ref: '#/components/examples/Submitted'                                           
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
@@ -133,9 +125,9 @@ paths:
 
   /organizations:
     post:
-      operationId: submitOrganizationState
-      summary: Submit Organization State
-      description: Submits the state of an organization.
+      operationId: submitOrganizationPulse
+      summary: Submit Organization Pulse
+      description: Submits the pulse of an organization.
       tags:
         - Organizations
       requestBody:
@@ -152,7 +144,7 @@ paths:
                 $ref: '#/components/examples/OrganizationTwo'                                                     
       responses:
         '201':
-          description: Organization State Submitted
+          description: Organization Pulse Submitted
           content:
             application/json:
               schema:
@@ -162,24 +154,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'  
+          $ref: '#/components/responses/InternalServerError'
 
   /access:
     post:
       operationId: submitAccess
-      summary: Submit Access State
-      description: Submits the state of API access.
+      summary: Submit Access Pulse
+      description: Submits the pulse of API access.
       tags:
         - Access
       requestBody:
@@ -196,7 +180,7 @@ paths:
                 $ref: '#/components/examples/AccessTwo'                                                      
       responses:
         '201':
-          description: Access State Submitted
+          description: Access Pulse Submitted
           content:
             application/json:
               schema:
@@ -206,24 +190,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'    
+          $ref: '#/components/responses/InternalServerError'  
 
   /distribution:
     post:
       operationId: submitDistribution
-      summary: Submit Distribution State
-      description: Submits the state of API distribution.
+      summary: Submit Distribution Pulse
+      description: Submits the pulse of API distribution.
       tags:
         - Distribution
       requestBody:
@@ -240,7 +216,7 @@ paths:
                 $ref: '#/components/examples/DistributionTwo'                         
       responses:
         '201':
-          description: Distribution State Submitted
+          description: Distribution Pulse Submitted
           content:
             application/json:
               schema:
@@ -250,24 +226,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'                              
+          $ref: '#/components/responses/InternalServerError'                            
 
   /authentication:
     post:
       operationId: submitAuthentication
-      summary: Submit Authentication State
-      description: Submits the state of API authentication.
+      summary: Submit Authentication Pulse
+      description: Submits the pulse of API authentication.
       tags:
         - Authentication
       requestBody:
@@ -284,7 +252,7 @@ paths:
                 $ref: '#/components/examples/AuthenticationTwo'                                                    
       responses:
         '201':
-          description: Authentication State Submitted
+          description: Authentication Pulse Submitted
           content:
             application/json:
               schema:
@@ -294,24 +262,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /http-apis:
     post:
       operationId: submitHttpApi
-      summary: Submit HttpApi State
-      description: Submits the state of API HTTP APIs.
+      summary: Submit HttpApi Pulse
+      description: Submits the pulse of API HTTP APIs.
       tags:
         - HTTP APIs
       requestBody:
@@ -328,7 +288,7 @@ paths:
                 $ref: '#/components/examples/HttpApisTwo'                                                    
       responses:
         '201':
-          description: HTTP API State Submitted
+          description: HTTP API Pulse Submitted
           content:
             application/json:
               schema:
@@ -338,24 +298,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                                           
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /graphql-apis:
     post:
       operationId: submitGraphQlApi
-      summary: Submit GraphQlApi State
-      description: Submits the state of GraphQL APIs.
+      summary: Submit GraphQlApi Pulse
+      description: Submits the pulse of GraphQL APIs.
       tags:
         - GraphQL APIs
       requestBody:
@@ -372,7 +324,7 @@ paths:
                 $ref: '#/components/examples/GraphQlApiTwo'                                                     
       responses:
         '201':
-          description: GraphQL API State Submitted
+          description: GraphQL API Pulse Submitted
           content:
             application/json:
               schema:
@@ -382,24 +334,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                                          
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /event-driven-apis:
     post:
       operationId: submitEventDriven
-      summary: Submit EventDriven State
-      description: Submits the state of Event-Driven APIs.
+      summary: Submit EventDriven Pulse
+      description: Submits the pulse of Event-Driven APIs.
       tags:
         - Event-Driven APIs
       requestBody:
@@ -416,7 +360,7 @@ paths:
                 $ref: '#/components/examples/EventDrivenTwo'                    
       responses:
         '201':
-          description: Event-Driven API State Submitted
+          description: Event-Driven API Pulse Submitted
           content:
             application/json:
               schema:
@@ -426,24 +370,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                                             
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /schema:
     post:
       operationId: submitSchema
-      summary: Submit Schema State
-      description: Submits the state of schema.
+      summary: Submit Schema Pulse
+      description: Submits the pulse of schema.
       tags:
         - Schema
       requestBody:
@@ -460,7 +396,7 @@ paths:
                 $ref: '#/components/examples/SchemaTwo'                                                    
       responses:
         '201':
-          description: Schema State Submitted
+          description: Schema Pulse Submitted
           content:
             application/json:
               schema:
@@ -470,24 +406,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                                          
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /contracts:
     post:
       operationId: submitContract
-      summary: Submit Contract State
-      description: Submits the state of APIs.json.
+      summary: Submit Contract Pulse
+      description: Submits the pulse of APIs.json.
       tags:
         - Contract
       requestBody:
@@ -504,7 +432,7 @@ paths:
                 $ref: '#/components/examples/ContractTwo'                                                         
       responses:
         '201':
-          description: Contract State Submitted
+          description: Contract Pulse Submitted
           content:
             application/json:
               schema:
@@ -514,24 +442,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /experience:
     post:
       operationId: submitExperience
-      summary: Submit Experience State
-      description: Submits the state of API experience.
+      summary: Submit Experience Pulse
+      description: Submits the pulse of API experience.
       tags:
         - Experience
       requestBody:
@@ -548,7 +468,7 @@ paths:
                 $ref: '#/components/examples/ExperienceTwo'                                                     
       responses:
         '201':
-          description: Experience State Submitted
+          description: Experience Pulse Submitted
           content:
             application/json:
               schema:
@@ -558,24 +478,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /properties:
     post:
       operationId: submitProperties
-      summary: Submit Properties State
-      description: Submits the state of API properties.
+      summary: Submit Properties Pulse
+      description: Submits the pulse of API properties.
       tags:
         - Properties
       requestBody:
@@ -592,7 +504,7 @@ paths:
                 $ref: '#/components/examples/PropertiesTwo'                                                       
       responses:
         '201':
-          description: Properties State Submitted
+          description: Properties Pulse Submitted
           content:
             application/json:
               schema:
@@ -602,24 +514,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'   
+          $ref: '#/components/responses/InternalServerError' 
 
   /plans:
     post:
       operationId: submitPlan
-      summary: Submit Plan State
-      description: Submits the state of API plan.
+      summary: Submit Plan Pulse
+      description: Submits the pulse of API plan.
       tags:
         - Plan
       requestBody:
@@ -636,7 +540,7 @@ paths:
                 $ref: '#/components/examples/PlanTwo'                                                  
       responses:
         '201':
-          description: Plan State Submitted
+          description: Plan Pulse Submitted
           content:
             application/json:
               schema:
@@ -646,24 +550,16 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'             
+          $ref: '#/components/responses/InternalServerError'           
 
   /governance:
     post:
       operationId: submitGovernance
-      summary: Submit Governance State
-      description: Submits the state of API governance.
+      summary: Submit Governance Pulse
+      description: Submits the pulse of API governance.
       tags:
         - Governance
       requestBody:
@@ -680,7 +576,7 @@ paths:
                 $ref: '#/components/examples/GovernanceTwo'                                                     
       responses:
         '201':
-          description: Governance State Submitted
+          description: Governance Pulse Submitted
           content:
             application/json:
               schema:
@@ -690,18 +586,10 @@ paths:
                   $ref: '#/components/examples/Submitted'                         
         '400':
           $ref: '#/components/responses/BadRequest'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
-        '403':
-          $ref: '#/components/responses/Forbidden'          
-        '404':
-          $ref: '#/components/responses/NotFound'
-        '409':
-          $ref: '#/components/responses/Conflict'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'             
+          $ref: '#/components/responses/InternalServerError'           
 
 components:
 
@@ -713,6 +601,8 @@ components:
         name: Kin Lane
         email: info@apievangelist.com
         role: API Evangelist
+        countries: 
+          - US          
 
     PeopleTwo:
       description: People two.
@@ -720,6 +610,8 @@ components:
         name: Tim Lane
         email: info@apievangelist.com
         role: API Evangelist    
+        countries: 
+          - US          
 
     OrganizationOne:
       description: Organization one.
@@ -736,7 +628,7 @@ components:
         countries: 
           - US      
         industries: 
-          - Blog
+          - Software Delivery
         employees: 1   
 
     AccessOne:
@@ -790,7 +682,8 @@ components:
         producedPercentage: 100
         consumeCount: 20
         consumePercentage: 100       
-        openApi: true    
+        openApi: true   
+        designFirst: true 
         openApiDocumentation: true    
         openApiMockServers: true    
         openApiSdks: true    
@@ -807,6 +700,7 @@ components:
         consumeCount: 30
         consumePercentage: 100       
         openApi: true    
+        designFirst: true 
         openApiDocumentation: true    
         openApiMockServers: true    
         openApiSdks: true    
@@ -846,7 +740,8 @@ components:
         kafkaProduce: 1     
         kafkaPublish: 1            
         kafkaSubscribe: 1 
-        asyncApi: true    
+        asyncApi: true  
+        designFirst: true   
         asyncApiDocumentation: true    
         asyncApiMockServers: true    
         asyncApiSdks: true    
@@ -866,7 +761,8 @@ components:
         kafkaProduce: 1     
         kafkaPublish: 1            
         kafkaSubscribe: 1 
-        asyncApi: true    
+        asyncApi: true   
+        designFirst: true  
         asyncApiDocumentation: true    
         asyncApiMockServers: true    
         asyncApiSdks: true    
@@ -899,7 +795,6 @@ components:
       description: Contract one.
       value:
         discovery: true
-        contracts: true
         portal: true
         repository: true
 
@@ -907,7 +802,6 @@ components:
       description: Contract two.
       value:
         discovery: true
-        contracts: true
         portal: true
         repository: true   
 
@@ -920,6 +814,8 @@ components:
         reliability: 10   
         consistency: 10  
         communication: 10  
+        automation: 10  
+        integration: 10  
 
     ExperienceTwo:
       description: Experience two.
@@ -929,25 +825,31 @@ components:
         quality: 8
         reliability: 8   
         consistency: 8  
-        communication: 8  
+        communication: 8 
+        automation: 10 
+        integration: 10   
 
     PropertiesOne:
       description: Properties one.
       value:
+        editor: 10
         documentation: 10
         mockServers: 10
         sdks: 10
         testing: 10   
         security: 10  
+        versioning: 10  
 
     PropertiesTwo:
       description: Properties two.
       value:
+        editor: 10
         documentation: 10
         mockServers: 10
         sdks: 10
         testing: 10   
         security: 10   
+        versioning: 10  
 
     PlanOne:
       description: Plan one.
@@ -970,7 +872,6 @@ components:
     GovernanceOne:
       description: Governance one.
       value:
-        rules: true
         spectral: true
         vacuum: true
         design: true
@@ -981,7 +882,6 @@ components:
     GovernanceTwo:
       description: Governance two.
       value:
-        rules: true
         spectral: true
         vacuum: true
         design: true
@@ -992,17 +892,18 @@ components:
     Submitted:
       description: Submitted
       value:
-        message: The person state was submitted.                  
+        message: The people pulse was submitted.                  
 
   schemas:     
 
     People:
       type: object
-      description: State of the people.
+      description: Pulse of the people.
       required:
         - name
         - email
         - role
+        - countries
       properties:
         name:
           type: string
@@ -1012,22 +913,31 @@ components:
           example: Kin Lane
         email:
           type: string
-          description: Your email.
+          description: Valid email address.
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com
         role:
           type: string
-          description: Your role.
+          description: Role of the person.
           minLength: 10
           maxLength: 250          
           example: Evangelist   
         linkedIn:
           type: string
-          description: Your LinkedIn URL.
+          description: Valid LinkedIn URL.
           minLength: 10
           maxLength: 500          
           example: https://www.linkedin.com/in/kinlane/     
+        countries:
+          type: array
+          items:
+            type: string
+          minItems: 1
+          maxItems: 10
+          description: A valid ISO 3166 country.
+          example: 
+            - US           
         other:
           type: string
           description: Other information (People).
@@ -1037,7 +947,7 @@ components:
 
     Organization:
       type: object
-      description: State of the organization.
+      description: Pulse of the organization.
       required:
         - industries
         - employees
@@ -1081,7 +991,7 @@ components:
 
     Access:
       type: object
-      description: State of access.
+      description: Pulse of access.
       required:
         - internal
         - partner
@@ -1095,19 +1005,19 @@ components:
           example: info@apievangelist.com      
         internal:
           type: integer
-          description: How many internal APIs.
+          description: How many internal APIs do you produce?
           minLength: 0
           maxLength: 50000
           example: 2500
         partner:
           type: integer
-          description: How many partner APIs.
+          description: How many partner APIs do you produce?
           minLength: 0
           maxLength: 50000
           example: 50
         public:
           type: integer
-          description: How many public APIs.
+          description: How many public APIs do you produce?
           minLength: 0
           maxLength: 50000     
           example: 50
@@ -1120,7 +1030,7 @@ components:
 
     Distribution:
       type: object
-      description: State of distribution.
+      description: Pulse of distribution.
       required:
         - publicPortal
       properties:
@@ -1132,19 +1042,19 @@ components:
           example: info@apievangelist.com      
         publicPortal:
           type: integer
-          description: How many public API portals.
+          description: How many public API portals do you have?
           minLength: 0
           maxLength: 25
           example: 1
         internalPortal:
           type: integer
-          description: How many internal API portals.
+          description: How many internal API portals do you have?
           minLength: 0
           maxLength: 25
           example: 1
         gateway:
           type: integer
-          description: How many API gateways.
+          description: How many API gateways do you have?
           minLength: 0
           maxLength: 25     
           example: 2    
@@ -1157,7 +1067,7 @@ components:
 
     Authentication:
       type: object
-      description: State of authentication.
+      description: Pulse of authentication.
       required:
         - basicAuth
         - keys
@@ -1172,19 +1082,19 @@ components:
           example: info@apievangelist.com      
         basicAuth:
           type: boolean
-          description: Do you use BasicAuth to authenticate with HTTP APIs?
+          description: Do you use BasicAuth to authenticate with APIs?
           example: true
         keys:
           type: boolean
-          description: Do you use API keys to authenticate with HTTP APIs?
+          description: Do you use API keys to authenticate with APIs?
           example: true
         jwt:
           type: boolean
-          description: HDo you use JWT to authenticate with HTTP APIs?
+          description: HDo you use JWT to authenticate with APIs?
           example: true
         oauth:
           type: boolean
-          description: Do you use OAuth to authenticate with HTTP APIs?
+          description: Do you use OAuth to authenticate with APIs?
           example: true    
         other:
           type: string
@@ -1195,12 +1105,21 @@ components:
 
     HttpApi:
       type: object
-      description: State of HTTP APIs.
+      description: Pulse of HTTP APIs.
       required:
         - producedCount
         - producedPercentage
         - consumeCount
         - consumePercentage
+        - openApi
+        - designFirst
+        - openApiDocumentation
+        - openApiMockServers
+        - openApiSdks
+        - openApiTesting
+        - openApiSecurity
+        - openApiPortal
+        - openApiRespository
       properties:
         email:
           type: string
@@ -1236,6 +1155,10 @@ components:
           type: boolean
           description: Do you use OpenAPI? 
           example: true  
+        designFirst:
+          type: boolean
+          description: Are you design-first when producing HTTP APIs?
+          example: true            
         openApiDocumentation:
           type: boolean
           description: Do you use OpenAPI for Generating Documentation? 
@@ -1273,12 +1196,14 @@ components:
 
     GraphQlApi:
       type: object
-      description: State of GraphQL APIs.
+      description: Pulse of GraphQL APIs.
       required:
         - producedCount
         - producedPercentage
         - consumeCount
         - consumePercentage
+        - internally
+        - externally
       properties:
         email:
           type: string
@@ -1327,7 +1252,7 @@ components:
 
     EventDriven:
       type: object
-      description: State of Event-Driven APIs.
+      description: Pulse of Event-Driven APIs.
       required:
         - webhooksPublish
         - webhooksSubscribe
@@ -1336,7 +1261,16 @@ components:
         - webSocketsSubscribe
         - kafkaProduce
         - kafkaPublish
-        - kafkaSubscribe        
+        - kafkaSubscribe   
+        - asyncApi    
+        - designFirst 
+        - asyncApiDocumentation
+        - asyncApiMockServers
+        - asyncApiSdks
+        - asyncApiTesting
+        - asyncApiSecurity
+        - asyncApiPortal
+        - asyncApiRespository    
       properties:
         email:
           type: string
@@ -1396,6 +1330,10 @@ components:
           type: boolean
           description: Do you use AsyncAPI? 
           example: true  
+        designFirst:
+          type: boolean
+          description: Are you design-first when producing event-driven APIs?
+          example: true           
         asyncApiDocumentation:
           type: boolean
           description: Do you use AsyncAPI for Generating Documentation? 
@@ -1433,7 +1371,7 @@ components:
 
     Schema:
       type: object
-      description: State of schema.
+      description: Pulse of schema.
       required:
         - data
         - apis
@@ -1481,7 +1419,7 @@ components:
 
     Contract:
       type: object
-      description: State of discovery.
+      description: Pulse of discovery.
       required:
         - discovery
         - contracts
@@ -1497,11 +1435,7 @@ components:
         discovery:
           type: boolean
           description: Do you use APIs.json for discovery?
-          example: true  
-        contracts:
-          type: boolean
-          description: Do you use APIs.json for contracts?
-          example: true                      
+          example: true                     
         portal:
           type: boolean
           description: Do you publish APIs.json to portal?
@@ -1519,7 +1453,7 @@ components:
 
     Experience:
       type: object
-      description: State of experience.
+      description: Pulse of experience.
       required:
         - discovery
         - onboarding
@@ -1569,7 +1503,19 @@ components:
           description: How much of a priority is API communication?
           example: 10 
           minLength: 3
-          maxLength: 3           
+          maxLength: 3   
+        automation:
+          type: integer
+          description: How much of a priority is API automation?
+          example: 10 
+          minLength: 3
+          maxLength: 3   
+        integration:
+          type: integer
+          description: How much of a priority is API integration?
+          example: 10 
+          minLength: 3
+          maxLength: 3                               
         other:
           type: string
           description: Other information (Experience).
@@ -1579,7 +1525,7 @@ components:
 
     Properties:
       type: object
-      description: State of API operational properties.
+      description: Pulse of API operational properties.
       required:
         - documentation
         - mockServers
@@ -1623,6 +1569,12 @@ components:
           example: 10 
           minLength: 3
           maxLength: 3   
+        versioning:
+          type: integer
+          description: How much of a priority is API versioning?
+          example: 10 
+          minLength: 3
+          maxLength: 3            
         other:
           type: string
           description: Other information (Properties).
@@ -1632,7 +1584,7 @@ components:
 
     Plan:
       type: object
-      description: State of API planning.
+      description: Pulse of API planning.
       required:
         - applications
         - rateLimits
@@ -1675,7 +1627,7 @@ components:
 
     Governance:
       type: object
-      description: State of API governance.
+      description: Pulse of API governance.
       required:
         - rules
         - spectral
@@ -1691,10 +1643,6 @@ components:
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
-        rules:
-          type: boolean
-          description: Do you govern your APIs using rules?
-          example: true  
         spectral:
           type: boolean
           description: Do you use Spectral for governance rules?
@@ -1728,7 +1676,7 @@ components:
 
     Submitted:
       type: object
-      description: The submitted state.
+      description: The submitted pulse.
       required:
         - message
       properties:
@@ -1737,7 +1685,7 @@ components:
           minLength: 10
           maxLength: 50             
           description: The message being returned.
-          example: The person state was submitted.                                              
+          example: The people pulse was submitted.                                              
 
     Problem:
       type: object

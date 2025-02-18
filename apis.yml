@@ -1,18 +1,17 @@
 ---
 aid: api-evangelist-state
-name: State of APIs
+name: API Pulse
 type: Contract
 description: |-
-  This is the APIs.json for the API Evangelist State of APis.
+  This is the APIs.json for the API Pulse.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
 - Application Programming Interface
 - API
-- State
-- Report
+- Pulse
 
 created: '2025-02-10'
-modified: '2025-02-10'
+modified: '2025-02-17'
 
 url: http://example.com/apis.json
 specificationVersion: '0.19'
