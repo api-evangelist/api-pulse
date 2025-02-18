@@ -907,7 +907,7 @@ components:
       properties:
         name:
           type: string
-          description: Your name.
+          description: A name.
           minLength: 5
           maxLength: 250
           example: Kin Lane
@@ -954,7 +954,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Organization).
+          description: A valid email (Organization).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com  
@@ -999,7 +999,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Access).
+          description: A valid email (Access).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1036,7 +1036,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Distribution).
+          description: A valid email (Distribution).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1076,7 +1076,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Authentication).
+          description: A valid email (Authentication).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1123,7 +1123,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (HTTP API).
+          description: A valid email (HTTP API).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1207,7 +1207,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (GraphQL API).
+          description: A valid email (GraphQL API).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1274,7 +1274,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Event-Driven).
+          description: A valid email (Event-Driven).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1382,7 +1382,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Schema).
+          description: A valid email (Schema).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1428,7 +1428,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Contract).
+          description: A valid email (Contract).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1464,7 +1464,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Experience).
+          description: A valid email (Experience).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1535,7 +1535,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Properties).
+          description: A valid email (Properties).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1594,7 +1594,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Plan).
+          description: A valid email (Plan).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1639,7 +1639,7 @@ components:
       properties:
         email:
           type: string
-          description: Your email (Governance).
+          description: A valid email (Governance).
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com      
@@ -1712,7 +1712,7 @@ components:
         detail:
           type: string
           description: A human-readable explanation specific to this occurrence of the problem
-          example: Your current balance is 30, but that costs 50.
+          example: A valid current balance is 30, but that costs 50.
           minLength: 10
           maxLength: 1000            
         instance:

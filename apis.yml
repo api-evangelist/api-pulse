@@ -28,35 +28,7 @@ apis:
         url: openapi/api-pulse-publish-openapi.yml
     contact:
       - FN: API Evangelist
-        email: info@apievangelist.com
-
-  - aid: api-pulse:api-pulse-subscribe
-    name: API Pulse - Publish
-    description: This is the  API for subscribing to the API pulse.
-    humanURL: https://github.com/api-evangelist/api-pulse
-    tags:
-      - Pulse
-      - Subscribe
-    properties:
-      - type: OpenAPI
-        url: openapi/api-pulse-subscribe-openapi.yml
-    contact:
-      - FN: API Evangelist
-        email: info@apievangelist.com
-
-  - aid: api-pulse:api-pulse-automate
-    name: API Pulse - Automate
-    description: This is the  API for automating the API pulse.
-    humanURL: https://github.com/api-evangelist/api-pulse
-    tags:
-      - Pulse
-      - Automate
-    properties:
-      - type: OpenAPI
-        url: openapi/api-pulse-automate-openapi.yml
-    contact:
-      - FN: API Evangelist
-        email: info@apievangelist.com                
+        email: info@apievangelist.com            
 
 common:
 
