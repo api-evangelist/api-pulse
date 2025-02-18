@@ -1,26 +1,27 @@
 # API Pulse
-This is a proposed schema for publishing to the API Pulse.
+This is a proposed schema for publishing to the API Pulse that captures a snapshot of how APIs are used across industries. 
 
 ## Background
-The API industry needs an ongoing pulse of APIs that is/has:
+The API industry is in need of data that helps share how everyone is using APIs, but prioritizes the following elements.
 
 - Vendor Neutral
 - API-First
-- Open Schema
 - Across Industries
 - Across Countries
 - Across Signals
-- Bi-Annual Reports
-- Ongoing Checks
+- Twice Year Reports
+- Ongoing Pulse Checks
 
 ## Goals
-The goal of the API Pulse is to help organizations and individuals understand:
+The goal of the API Pulse is to help organizations and individuals understand better understand the industries around them.
 
-- Position in Industries
-- State of Industries
+- Position in Existing Industries
+- State of Existing Industries
+- Awareness of New Industries
+- Introduction to Common Practices
 
 ## Schema
-The schema is currently defined as an OpenAPI with JSON Schema.
+The schema is currently defined as an OpenAPI 3.1 with JSON Schem which provides a machine-readable draft of the following signals.
 
 ### People
 Pulse of the people.
@@ -42,7 +43,7 @@ Pulse of the organization.
  - other - Other information (Organization).
 
 ### Access
-Pulse of access.
+Pulse of API access.
 
  - email - Your email (Access).
  - internal - How many internal APIs do you produce?
@@ -51,7 +52,7 @@ Pulse of access.
  - other - Other information (Access).
 
 ### Distribution
-Pulse of distribution.
+Pulse of API distribution.
 
  - email - Your email (Distribution).
  - publicPortal - How many public API portals do you have?
@@ -60,7 +61,7 @@ Pulse of distribution.
  - other - Other information (Distribution).
 
 ### Authentication
-Pulse of authentication.
+Pulse of API authentication.
 
  - email - Your email (Authentication).
  - basicAuth - Do you use BasicAuth to authenticate with APIs?
@@ -136,7 +137,7 @@ Pulse of schema.
  - other - Other information (Schema).
 
 ### Contract
-Pulse of discovery.
+Pulse of API discovery.
 
  - email - Your email (Contract).
  - discovery - Do you use APIs.json for discovery?
@@ -145,7 +146,7 @@ Pulse of discovery.
  - other - Other information (Contract).
 
 ### Experience
-Pulse of experience.
+Pulse of API experience.
 
  - email - Your email (Experience).
  - discovery - How much of a priority is API discovery?
@@ -159,7 +160,7 @@ Pulse of experience.
  - other - Other information (Experience).
 
 ### Properties
-Pulse of API operational properties.
+Pulse of API properties.
 
  - email - Your email (Properties).
  - documentation - How much of a priority is API documentation?
@@ -171,7 +172,7 @@ Pulse of API operational properties.
  - other - Other information (Properties).
 
 ### Plan
-Pulse of API planning.
+Pulse of API plans.
 
  - email - Your email (Plan).
  - applications - Do you require an application to be defined to access APIs?
@@ -193,8 +194,14 @@ Pulse of API governance.
  - gateway - Do you validate JSON Schema at the API gateway?
  - other - Other information (Governance).
 
+## Checks
+A separate schema will provided for checking the API pulse in an ongoing way, allowing those who contribute to the API pulse to check where they stand as individual and organization withint he industries they contribute to.
+
+## Reports
+A separate schema will be provided for pull spring and fall publishing of reports, allowing any to see the API pulse as submitted across all signals, countries, and industries, helping bring more awareness to the space.
+
 ## Fedback
-Feedback on the API Pulse schema can be made via 3 mechanisms:
+Feedback on the API Pulse schema can be made via three separate channels, allowing you to contribute to what data is published and available to subscribe to as part of checks and reports.
 
 - GitHub Issues
 - Pull Request
