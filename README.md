@@ -23,7 +23,7 @@ The goal of the API Pulse is to help organizations and individuals understand be
 ## Schema
 The schema is currently defined as an OpenAPI 3.1 with JSON Schem which provides a machine-readable draft of the following signals.
 
-### People
+### People ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L899))
 Pulse of the people.
 
  - **name** - Your name.
@@ -33,7 +33,7 @@ Pulse of the people.
  - **countries** - A valid ISO 3166 country.
  - **other** - Other information (People).
 
-### Organization
+### Organization ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L948))
 Pulse of the organization.
 
  - **email** - Your email (Organization).
@@ -42,7 +42,7 @@ Pulse of the organization.
  - **employees** - The number of employees that work at an enterprise organization.
  - **other** - Other information (Organization).
 
-### Access
+### Access ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L992))
 Pulse of API access.
 
  - **email** - Your email (Access).
@@ -51,7 +51,7 @@ Pulse of API access.
  - **public** - How many public APIs do you produce?
  - **other** - Other information (Access).
 
-### Distribution
+### Distribution ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1031))
 Pulse of API distribution.
 
  - **email** - Your email (Distribution).
@@ -60,7 +60,7 @@ Pulse of API distribution.
  - **gateway** - How many API gateways do you have?
  - **other** - Other information (Distribution).
 
-### Authentication
+### Authentication ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1068))
 Pulse of API authentication.
 
  - **email** - Your email (Authentication).
@@ -70,7 +70,7 @@ Pulse of API authentication.
  - **oauth** - Do you use OAuth to authenticate with APIs?
  - **other** - Other information (Authentication).
 
-### HttpApi
+### HttpApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1106))
 Pulse of HTTP APIs.
 
  - **email** - Your email (HTTP API).
@@ -89,7 +89,7 @@ Pulse of HTTP APIs.
  - **openApiRespository** - Do you publish OpenAPI to a repository?
  - **other** - Other information (HTTP APIs).
 
-### GraphQlApi
+### GraphQlApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1197))
 Pulse of GraphQL APIs.
 
  - **email** - Your email (GraphQL API).
@@ -101,7 +101,7 @@ Pulse of GraphQL APIs.
  - **externally** - Do you use GraphQL externally?
  - **other** - Other information (GraphQL APIs).
 
-### EventDriven
+### EventDrivenApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1253))
 Pulse of Event-Driven APIs.
 
  - **email** - Your email (Event-Driven).
@@ -124,7 +124,7 @@ Pulse of Event-Driven APIs.
  - **asyncApiRespositor**y - Do you publish AsyncAPI to a repository?
  - **other** - Other information (Event-Driven APIs).
 
-### Schema
+### Schema ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1372))
 Pulse of schema.
 
  - **email** - Your email (Schema).
@@ -136,7 +136,7 @@ Pulse of schema.
  - **repository** - Do you publish JSON Schema to repository?
  - **other** - Other information (Schema).
 
-### Contract
+### Contracts ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1420))
 Pulse of API discovery.
 
  - **email** - Your email (Contract).
@@ -145,7 +145,7 @@ Pulse of API discovery.
  - **repository** - Do you publish APIs.json to repository?
  - **other** - Other information (Contract).
 
-### Experience
+### Experience ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1454))
 Pulse of API experience.
 
  - **email** - Your email (Experience).
@@ -159,7 +159,7 @@ Pulse of API experience.
  - **integration** - How much of a priority is API integration?
  - **other** - Other information (Experience).
 
-### Properties
+### Properties ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1526))
 Pulse of API properties.
 
  - **email** - Your email (Properties).
@@ -171,7 +171,7 @@ Pulse of API properties.
  - **versioning** - How much of a priority is API versioning?
  - **other** - Other information (Properties).
 
-### Plan
+### Plan ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1585))
 Pulse of API plans.
 
  - **email** - Your email (Plan).
@@ -182,7 +182,7 @@ Pulse of API plans.
  - **report** - Do you report on API usage data with consumers?
  - **other** - Other information (Plan).
 
-### Governance
+### Governance ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1628))
 Pulse of API governance.
 
  - **email** - Your email (Governance).
