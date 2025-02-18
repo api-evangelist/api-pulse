@@ -1,10 +1,9 @@
 ---
-aid: api-evangelist-state
+aid: api-pulse
 name: API Pulse
 type: Contract
 description: |-
   This is the APIs.json for the API Pulse.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
 - Application Programming Interface
 - API
@@ -13,34 +12,51 @@ tags:
 created: '2025-02-10'
 modified: '2025-02-17'
 
-url: http://example.com/apis.json
+url: https://github.com/api-evangelist/api-pulse/blob/main/apis.yml
 specificationVersion: '0.19'
 apis:
 
-  - aid: api-evangelist-products:products-api
-    name: Products API.
-    description: A demo products API.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com/apis.yml
-    baseURL: http://apis.example.com
+  - aid: api-pulse:api-pulse-publish
+    name: API Pulse - Publish
+    description: This is the  API for publishing to the API pulse.
+    humanURL: https://github.com/api-evangelist/api-pulse
     tags:
-      - API
-      - Application Programming Interface
-      - Products
+      - Pulse
+      - Publish
     properties:
-      - type: Documentation
-        url: http://example.com/documentation
       - type: OpenAPI
-        url: openapi/products-api-openapi.yml
-      - type: Authentication
-        url: http://example.com/authentication
-      - type: GettingStarted
-        url: http://example.com/getting-started
-      - type: ChangeLog
-        url: http://example.com/change-log 
+        url: openapi/api-pulse-publish-openapi.yml
     contact:
       - FN: API Evangelist
         email: info@apievangelist.com
+
+  - aid: api-pulse:api-pulse-subscribe
+    name: API Pulse - Publish
+    description: This is the  API for subscribing to the API pulse.
+    humanURL: https://github.com/api-evangelist/api-pulse
+    tags:
+      - Pulse
+      - Subscribe
+    properties:
+      - type: OpenAPI
+        url: openapi/api-pulse-subscribe-openapi.yml
+    contact:
+      - FN: API Evangelist
+        email: info@apievangelist.com
+
+  - aid: api-pulse:api-pulse-automate
+    name: API Pulse - Automate
+    description: This is the  API for automating the API pulse.
+    humanURL: https://github.com/api-evangelist/api-pulse
+    tags:
+      - Pulse
+      - Automate
+    properties:
+      - type: OpenAPI
+        url: openapi/api-pulse-automate-openapi.yml
+    contact:
+      - FN: API Evangelist
+        email: info@apievangelist.com                
 
 common:
 
