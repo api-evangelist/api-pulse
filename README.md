@@ -1,30 +1,30 @@
 # The API Pulse
-This is a proposed schema for publishing to the API Pulse that captures a snapshot of how APIs are being used across industries around the globe.
+This is a proposed schema for publishing to the API Pulse using an HTTP API, capturing a snapshot of how APIs are being used across industries around the globe by the people who are producing and consuming them.
 
-## Background
-The API industry is in need of data that helps share how everyone is using APIs, and prioritizes the following dimensions of our API operations.
+## Overview ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/1))
+The API industry is in need of accessible community data that helps share knowledge about how everyone is using APIs while prioritizing the following dimensions of what we need for our API operations.
 
-- **Vendor Neutral** - You aren't to be sold to.
-- **API-First** - Defined as an API first.
-- **Across Industries** - Industry granularity.
-- **Across Countries** - Not just the United States.
-- **Across Signals** - Key signals we need.
-- **Bi-Annual Reports** - Twice a year reports.
-- **Ongoing Pulse Checks** - Ability to check-in anytime.
+- **Vendor Neutral** - You aren't to be sold to as part of engagement.
+- **API-First** - Defined as an API first, then develop applications.
+- **Across Industries** - Understanding across, but also within industries.
+- **Across Countries** - Allowing for understanding usage in countries.
+- **Across Signals** - Look at APIs, but also the other common signals.
+- **Bi-Annual Reports** - Summarizing and publishing reports twice a year.
+- **Ongoing Pulse Checks** - Anyone contributing gets ongoing pulse checks.
 
-## Goals
-The goal of the API Pulse is to help organizations and individuals better understand the industries they operate within and where they are headed.
+## Goals ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/2))
+The goal of the API Pulse is to help organizations and individuals better understand the industries they operate in, or are planning on moving into, helping inform career and business decisions.
 
 - **Position in Existing Industries**
 - **State of Existing Industries**
 - **Awareness of New Industries**
-- **Introduction to Common Practices**
+- **Education of Common Practices**
 
 ## Schema
-The schema for the API pulse is currently defined as an OpenAPI 3.1 that uses the latest draft of JSON Schema to define the schema for each API pulse signal and how it can be submitted.
+The schema for the API pulse is currently defined as [an OpenAPI 3.1 that uses the latest draft of JSON Schema](https://github.com/api-evangelist/api-pulse/blob/main/openapi/api-pulse-publish-openapi.yml) to define the schema for each API pulse signal and how it can be submitted.
 
-### People ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L899))
-Pulse of the people.
+### People ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L899)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/3))
+Pulse of the API people.
 
 - **name** - A name.
 - **email** - Valid email address.
@@ -33,8 +33,8 @@ Pulse of the people.
 - **countries** - A valid ISO 3166 country.
 - **other** - Other information (People).
 
-### Organization ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L948))
-Pulse of the organization.
+### Organization ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L948)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/4))
+Pulse of the API organization.
 
 - **email** - A valid email (Organization).
 - **countries** - A valid ISO 3166 country.
@@ -42,7 +42,7 @@ Pulse of the organization.
 - **employees** - The number of employees that work at an enterprise organization.
 - **other** - Other information (Organization).
 
-### Access ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L992))
+### Access ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L992)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/5))
 Pulse of API access.
 
 - **email** - A valid email (Access).
@@ -51,7 +51,7 @@ Pulse of API access.
 - **public** - How many public APIs do you produce?
 - **other** - Other information (Access).
 
-### Distribution ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1031))
+### Distribution ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1031)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/6))
 Pulse of API distribution.
 
 - **email** - A valid email (Distribution).
@@ -60,7 +60,7 @@ Pulse of API distribution.
 - **gateway** - How many API gateways do you have?
 - **other** - Other information (Distribution).
 
-### Authentication ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1068))
+### Authentication ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1068)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/7))
 Pulse of API authentication.
 
 - **email** - A valid email (Authentication).
@@ -70,7 +70,7 @@ Pulse of API authentication.
 - **oauth** - Do you use OAuth to authenticate with APIs?
 - **other** - Other information (Authentication).
 
-### HttpApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1106))
+### HttpApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1106)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/8))
 Pulse of HTTP APIs.
 
 - **email** - A valid email (HTTP API).
@@ -89,7 +89,7 @@ Pulse of HTTP APIs.
 - **openApiRespository** - Do you publish OpenAPI to a repository?
 - **other** - Other information (HTTP APIs).
 
-### GraphQlApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1197))
+### GraphQlApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1197)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/9))
 Pulse of GraphQL APIs.
 
 - **email** - A valid email (GraphQL API).
@@ -101,7 +101,7 @@ Pulse of GraphQL APIs.
 - **externally** - Do you use GraphQL externally?
 - **other** - Other information (GraphQL APIs).
 
-### EventDrivenApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1253))
+### EventDrivenApi ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1253)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/10))
 Pulse of Event-Driven APIs.
 
 - **email** - A valid email (Event-Driven).
@@ -124,8 +124,8 @@ Pulse of Event-Driven APIs.
 - **asyncApiRespositor**y - Do you publish AsyncAPI to a repository?
 - **other** - Other information (Event-Driven APIs).
 
-### Schema ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1372))
-Pulse of schema.
+### Schema ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1372)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/11))
+Pulse of API schema.
 
 - **email** - A valid email (Schema).
 - **data** - Do you use JSON Schema to define data?
@@ -136,7 +136,7 @@ Pulse of schema.
 - **repository** - Do you publish the JSON Schema to the repository?
 - **other** - Other information (Schema).
 
-### Contracts ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1420))
+### Contracts ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1420)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/12))
 Pulse of API discovery.
 
 - **email** - A valid email (Contract).
@@ -145,7 +145,7 @@ Pulse of API discovery.
 - **repository** - Do you publish APIs.json to the repository?
 - **other** - Other information (Contract).
 
-### Experience ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1454))
+### Experience ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1454)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/13))
 Pulse of API experience.
 
 - **email** - A valid email (Experience).
@@ -159,7 +159,7 @@ Pulse of API experience.
 - **integration** - How much of a priority is API integration?
 - **other** - Other information (Experience).
 
-### Properties ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1526))
+### Properties ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1526)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/14))
 Pulse of API properties.
 
 - **email** - A valid email (Properties).
@@ -171,7 +171,7 @@ Pulse of API properties.
 - **versioning** - How much of a priority is API versioning?
 - **other** - Other information (Properties).
 
-### Plan ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1585))
+### Plan ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1585)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/15))
 Pulse of API plans.
 
 - **email** - A valid email (Plan).
@@ -182,7 +182,7 @@ Pulse of API plans.
 - **report** - Do you report on API usage data with consumers?
 - **other** - Other information (Plan).
 
-### Governance ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1628))
+### Governance ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L1628)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/16))
 Pulse of API governance.
 
 - **email** - A valid email (Governance).
@@ -195,23 +195,34 @@ Pulse of API governance.
 - **other** - Other information (Governance).
 
 ## Accounts
-The goal of this pulse is to allow you to use your personal or professional email to contribute the signals for the API pulse that matter to you without setting up yet another account or expect you to use an existing service.
+The goal of the API Pulse is to allow you to use your personal or professional email to contribute one or more signals to the API pulse which matter most to you without setting up yet another account or assuming you use an existing service.
 
 ## Emails
-Your email is only used to verify your pulse signals are coming from you, provide you access to regular API pulse checks, and send you monthly newsletter--your email will not be sold or shared with any partners.
+Your email is only used to verify your pulse signals are coming from you, provide you access to regular API Pulse Checks, and send you our monthly newsletter--your email will not be sold or shared with any partners.
+
+## Inclusive
+The API Pulse works to be relevant to companies, organizations, institutions, and government agencies, but also to individuals--you can be design-first or code-first, producing or consuming APIs, and be a business or technical stakeholder.
+
+## Scope
+The first iteration of the API Pulse is trying to remain as simple and straightforward as possible, while focusing on just the fundamentals of API operations across many different industries--we can always expand the scope with future iterations.
 
 ## Checks
-A separate schema will be provided for checking the API pulse in an ongoing way, allowing those who contribute to the API pulse to check where they stand as individuals and organizations within the industries they contribute to.
+A separate API schema will soon be provided for checking the API Pulse in an ongoing way, allowing those who contribute to the API Pulse to check where they stand as individuals and organizations within the industries they contribute to.
 
 ## Reports
-A separate schema will be provided for pull spring and fall publishing of reports, allowing any to see the API pulse as submitted across all signals, countries, and industries, helping bring more awareness to the space.
+A separate API schema will soon be provided for pull spring and fall publishing of reports, allowing any to see the API pulse as submitted across all signals, countries, and industries, helping bring more awareness to the space.
+
+### Report Target Dates
+
+- May 2025
+- September 2025
 
 ## Feedback
-Feedback on the API Pulse schema can be made via three separate channels, allowing you to contribute to what data is published and available to subscribe to as part of checks and reports.
+Feedback on the API Pulse schema can be made via four separate channels, allowing you to contribute to what data is published and available to subscribe to as part of regular checks and bi-annual reports.
 
 - [GitHub Discussions](https://github.com/api-evangelist/api-pulse/discussions) - Where most of the conversation will occur.
 - [GitHub Issues](https://github.com/api-evangelist/api-pulse/issues) - Submit an issue with any questions or comments.
 - [Pull Request](https://github.com/api-evangelist/api-pulse/pulls) - Submit  a pull request making changes you want.
 - [Email](mailto:info@apievangelist.com) - Drop us an email with questions.
 
-Ideally feedback and questions remain accessible as issues and pull requests, but we understand not everyone will want to work out in the open and invite email communications, but please make sure and check the issues before emailing.
+Ideally feedback and questions remain openly accessible as issues and pull requests, but we understand not everyone will want to work out in the open and invite email communications, but please make sure and check the issues before emailing.
