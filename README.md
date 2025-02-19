@@ -66,7 +66,7 @@ Pulse of API authentication.
 - **email** - A valid email (Authentication).
 - **basicAuth** - Do you use BasicAuth to authenticate with APIs?
 - **keys** - Do you use API keys to authenticate with APIs?
-- **jwt** - HDo you use JWT to authenticate with APIs?
+- **jwt** - Do you use JWT to authenticate with APIs?
 - **oauth** - Do you use OAuth to authenticate with APIs?
 - **other** - Other information (Authentication).
 
