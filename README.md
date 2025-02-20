@@ -1,10 +1,10 @@
 # The API Pulse
-This is a proposed schema for publishing to the API Pulse using an HTTP API, capturing a snapshot of how APIs are being used across industries around the globe by the people who are producing and consuming them.
+This is the proposed schema for publishing to the API Pulse using an HTTP API, capturing a snapshot of how APIs are being used across industries around the globe by the people who are producing and consuming them within enterprise organizations.
 
 ## Overview ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/1))
 The API industry is in need of accessible community data that helps share knowledge about how everyone is using APIs while prioritizing the following dimensions of what we need for our API operations.
 
-- **Vendor Neutral** - You aren't to be sold to as part of engagement.
+- **Vendor Neutral** - You aren't going to be sold to as part of engagement.
 - **API-First** - Defined as an API first, then develop applications.
 - **Across Industries** - Understanding across, but also within industries.
 - **Across Countries** - Allowing for understanding usage in countries.
@@ -26,7 +26,7 @@ The schema for the API pulse is currently defined as [an OpenAPI 3.1 that uses t
 ### People ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L899)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/3))
 Pulse of the API people.
 
-- **name** - A name.
+- **name** - The name of the person.
 - **email** - Valid email address.
 - **role** - Role of the person.
 - **linkedIn** - Valid LinkedIn URL.
@@ -37,10 +37,16 @@ Pulse of the API people.
 Pulse of the API organization.
 
 - **email** - A valid email (Organization).
+- **name** - The name of the organization.
 - **countries** - A valid ISO 3166 country.
-- **industries** - A valid North American Industry Classification System (NAICS) entry.
 - **employees** - The number of employees that work at an enterprise organization.
 - **other** - Other information (Organization).
+
+### Sector ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#1039)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/20))
+Pulse of the API organization.
+
+- **email** - A valid email (Organization).
+- **industries** - A valid North American Industry Classification System (NAICS) entry.
 
 ### Access ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L992)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/5))
 Pulse of API access.
@@ -164,7 +170,7 @@ Pulse of API properties.
 
 - **email** - A valid email (Properties).
 - **documentation** - How much of a priority is API documentation?
-- **mockServers** - How much of a priority is API mock servers?
+- **mockServers** - How much of a priority are API mock servers?
 - **sdks** - How much of a priority are SDKs?
 - **testing** - How much of a priority is API testing?
 - **security** - How much of a priority is API security?
@@ -186,8 +192,8 @@ Pulse of API plans.
 Pulse of API governance.
 
 - **email** - A valid email (Governance).
-- **spectral** - Do you use Spectral for governance rules?
-- **vacuum** - Do you use Vacuum for governance?
+- **spectral** - Do you use Spectral for governance rule linting?
+- **vacuum** - Do you use Vacuum for governance rule linting?
 - **design** - Do you apply rules during the design of APIs?
 - **development** - Do you apply rules during development of APIs?
 - **pipelines** - Do you apply rules during pipeline builds of APIs?
@@ -213,6 +219,7 @@ A separate API schema will soon be provided for checking the API Pulse in an ong
 A separate API schema will soon be provided for pull spring and fall publishing of reports, allowing any to see the API pulse as submitted across all signals, countries, and industries, helping bring more awareness to the space.
 
 ### Report Target Dates
+These are the two target dates for the first two versions of the API Pulse, building momentum with each release and pushing into more industries, and increasing the signals.
 
 - May 2025
 - September 2025

@@ -12,7 +12,7 @@ info:
     url: https://apievangelist.com
     email: info@apievangelist.com
 
-  termsOfService: http://example.com/terms/
+  termsOfService: http://theapipulse.com//terms/
 
   license: 
     name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
@@ -20,12 +20,12 @@ info:
 
 externalDocs:
   description: API Pulse
-  url: http://pulse.apievangelist.com
+  url: http://theapipulse.com/
 
 servers:
 
-  - url: https://pulse-api.apievangelist.com
-    description: Production
+  - url: http://api.theapipulse.com
+    description: The base URL for the API Pulse.
 
 tags:
 
@@ -83,9 +83,52 @@ tags:
 
   - name: Schema
     description: | 
-      The pulse of schema.                                                                
+      The pulse of schema.  
+
+  - name: Sectors
+    description: | 
+      The pulse of sector.       
+
+  - name: Signals
+    description: | 
+      The overall signal.                                                                     
 
 paths:
+
+  /signals:
+    post:
+      operationId: submitSignal
+      summary: Submit Signal
+      description: Submits an entire signal.
+      tags:
+        - Signals
+      requestBody:
+        required: true
+        description: A valid signal schema.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Signal'
+            examples:
+              SignalOne:
+                $ref: '#/components/examples/SignalOne'    
+                                           
+      responses:
+        '201':
+          description: People Pulse Submitted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Submitted'
+              examples:
+                Submitted:
+                  $ref: '#/components/examples/Submitted'                                           
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'       
 
   /people:
     post:
@@ -158,6 +201,43 @@ paths:
           $ref: '#/components/responses/TooManyRequests'
         '500':
           $ref: '#/components/responses/InternalServerError'
+
+
+  /sector:
+    post:
+      operationId: submitSectorPulse
+      summary: Submit Sector Pulse
+      description: Submits the pulse of a sector.
+      tags:
+        - Sectors
+      requestBody:
+        required: true
+        description: A valid sector schema.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sector'
+            examples:
+              OrganizationOne:
+                $ref: '#/components/examples/SectorOne'   
+              OrganizationTwo:
+                $ref: '#/components/examples/SectorTwo'                                                     
+      responses:
+        '201':
+          description: Sector Pulse Submitted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Submitted'
+              examples:
+                Submitted:
+                  $ref: '#/components/examples/Submitted'                         
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'          
 
   /access:
     post:
@@ -352,7 +432,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EventDriven'
+              $ref: '#/components/schemas/EventDrivenApi'
             examples:
               EventDrivenOne:
                 $ref: '#/components/examples/EventDrivenOne'                                     
@@ -595,6 +675,117 @@ components:
 
   examples:
 
+    SignalOne:
+        description: Entire Signal One
+        value:
+            people:
+                name: Kin Lane
+                email: info@apievangelist.com
+                role: API Evangelist
+                countries: 
+                - US             
+            organization:
+                name: API Evangelist
+                countries: 
+                - US
+                employees: 1 
+            sectors:
+                industries: 
+                - Software Delivery
+            access:
+                internal: 500
+                partner: 50
+                public: 5
+            distribution:
+                publicPortal: 1
+                internalPortal: 2
+                gateway: 1
+            authentication:
+                basicAuth: false
+                keys: true
+                jwt: false
+                oauth: false
+            httpApis:
+                producedCount: 150
+                producedPercentage: 100
+                consumeCount: 20
+                consumePercentage: 100       
+                openApi: true   
+                designFirst: true 
+                openApiDocumentation: true    
+                openApiMockServers: true    
+                openApiSdks: true    
+                openApiTesting: true    
+                openApiSecurity: false  
+                openApiPortal: false  
+                openApiRespository: true   
+            graphQlApis:
+                producedCount: 1
+                producedPercentage: 5
+                consumeCount: 1
+                consumePercentage: 5       
+                internally: true    
+                externally: false    
+            eventDrivenApis:
+                webhooksPublish: 1
+                webhooksSubscribe: 1
+                webSocketsProduce: 1
+                webSocketsPublish: 1     
+                webSocketsSubscribe: 1     
+                kafkaProduce: 1     
+                kafkaPublish: 1            
+                kafkaSubscribe: 1 
+                asyncApi: true  
+                designFirst: true   
+                asyncApiDocumentation: true    
+                asyncApiMockServers: true    
+                asyncApiSdks: true    
+                asyncApiTesting: true    
+                asyncApiSecurity: true  
+                asyncApiPortal: true  
+                asyncApiRespository: true   
+            schema:
+                data: true
+                apis: true
+                validation: true
+                forms: true
+                registry: true     
+                repository: true    
+            contracts:
+                discovery: true
+                portal: true
+                repository: true
+            experience:
+                discovery: 10
+                onboarding: 10
+                quality: 10
+                reliability: 10   
+                consistency: 10  
+                communication: 10  
+                automation: 10  
+                integration: 10  
+            properties:
+                editor: 10
+                documentation: 10
+                mockServers: 10
+                sdks: 10
+                testing: 10   
+                security: 10  
+                versioning: 10  
+            plans:
+                applications: true
+                rateLimits: true
+                chargeAccess: true
+                usage: true
+                report: true   
+            governance:
+                spectral: true
+                vacuum: true
+                design: true
+                development: true  
+                pipelines: true  
+                gateway: true                
+
     PeopleOne:
       description: People one.
       value:
@@ -616,20 +807,30 @@ components:
     OrganizationOne:
       description: Organization one.
       value:
+        name: API Evangelist
         countries: 
           - US
-        industries: 
-          - Software Delivery
         employees: 1
 
     OrganizationTwo:
       description: Organization two.
       value:
+        name: API Evangelist
         countries: 
           - US      
+        employees: 1   
+
+    SectorOne:
+      description: Sector one.
+      value:
         industries: 
           - Software Delivery
-        employees: 1   
+
+    SectorTwo:
+      description: Sector two.
+      value:   
+        industries: 
+          - Software Delivery
 
     AccessOne:
       description: Access one.
@@ -896,6 +1097,59 @@ components:
 
   schemas:     
 
+    Signal:
+      type: object
+      description: Pulse of the people.
+      required:
+        - access
+        - authentication
+        - contracts
+        - distribution
+        - eventDrivenApis
+        - experience
+        - governance
+        - graphQlApis
+        - httpApis
+        - organizations
+        - people
+        - plans
+        - properties
+        - schema
+        - sectors
+      properties:
+        access:    
+            $ref: '#/components/schemas/Access'        
+        authentication:    
+            $ref: '#/components/schemas/Authentication'     
+        contracts:    
+            $ref: '#/components/schemas/Contract'   
+        distribution:    
+            $ref: '#/components/schemas/Distribution'                
+        eventDrivenApis:    
+            $ref: '#/components/schemas/EventDrivenApi'             
+        experience:    
+            $ref: '#/components/schemas/Experience'     
+        governance:    
+            $ref: '#/components/schemas/Governance'                                                                             
+        graphQlApis:    
+            $ref: '#/components/schemas/GraphQlApi'       
+        httpApis:    
+            $ref: '#/components/schemas/HttpApi'       
+        organizaiton:    
+            $ref: '#/components/schemas/Organization'          
+        organizaiton:    
+            $ref: '#/components/schemas/Organization'         
+        people:    
+            $ref: '#/components/schemas/People'        
+        plans:    
+            $ref: '#/components/schemas/Plan'     
+        properties:    
+            $ref: '#/components/schemas/Properties'     
+        schema:    
+            $ref: '#/components/schemas/Schema'                                         
+        sector:    
+            $ref: '#/components/schemas/Sector'                                                                                          
+
     People:
       type: object
       description: Pulse of the people.
@@ -935,7 +1189,7 @@ components:
             type: string
           minItems: 1
           maxItems: 10
-          description: A valid ISO 3166 country.
+          description: A valid ISO 3166 country for the person.
           example: 
             - US           
         other:
@@ -949,7 +1203,6 @@ components:
       type: object
       description: Pulse of the organization.
       required:
-        - industries
         - employees
       properties:
         email:
@@ -958,24 +1211,21 @@ components:
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com  
+        name:
+          type: string
+          description: The company name.
+          minLength: 1
+          maxLength: 500
+          example: API Evangelist       
         countries:
           type: array
           items:
             type: string
           minItems: 1
           maxItems: 10
-          description: A valid ISO 3166 country.
+          description: A valid ISO 3166 country for the organization.
           example: 
             - US            
-        industries:
-          type: array
-          items:
-            type: string
-          minItems: 1
-          maxItems: 10
-          description: A valid North American Industry Classification System (NAICS) entry.
-          example: 
-            - Software Publishers
         employees:
           type: integer
           description: The number of employees that work at an enterprise organization.
@@ -987,7 +1237,29 @@ components:
           description: Other information (Organization).
           minLength: 10
           maxLength: 250          
-          example: Something additional I wanted to say.            
+          example: Something additional I wanted to say.       
+
+    Sector:
+      type: object
+      description: Pulse of the sector.
+      required:
+        - industries
+      properties:
+        email:
+          type: string
+          description: A valid email (Sector).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com          
+        industries:
+          type: array
+          items:
+            type: string
+          minItems: 1
+          maxItems: 10
+          description: A valid North American Industry Classification System (NAICS) entry.
+          example: 
+            - Software Publishers
 
     Access:
       type: object
@@ -1250,7 +1522,7 @@ components:
           maxLength: 250          
           example: Something additional I wanted to say.            
 
-    EventDriven:
+    EventDrivenApi:
       type: object
       description: Pulse of Event-Driven APIs.
       required:
@@ -1419,10 +1691,9 @@ components:
 
     Contract:
       type: object
-      description: Pulse of discovery.
+      description: Pulse of contract.
       required:
         - discovery
-        - contracts
         - portal
         - repository
       properties:
@@ -1629,7 +1900,6 @@ components:
       type: object
       description: Pulse of API governance.
       required:
-        - rules
         - spectral
         - vacuum
         - design
@@ -1784,52 +2054,6 @@ components:
             status: 400
             detail: The request is invalid or missing required parameters.
 
-    Conflict:
-      description: Conflict
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/conflict
-            title: Conflict
-            status: 409
-            detail: There is a conflict with an existing resource.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/conflict
-            title: Conflict
-            status: 409
-            detail: There is a conflict with an existing resource.
-
-    Forbidden:
-      description: Forbidden
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/forbidden
-            title: Forbidden
-            status: 403
-            detail: Access is forbidden with the provided credentials.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/forbidden
-            title: Forbidden
-            status: 403
-            detail: Access is forbidden with the provided credentials.
-
     InternalServerError:
       description: Internal Server Error
       headers:
@@ -1852,29 +2076,6 @@ components:
             title: Internal Server Error
             status: 500
             detail: An unexpected error occurred.
-
-    NotFound:
-      description: Not Found
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/not-found
-            title: Not Found
-            status: 404
-            detail: The requested resource was not found.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/not-found
-            title: Not Found
-            status: 404
-            detail: The requested resource was not found.
 
     TooManyRequests:
       description: Too Many Requests
@@ -1900,26 +2101,3 @@ components:
             title: Too Many Requests
             status: 429
             detail: You have exceeded the rate limit.
-
-    Unauthorized:
-      description: Unauthorized
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/unauthorized
-            title: Unauthorized
-            status: 401
-            detail: You do not have the necessary permissions.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/unauthorized
-            title: Unauthorized
-            status: 401
-            detail: You do not have the necessary permissions.
