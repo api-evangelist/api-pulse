@@ -83,7 +83,11 @@ tags:
 
   - name: Schema
     description: | 
-      The pulse of schema.                                                                
+      The pulse of schema.  
+
+  - name: Sector
+    description: | 
+      The pulse of sector.                                                                
 
 paths:
 
@@ -158,6 +162,43 @@ paths:
           $ref: '#/components/responses/TooManyRequests'
         '500':
           $ref: '#/components/responses/InternalServerError'
+
+
+  /sector:
+    post:
+      operationId: submitSectorPulse
+      summary: Submit Sector Pulse
+      description: Submits the pulse of a sector.
+      tags:
+        - Sectors
+      requestBody:
+        required: true
+        description: A valid sector schema.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sector'
+            examples:
+              OrganizationOne:
+                $ref: '#/components/examples/SectorOne'   
+              OrganizationTwo:
+                $ref: '#/components/examples/SectorTwo'                                                     
+      responses:
+        '201':
+          description: Sector Pulse Submitted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Submitted'
+              examples:
+                Submitted:
+                  $ref: '#/components/examples/Submitted'                         
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'          
 
   /access:
     post:
@@ -616,20 +657,30 @@ components:
     OrganizationOne:
       description: Organization one.
       value:
+        name: API Evangelist
         countries: 
           - US
-        industries: 
-          - Software Delivery
         employees: 1
 
     OrganizationTwo:
       description: Organization two.
       value:
+        name: API Evangelist
         countries: 
           - US      
+        employees: 1   
+
+    SectorOne:
+      description: Sector one.
+      value:
         industries: 
           - Software Delivery
-        employees: 1   
+
+    SectorTwo:
+      description: Sector two.
+      value:   
+        industries: 
+          - Software Delivery
 
     AccessOne:
       description: Access one.
@@ -949,7 +1000,6 @@ components:
       type: object
       description: Pulse of the organization.
       required:
-        - industries
         - employees
       properties:
         email:
@@ -958,6 +1008,12 @@ components:
           minLength: 1
           maxLength: 500
           example: info@apievangelist.com  
+        name:
+          type: string
+          description: The company name.
+          minLength: 1
+          maxLength: 500
+          example: API Evangelist       
         countries:
           type: array
           items:
@@ -967,15 +1023,6 @@ components:
           description: A valid ISO 3166 country.
           example: 
             - US            
-        industries:
-          type: array
-          items:
-            type: string
-          minItems: 1
-          maxItems: 10
-          description: A valid North American Industry Classification System (NAICS) entry.
-          example: 
-            - Software Publishers
         employees:
           type: integer
           description: The number of employees that work at an enterprise organization.
@@ -987,7 +1034,29 @@ components:
           description: Other information (Organization).
           minLength: 10
           maxLength: 250          
-          example: Something additional I wanted to say.            
+          example: Something additional I wanted to say.       
+
+    Sector:
+      type: object
+      description: Pulse of the sector.
+      required:
+        - industries
+      properties:
+        email:
+          type: string
+          description: A valid email (Organization).
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com          
+        industries:
+          type: array
+          items:
+            type: string
+          minItems: 1
+          maxItems: 10
+          description: A valid North American Industry Classification System (NAICS) entry.
+          example: 
+            - Software Publishers
 
     Access:
       type: object
@@ -1419,10 +1488,9 @@ components:
 
     Contract:
       type: object
-      description: Pulse of discovery.
+      description: Pulse of contract.
       required:
         - discovery
-        - contracts
         - portal
         - repository
       properties:
@@ -1629,7 +1697,6 @@ components:
       type: object
       description: Pulse of API governance.
       required:
-        - rules
         - spectral
         - vacuum
         - design
