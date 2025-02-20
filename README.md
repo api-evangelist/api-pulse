@@ -37,10 +37,16 @@ Pulse of the API people.
 Pulse of the API organization.
 
 - **email** - A valid email (Organization).
+- **name** - The name of the organization.
 - **countries** - A valid ISO 3166 country.
-- **industries** - A valid North American Industry Classification System (NAICS) entry.
 - **employees** - The number of employees that work at an enterprise organization.
 - **other** - Other information (Organization).
+
+### Sector ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#1039)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/20))
+Pulse of the API organization.
+
+- **email** - A valid email (Organization).
+- **industries** - A valid North American Industry Classification System (NAICS) entry.
 
 ### Access ([Schema](https://github.com/api-evangelist/api-pulse/blob/2faeec4ca43a1bd6c6015d853e60aa32280855e1/openapi/api-pulse-publish-openapi.yml#L992)) ([Discussion](https://github.com/api-evangelist/api-pulse/discussions/5))
 Pulse of API access.

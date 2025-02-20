@@ -12,7 +12,7 @@ info:
     url: https://apievangelist.com
     email: info@apievangelist.com
 
-  termsOfService: http://example.com/terms/
+  termsOfService: http://theapipulse.com//terms/
 
   license: 
     name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
@@ -24,8 +24,8 @@ externalDocs:
 
 servers:
 
-  - url: https://pulse-api.apievangelist.com
-    description: Production
+  - url: http://api.theapipulse.com/
+    description: The base URL for the API Pulse.
 
 tags:
 
