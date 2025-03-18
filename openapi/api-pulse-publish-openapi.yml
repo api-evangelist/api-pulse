@@ -27,67 +27,7 @@ servers:
   - url: http://api.theapipulse.com
     description: The base URL for the API Pulse.
 
-tags:
-
-  - name: Access
-    description: | 
-      The pulse of API access.     
-
-  - name: Authentication
-    description: | 
-      The pulse of API authentication.    
-
-  - name: Contract
-    description: | 
-      The pulse of API contracts.        
-
-  - name: Distribution
-    description: | 
-      The pulse of API distribution.           
-
-  - name: Event-Driven APIs
-    description: | 
-      The pulse of Event-Driven APIs.   
-
-  - name: Experience
-    description: | 
-      The pulse of API experience.
-
-  - name: Governance
-    description: | 
-      The pulse of API governance.   
-
-  - name: GraphQL APIs
-    description: | 
-      The pulse of GraphQL APIs.
-
-  - name: HTTP APIs
-    description: | 
-      The pulse of HTTP APIs.   
-
-  - name: People
-    description: | 
-      The pulse of API people.
-
-  - name: Plan
-    description: | 
-      The pulse of API plans.     
-
-  - name: Properties
-    description: | 
-      The pulse of API properties.    
-
-  - name: Organizations
-    description: | 
-      The pulse of organizations.
-
-  - name: Schema
-    description: | 
-      The pulse of schema.  
-
-  - name: Sectors
-    description: | 
-      The pulse of sector.       
+tags:      
 
   - name: Signals
     description: | 
@@ -110,8 +50,7 @@ paths:
             schema:
               $ref: '#/components/schemas/Signal'
             examples:
-              SignalOne:
-                $ref: '#/components/examples/SignalOne'    
+              $ref: '#/components/examples/SignalOne'    
                                            
       responses:
         '201':
@@ -129,547 +68,6 @@ paths:
           $ref: '#/components/responses/TooManyRequests'
         '500':
           $ref: '#/components/responses/InternalServerError'       
-
-  /people:
-    post:
-      operationId: submitPeoplePulse
-      summary: Submit People Pulse
-      description: Submits the pulse of API people.
-      tags:
-        - People
-      requestBody:
-        required: true
-        description: A valid people schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/People'
-            examples:
-              PeopleOne:
-                $ref: '#/components/examples/PeopleOne'    
-              PeopleTwo:
-                $ref: '#/components/examples/PeopleTwo'                                                      
-      responses:
-        '201':
-          description: People Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                                           
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'   
-
-  /organizations:
-    post:
-      operationId: submitOrganizationPulse
-      summary: Submit Organization Pulse
-      description: Submits the pulse of an organization.
-      tags:
-        - Organizations
-      requestBody:
-        required: true
-        description: A valid organization schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Organization'
-            examples:
-              OrganizationOne:
-                $ref: '#/components/examples/OrganizationOne'   
-              OrganizationTwo:
-                $ref: '#/components/examples/OrganizationTwo'                                                     
-      responses:
-        '201':
-          description: Organization Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'
-
-
-  /sector:
-    post:
-      operationId: submitSectorPulse
-      summary: Submit Sector Pulse
-      description: Submits the pulse of a sector.
-      tags:
-        - Sectors
-      requestBody:
-        required: true
-        description: A valid sector schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Sector'
-            examples:
-              OrganizationOne:
-                $ref: '#/components/examples/SectorOne'   
-              OrganizationTwo:
-                $ref: '#/components/examples/SectorTwo'                                                     
-      responses:
-        '201':
-          description: Sector Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'          
-
-  /access:
-    post:
-      operationId: submitAccess
-      summary: Submit Access Pulse
-      description: Submits the pulse of API access.
-      tags:
-        - Access
-      requestBody:
-        required: true
-        description: A valid access schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Access'
-            examples:
-              AccessOne:
-                $ref: '#/components/examples/AccessOne'   
-              AccessTwo:
-                $ref: '#/components/examples/AccessTwo'                                                      
-      responses:
-        '201':
-          description: Access Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'  
-
-  /distribution:
-    post:
-      operationId: submitDistribution
-      summary: Submit Distribution Pulse
-      description: Submits the pulse of API distribution.
-      tags:
-        - Distribution
-      requestBody:
-        required: true
-        description: A valid distribution schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Distribution'
-            examples:
-              DistributionOne:
-                $ref: '#/components/examples/DistributionOne'                                     
-              DistributionTwo:
-                $ref: '#/components/examples/DistributionTwo'                         
-      responses:
-        '201':
-          description: Distribution Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'                            
-
-  /authentication:
-    post:
-      operationId: submitAuthentication
-      summary: Submit Authentication Pulse
-      description: Submits the pulse of API authentication.
-      tags:
-        - Authentication
-      requestBody:
-        required: true
-        description: A valid authentication schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Authentication'
-            examples:
-              AuthenticationOne:
-                $ref: '#/components/examples/AuthenticationOne'    
-              AuthenticationTwo:
-                $ref: '#/components/examples/AuthenticationTwo'                                                    
-      responses:
-        '201':
-          description: Authentication Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /http-apis:
-    post:
-      operationId: submitHttpApi
-      summary: Submit HttpApi Pulse
-      description: Submits the pulse of API HTTP APIs.
-      tags:
-        - HTTP APIs
-      requestBody:
-        required: true
-        description: A valid HTTP API schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/HttpApi'
-            examples:
-              HttpApisOne:
-                $ref: '#/components/examples/HttpApisOne'    
-              HttpApisTwo:
-                $ref: '#/components/examples/HttpApisTwo'                                                    
-      responses:
-        '201':
-          description: HTTP API Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                                           
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /graphql-apis:
-    post:
-      operationId: submitGraphQlApi
-      summary: Submit GraphQlApi Pulse
-      description: Submits the pulse of GraphQL APIs.
-      tags:
-        - GraphQL APIs
-      requestBody:
-        required: true
-        description: A valid GraphQL API schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/GraphQlApi'
-            examples:
-              GraphQlApiOne:
-                $ref: '#/components/examples/GraphQlApiOne'     
-              GraphQlApiTwo:
-                $ref: '#/components/examples/GraphQlApiTwo'                                                     
-      responses:
-        '201':
-          description: GraphQL API Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                                          
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /event-driven-apis:
-    post:
-      operationId: submitEventDriven
-      summary: Submit EventDriven Pulse
-      description: Submits the pulse of Event-Driven APIs.
-      tags:
-        - Event-Driven APIs
-      requestBody:
-        required: true
-        description: A valid event-driven API schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/EventDrivenApi'
-            examples:
-              EventDrivenOne:
-                $ref: '#/components/examples/EventDrivenOne'                                     
-              EventDrivenTwo:
-                $ref: '#/components/examples/EventDrivenTwo'                    
-      responses:
-        '201':
-          description: Event-Driven API Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                                             
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /schema:
-    post:
-      operationId: submitSchema
-      summary: Submit Schema Pulse
-      description: Submits the pulse of schema.
-      tags:
-        - Schema
-      requestBody:
-        required: true
-        description: A valid Schema schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Schema'
-            examples:
-              SchemaOne:
-                $ref: '#/components/examples/SchemaOne'    
-              SchemaTwo:
-                $ref: '#/components/examples/SchemaTwo'                                                    
-      responses:
-        '201':
-          description: Schema Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                                          
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /contracts:
-    post:
-      operationId: submitContract
-      summary: Submit Contract Pulse
-      description: Submits the pulse of APIs.json.
-      tags:
-        - Contract
-      requestBody:
-        required: true
-        description: A valid APIs.json schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Contract'
-            examples:
-              ContractOne:
-                $ref: '#/components/examples/ContractOne'
-              ContractTwo:
-                $ref: '#/components/examples/ContractTwo'                                                         
-      responses:
-        '201':
-          description: Contract Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /experience:
-    post:
-      operationId: submitExperience
-      summary: Submit Experience Pulse
-      description: Submits the pulse of API experience.
-      tags:
-        - Experience
-      requestBody:
-        required: true
-        description: A valid experience schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Experience'
-            examples:
-              ExperienceOne:
-                $ref: '#/components/examples/ExperienceOne'  
-              ExperienceTwo:
-                $ref: '#/components/examples/ExperienceTwo'                                                     
-      responses:
-        '201':
-          description: Experience Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /properties:
-    post:
-      operationId: submitProperties
-      summary: Submit Properties Pulse
-      description: Submits the pulse of API properties.
-      tags:
-        - Properties
-      requestBody:
-        required: true
-        description: A valid properties schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Properties'
-            examples:
-              PropertiesOne:
-                $ref: '#/components/examples/PropertiesOne' 
-              PropertiesTwo:
-                $ref: '#/components/examples/PropertiesTwo'                                                       
-      responses:
-        '201':
-          description: Properties Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError' 
-
-  /plans:
-    post:
-      operationId: submitPlan
-      summary: Submit Plan Pulse
-      description: Submits the pulse of API plan.
-      tags:
-        - Plan
-      requestBody:
-        required: true
-        description: A valid plan schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Plan'
-            examples:
-              PlanOne:
-                $ref: '#/components/examples/PlanOne'    
-              PlanTwo:
-                $ref: '#/components/examples/PlanTwo'                                                  
-      responses:
-        '201':
-          description: Plan Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'           
-
-  /governance:
-    post:
-      operationId: submitGovernance
-      summary: Submit Governance Pulse
-      description: Submits the pulse of API governance.
-      tags:
-        - Governance
-      requestBody:
-        required: true
-        description: A valid governance schema.
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Governance'
-            examples:
-              GovernanceOne:
-                $ref: '#/components/examples/GovernanceOne'  
-              GovernanceTwo:
-                $ref: '#/components/examples/GovernanceTwo'                                                     
-      responses:
-        '201':
-          description: Governance Pulse Submitted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Submitted'
-              examples:
-                Submitted:
-                  $ref: '#/components/examples/Submitted'                         
-        '400':
-          $ref: '#/components/responses/BadRequest'
-        '429':
-          $ref: '#/components/responses/TooManyRequests'
-        '500':
-          $ref: '#/components/responses/InternalServerError'           
 
 components:
 
@@ -793,16 +191,7 @@ components:
         email: info@apievangelist.com
         role: API Evangelist
         countries: 
-          - US          
-
-    PeopleTwo:
-      description: People two.
-      value:
-        name: Tim Lane
-        email: info@apievangelist.com
-        role: API Evangelist    
-        countries: 
-          - US          
+          - US            
 
     OrganizationOne:
       description: Organization one.
@@ -812,23 +201,9 @@ components:
           - US
         employees: 1
 
-    OrganizationTwo:
-      description: Organization two.
-      value:
-        name: API Evangelist
-        countries: 
-          - US      
-        employees: 1   
-
     SectorOne:
       description: Sector one.
       value:
-        industries: 
-          - Software Delivery
-
-    SectorTwo:
-      description: Sector two.
-      value:   
         industries: 
           - Software Delivery
 
@@ -839,26 +214,12 @@ components:
         partner: 50
         public: 5
 
-    AccessTwo:
-      description: Access two.
-      value:
-        internal: 250
-        partner: 25
-        public: 0    
-
     DistributionOne:
       description: Distribution one.
       value:
         publicPortal: 1
         internalPortal: 2
         gateway: 1
-
-    DistributionTwo:
-      description: Distribution two.
-      value:
-        publicPortal: 1
-        internalPortal: 1
-        public: 2   
 
     AuthenticationOne:
       description: Authentication one.
@@ -867,14 +228,6 @@ components:
         keys: true
         jwt: false
         oauth: false
-
-    AuthenticationTwo:
-      description: Authentication two.
-      value:
-        basicAuth: false
-        keys: true
-        jwt: false
-        oauth: false   
 
     HttpApisOne:
       description: HTTP APIs one.
@@ -893,24 +246,7 @@ components:
         openApiPortal: false  
         openApiRespository: true   
 
-    HttpApisTwo:
-      description: HTTP APIs two.
-      value:
-        producedCount: 250
-        producedPercentage: 90
-        consumeCount: 30
-        consumePercentage: 100       
-        openApi: true    
-        designFirst: true 
-        openApiDocumentation: true    
-        openApiMockServers: true    
-        openApiSdks: true    
-        openApiTesting: true    
-        openApiSecurity: true  
-        openApiPortal: true  
-        openApiRespository: true  
-
-    GraphQlApiOne:
+    GraphQlApisOne:
       description: GraphQL APIs one.
       value:
         producedCount: 1
@@ -920,17 +256,7 @@ components:
         internally: true    
         externally: false    
 
-    GraphQlApiTwo:
-      description: GraphQL APIs two.
-      value:
-        producedCount: 1
-        producedPercentage: 5
-        consumeCount: 1
-        consumePercentage: 5       
-        internally: true    
-        externally: false 
-
-    EventDrivenOne:
+    EventDrivenApisOne:
       description: Event-Driven APIs one.
       value:
         webhooksPublish: 1
@@ -951,27 +277,6 @@ components:
         asyncApiPortal: true  
         asyncApiRespository: true   
 
-    EventDrivenTwo:
-      description: Event-Driven APIs two.
-      value:
-        webhooksPublish: 1
-        webhooksSubscribe: 1
-        webSocketsProduce: 1
-        webSocketsPublish: 1     
-        webSocketsSubscribe: 1     
-        kafkaProduce: 1     
-        kafkaPublish: 1            
-        kafkaSubscribe: 1 
-        asyncApi: true   
-        designFirst: true  
-        asyncApiDocumentation: true    
-        asyncApiMockServers: true    
-        asyncApiSdks: true    
-        asyncApiTesting: true    
-        asyncApiSecurity: true  
-        asyncApiPortal: true  
-        asyncApiRespository: true  
-
     SchemaOne:
       description: Schema one.
       value:
@@ -982,29 +287,12 @@ components:
         registry: true     
         repository: true    
 
-    SchemaTwo:
-      description: Schema two.
-      value:
-        data: true
-        apis: true
-        validation: true
-        forms: true
-        registry: true     
-        repository: true
-
     ContractOne:
       description: Contract one.
       value:
         discovery: true
         portal: true
         repository: true
-
-    ContractTwo:
-      description: Contract two.
-      value:
-        discovery: true
-        portal: true
-        repository: true   
 
     ExperienceOne:
       description: Experience one.
@@ -1018,18 +306,6 @@ components:
         automation: 10  
         integration: 10  
 
-    ExperienceTwo:
-      description: Experience two.
-      value:
-        discovery: 8
-        onboarding: 8
-        quality: 8
-        reliability: 8   
-        consistency: 8  
-        communication: 8 
-        automation: 10 
-        integration: 10   
-
     PropertiesOne:
       description: Properties one.
       value:
@@ -1041,28 +317,8 @@ components:
         security: 10  
         versioning: 10  
 
-    PropertiesTwo:
-      description: Properties two.
-      value:
-        editor: 10
-        documentation: 10
-        mockServers: 10
-        sdks: 10
-        testing: 10   
-        security: 10   
-        versioning: 10  
-
     PlanOne:
       description: Plan one.
-      value:
-        applications: true
-        rateLimits: true
-        chargeAccess: true
-        usage: true
-        report: true   
-
-    PlanTwo:
-      description: Plan two.
       value:
         applications: true
         rateLimits: true
@@ -1080,16 +336,6 @@ components:
         pipelines: true  
         gateway: true    
 
-    GovernanceTwo:
-      description: Governance two.
-      value:
-        spectral: true
-        vacuum: true
-        design: true
-        development: true  
-        pipelines: false  
-        gateway: false    
-
     Submitted:
       description: Submitted
       value:
@@ -1099,7 +345,7 @@ components:
 
     Signal:
       type: object
-      description: Pulse of the people.
+      description: A pulse signal.
       required:
         - access
         - authentication
@@ -1110,12 +356,14 @@ components:
         - governance
         - graphQlApis
         - httpApis
-        - organizations
+        - organization
         - people
         - plans
         - properties
         - schema
-        - sectors
+        - sector
+      examples:
+        $ref: '#/components/examples/SignalOne'  
       properties:
         access:    
             $ref: '#/components/schemas/Access'        
@@ -1135,10 +383,8 @@ components:
             $ref: '#/components/schemas/GraphQlApi'       
         httpApis:    
             $ref: '#/components/schemas/HttpApi'       
-        organizaiton:    
+        organization:    
             $ref: '#/components/schemas/Organization'          
-        organizaiton:    
-            $ref: '#/components/schemas/Organization'         
         people:    
             $ref: '#/components/schemas/People'        
         plans:    
@@ -1146,7 +392,7 @@ components:
         properties:    
             $ref: '#/components/schemas/Properties'     
         schema:    
-            $ref: '#/components/schemas/Schema'                                         
+            $ref: '#/components/schemas/Schema'                                          
         sector:    
             $ref: '#/components/schemas/Sector'                                                                                          
 
@@ -1158,6 +404,8 @@ components:
         - email
         - role
         - countries
+      examples:
+        $ref: '#/components/examples/PeopleOne'          
       properties:
         name:
           type: string
@@ -1204,13 +452,9 @@ components:
       description: Pulse of the organization.
       required:
         - employees
+      examples:
+        $ref: '#/components/examples/OrganizationOne'          
       properties:
-        email:
-          type: string
-          description: A valid email (Organization).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com  
         name:
           type: string
           description: The company name.
@@ -1244,22 +488,44 @@ components:
       description: Pulse of the sector.
       required:
         - industries
-      properties:
-        email:
-          type: string
-          description: A valid email (Sector).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com          
+      examples:
+        $ref: '#/components/examples/SectorOne'          
+      properties:    
         industries:
           type: array
           items:
             type: string
+            enum:
+                - Technology
+                - Healthcare & Pharmaceuticals
+                - Finance & Insurance
+                - Energy & Utilities
+                - Retail & E-Commerce
+                - Automotive & Transportation
+                - Construction & Real Estate
+                - Media & Entertainment
+                - Manufacturing & Industrial Production
+                - Telecommunications
+                - Food & Beverage
+                - Agriculture & Agribusiness
+                - Education & EdTech
+                - Aerospace & Defense
+                - Hospitality & Tourism
+                - Chemicals & Materials
+                - Biotechnology & Life Sciences
+                - Environmental & Sustainability
+                - Legal & Professional Services
+                - Sports & Recreation
+                - Mining & Metals
+                - Fashion & Apparel
+                - Supply Chain & Logistics
+                - Nonprofit & Philanthropy
+                - Government                 
           minItems: 1
           maxItems: 10
-          description: A valid North American Industry Classification System (NAICS) entry.
+          description: A valid North American Industry Classification System (NAICS) entry.     
           example: 
-            - Software Publishers
+            - Technology
 
     Access:
       type: object
@@ -1268,13 +534,9 @@ components:
         - internal
         - partner
         - public
-      properties:
-        email:
-          type: string
-          description: A valid email (Access).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/AccessOne'          
+      properties:    
         internal:
           type: integer
           description: How many internal APIs do you produce?
@@ -1305,13 +567,9 @@ components:
       description: Pulse of distribution.
       required:
         - publicPortal
-      properties:
-        email:
-          type: string
-          description: A valid email (Distribution).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/DistributionOne'          
+      properties:    
         publicPortal:
           type: integer
           description: How many public API portals do you have?
@@ -1345,13 +603,9 @@ components:
         - keys
         - jwt
         - oauth
-      properties:
-        email:
-          type: string
-          description: A valid email (Authentication).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/AuthenticationOne'          
+      properties:    
         basicAuth:
           type: boolean
           description: Do you use BasicAuth to authenticate with APIs?
@@ -1392,13 +646,9 @@ components:
         - openApiSecurity
         - openApiPortal
         - openApiRespository
-      properties:
-        email:
-          type: string
-          description: A valid email (HTTP API).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/HttpApisOne'          
+      properties:   
         producedCount:
           type: integer
           description: How many HTTP APIs do you produce?
@@ -1476,13 +726,9 @@ components:
         - consumePercentage
         - internally
         - externally
-      properties:
-        email:
-          type: string
-          description: A valid email (GraphQL API).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/GraphQlApisOne'           
+      properties:    
         producedCount:
           type: integer
           description: How many GraphQL APIs do you produce?
@@ -1543,13 +789,9 @@ components:
         - asyncApiSecurity
         - asyncApiPortal
         - asyncApiRespository    
-      properties:
-        email:
-          type: string
-          description: A valid email (Event-Driven).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/EventDrivenApisOne'           
+      properties:    
         webhooksPublish:
           type: integer
           description: How many Webhooks to you publish?
@@ -1651,13 +893,9 @@ components:
         - forms
         - registry
         - repository
-      properties:
-        email:
-          type: string
-          description: A valid email (Schema).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/SchemaOne'           
+      properties:     
         data:
           type: boolean
           description: Do you use JSON Schema to define data?
@@ -1696,13 +934,9 @@ components:
         - discovery
         - portal
         - repository
-      properties:
-        email:
-          type: string
-          description: A valid email (Contract).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/ContractOne'           
+      properties:   
         discovery:
           type: boolean
           description: Do you use APIs.json for discovery?
@@ -1732,13 +966,9 @@ components:
         - reliability
         - consistency
         - communication
-      properties:
-        email:
-          type: string
-          description: A valid email (Experience).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/ExperienceOne'           
+      properties:     
         discovery:
           type: integer
           description: How much of a priority is API discovery?
@@ -1803,13 +1033,9 @@ components:
         - sdks
         - testing
         - security
-      properties:
-        email:
-          type: string
-          description: A valid email (Properties).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/PropertiesOne'           
+      properties:     
         documentation:
           type: integer
           description: How much of a priority is API documentation?
@@ -1862,13 +1088,9 @@ components:
         - chargeAccess
         - usage
         - report
-      properties:
-        email:
-          type: string
-          description: A valid email (Plan).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/PlanOne'         
+      properties:     
         applications:
           type: boolean
           description: Do you require an application to be defined to access APIs?
@@ -1906,13 +1128,9 @@ components:
         - development
         - pipelines
         - gateway
-      properties:
-        email:
-          type: string
-          description: A valid email (Governance).
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com      
+      examples:
+        $ref: '#/components/examples/GovernanceOne'         
+      properties:    
         spectral:
           type: boolean
           description: Do you use Spectral for governance rules?
@@ -1949,6 +1167,8 @@ components:
       description: The submitted pulse.
       required:
         - message
+      examples:
+        $ref: '#/components/examples/Submitted'         
       properties:
         message:
           type: string
