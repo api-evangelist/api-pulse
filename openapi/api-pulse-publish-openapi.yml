@@ -49,8 +49,6 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Signal'
-            examples:
-              $ref: '#/components/examples/SignalOne'    
                                            
       responses:
         '201':
@@ -362,8 +360,6 @@ components:
         - properties
         - schema
         - sector
-      examples:
-        $ref: '#/components/examples/SignalOne'  
       properties:
         access:    
             $ref: '#/components/schemas/Access'        
@@ -403,9 +399,7 @@ components:
         - name
         - email
         - role
-        - countries
-      examples:
-        $ref: '#/components/examples/PeopleOne'          
+        - countries       
       properties:
         name:
           type: string
@@ -451,9 +445,7 @@ components:
       type: object
       description: Pulse of the organization.
       required:
-        - employees
-      examples:
-        $ref: '#/components/examples/OrganizationOne'          
+        - employees      
       properties:
         name:
           type: string
@@ -487,9 +479,7 @@ components:
       type: object
       description: Pulse of the sector.
       required:
-        - industries
-      examples:
-        $ref: '#/components/examples/SectorOne'          
+        - industries        
       properties:    
         industries:
           type: array
@@ -533,9 +523,7 @@ components:
       required:
         - internal
         - partner
-        - public
-      examples:
-        $ref: '#/components/examples/AccessOne'          
+        - public        
       properties:    
         internal:
           type: integer
@@ -566,9 +554,7 @@ components:
       type: object
       description: Pulse of distribution.
       required:
-        - publicPortal
-      examples:
-        $ref: '#/components/examples/DistributionOne'          
+        - publicPortal        
       properties:    
         publicPortal:
           type: integer
@@ -602,9 +588,7 @@ components:
         - basicAuth
         - keys
         - jwt
-        - oauth
-      examples:
-        $ref: '#/components/examples/AuthenticationOne'          
+        - oauth       
       properties:    
         basicAuth:
           type: boolean
@@ -645,9 +629,7 @@ components:
         - openApiTesting
         - openApiSecurity
         - openApiPortal
-        - openApiRespository
-      examples:
-        $ref: '#/components/examples/HttpApisOne'          
+        - openApiRespository         
       properties:   
         producedCount:
           type: integer
@@ -725,9 +707,7 @@ components:
         - consumeCount
         - consumePercentage
         - internally
-        - externally
-      examples:
-        $ref: '#/components/examples/GraphQlApisOne'           
+        - externally          
       properties:    
         producedCount:
           type: integer
@@ -788,9 +768,7 @@ components:
         - asyncApiTesting
         - asyncApiSecurity
         - asyncApiPortal
-        - asyncApiRespository    
-      examples:
-        $ref: '#/components/examples/EventDrivenApisOne'           
+        - asyncApiRespository              
       properties:    
         webhooksPublish:
           type: integer
@@ -892,9 +870,7 @@ components:
         - validation
         - forms
         - registry
-        - repository
-      examples:
-        $ref: '#/components/examples/SchemaOne'           
+        - repository       
       properties:     
         data:
           type: boolean
@@ -933,9 +909,7 @@ components:
       required:
         - discovery
         - portal
-        - repository
-      examples:
-        $ref: '#/components/examples/ContractOne'           
+        - repository         
       properties:   
         discovery:
           type: boolean
@@ -965,9 +939,7 @@ components:
         - quality
         - reliability
         - consistency
-        - communication
-      examples:
-        $ref: '#/components/examples/ExperienceOne'           
+        - communication         
       properties:     
         discovery:
           type: integer
@@ -1032,9 +1004,7 @@ components:
         - mockServers
         - sdks
         - testing
-        - security
-      examples:
-        $ref: '#/components/examples/PropertiesOne'           
+        - security         
       properties:     
         documentation:
           type: integer
@@ -1087,9 +1057,7 @@ components:
         - rateLimits
         - chargeAccess
         - usage
-        - report
-      examples:
-        $ref: '#/components/examples/PlanOne'         
+        - report       
       properties:     
         applications:
           type: boolean
@@ -1127,9 +1095,7 @@ components:
         - design
         - development
         - pipelines
-        - gateway
-      examples:
-        $ref: '#/components/examples/GovernanceOne'         
+        - gateway       
       properties:    
         spectral:
           type: boolean
@@ -1166,9 +1132,7 @@ components:
       type: object
       description: The submitted pulse.
       required:
-        - message
-      examples:
-        $ref: '#/components/examples/Submitted'         
+        - message       
       properties:
         message:
           type: string
