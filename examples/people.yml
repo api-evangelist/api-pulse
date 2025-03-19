@@ -1,0 +1,107 @@
+people:
+    name: Kin Lane
+    email: info@apievangelist.com
+    role: API Evangelist
+    countries: 
+    - US             
+organization:
+    name: API Evangelist
+    countries: 
+    - US
+    employees: 1 
+sectors:
+    industries: 
+    - Software Delivery
+access:
+    internal: 500
+    partner: 50
+    public: 5
+distribution:
+    publicPortal: 1
+    internalPortal: 2
+    gateway: 1
+authentication:
+    basicAuth: false
+    keys: true
+    jwt: false
+    oauth: false
+httpApis:
+    producedCount: 150
+    producedPercentage: 100
+    consumeCount: 20
+    consumePercentage: 100       
+    openApi: true   
+    designFirst: true 
+    openApiDocumentation: true    
+    openApiMockServers: true    
+    openApiSdks: true    
+    openApiTesting: true    
+    openApiSecurity: false  
+    openApiPortal: false  
+    openApiRespository: true   
+graphQlApis:
+    producedCount: 1
+    producedPercentage: 5
+    consumeCount: 1
+    consumePercentage: 5       
+    internally: true    
+    externally: false    
+eventDrivenApis:
+    webhooksPublish: 1
+    webhooksSubscribe: 1
+    webSocketsProduce: 1
+    webSocketsPublish: 1     
+    webSocketsSubscribe: 1     
+    kafkaProduce: 1     
+    kafkaPublish: 1            
+    kafkaSubscribe: 1 
+    asyncApi: true  
+    designFirst: true   
+    asyncApiDocumentation: true    
+    asyncApiMockServers: true    
+    asyncApiSdks: true    
+    asyncApiTesting: true    
+    asyncApiSecurity: true  
+    asyncApiPortal: true  
+    asyncApiRespository: true   
+schema:
+    data: true
+    apis: true
+    validation: true
+    forms: true
+    registry: true     
+    repository: true    
+contracts:
+    discovery: true
+    portal: true
+    repository: true
+experience:
+    discovery: 10
+    onboarding: 10
+    quality: 10
+    reliability: 10   
+    consistency: 10  
+    communication: 10  
+    automation: 10  
+    integration: 10  
+properties:
+    editor: 10
+    documentation: 10
+    mockServers: 10
+    sdks: 10
+    testing: 10   
+    security: 10  
+    versioning: 10  
+plans:
+    applications: true
+    rateLimits: true
+    chargeAccess: true
+    usage: true
+    report: true   
+governance:
+    spectral: true
+    vacuum: true
+    design: true
+    development: true  
+    pipelines: true  
+    gateway: true   
