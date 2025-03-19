@@ -361,6 +361,20 @@ components:
         - schema
         - sector
       properties:
+
+        created:
+          type: string
+          description: Date when signal was created.
+          minLength: 10
+          maxLength: 10
+          example: 2025-01-01   
+        validated:
+          type: string
+          description: Date when signal was validated.
+          minLength: 10
+          maxLength: 10
+          example: 2025-01-01  
+
         access:    
             $ref: '#/components/schemas/Access'        
         authentication:    
