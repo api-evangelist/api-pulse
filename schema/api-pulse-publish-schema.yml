@@ -1,4 +1,4 @@
-$id: https://example.com/arrays.schema.json
+$id: https://github.com/api-evangelist/api-pulse/blob/main/schema/api-pulse-publish-schema.yml
 $schema: https://json-schema.org/draft/2020-12/schema
 title: API Pulse Signal
 description: An API pulse signal
