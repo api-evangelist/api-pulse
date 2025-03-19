@@ -1,0 +1,788 @@
+$id: https://example.com/arrays.schema.json
+$schema: https://json-schema.org/draft/2020-12/schema
+title: API Pulse Signal
+description: An API pulse signal
+type: object
+required:
+  - access
+  - authentication
+  - contracts
+  - distribution
+  - eventDrivenApis
+  - experience
+  - governance
+  - graphQlApis
+  - httpApis
+  - organization
+  - people
+  - plans
+  - properties
+  - schema
+  - sector
+properties:
+
+  access:    
+      $ref: '#/$defs/Access'        
+  authentication:    
+      $ref: '#/$defs/Authentication'     
+  contracts:    
+      $ref: '#/$defs/Contract'   
+  distribution:    
+      $ref: '#/$defs/Distribution'                
+  eventDrivenApis:    
+      $ref: '#/$defs/EventDrivenApi'             
+  experience:    
+      $ref: '#/$defs/Experience'     
+  governance:    
+      $ref: '#/$defs/Governance'                                                                             
+  graphQlApis:    
+      $ref: '#/$defs/GraphQlApi'       
+  httpApis:    
+      $ref: '#/$defs/HttpApi'       
+  organization:    
+      $ref: '#/$defs/Organization'          
+  people:    
+      $ref: '#/$defs/People'        
+  plans:    
+      $ref: '#/$defs/Plan'     
+  properties:    
+      $ref: '#/$defs/Properties'     
+  schema:    
+      $ref: '#/$defs/Schema'                                          
+  sector:    
+      $ref: '#/$defs/Sector'  
+$defs:                                                                                 
+
+  People:
+    type: object
+    description: Pulse of the people.
+    required:
+      - name
+      - email
+      - role
+      - countries       
+    properties:
+      name:
+        type: string
+        description: A name.
+        minLength: 5
+        maxLength: 250
+        example: Kin Lane
+      email:
+        type: string
+        description: Valid email address.
+        minLength: 1
+        maxLength: 500
+        example: info@apievangelist.com
+      role:
+        type: string
+        description: Role of the person.
+        minLength: 10
+        maxLength: 250          
+        example: Evangelist   
+      linkedIn:
+        type: string
+        description: Valid LinkedIn URL.
+        minLength: 10
+        maxLength: 500          
+        example: https://www.linkedin.com/in/kinlane/     
+      countries:
+        type: array
+        items:
+          type: string
+        minItems: 1
+        maxItems: 10
+        description: A valid ISO 3166 country for the person.
+        example: 
+          - US           
+      other:
+        type: string
+        description: Other information (People).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                       
+
+  Organization:
+    type: object
+    description: Pulse of the organization.
+    required:
+      - employees      
+    properties:
+      name:
+        type: string
+        description: The company name.
+        minLength: 1
+        maxLength: 500
+        example: API Evangelist       
+      countries:
+        type: array
+        items:
+          type: string
+        minItems: 1
+        maxItems: 10
+        description: A valid ISO 3166 country for the organization.
+        example: 
+          - US            
+      employees:
+        type: integer
+        description: The number of employees that work at an enterprise organization.
+        minLength: 1
+        maxLength: 500000
+        example: 100
+      other:
+        type: string
+        description: Other information (Organization).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.       
+
+  Sector:
+    type: object
+    description: Pulse of the sector.
+    required:
+      - industries        
+    properties:    
+      industries:
+        type: string
+        enum:
+          - Technology
+          - Healthcare & Pharmaceuticals
+          - Finance & Insurance
+          - Energy & Utilities
+          - Retail & E-Commerce
+          - Automotive & Transportation
+          - Construction & Real Estate
+          - Media & Entertainment
+          - Manufacturing & Industrial Production
+          - Telecommunications
+          - Food & Beverage
+          - Agriculture & Agribusiness
+          - Education & EdTech
+          - Aerospace & Defense
+          - Hospitality & Tourism
+          - Chemicals & Materials
+          - Biotechnology & Life Sciences
+          - Environmental & Sustainability
+          - Legal & Professional Services
+          - Sports & Recreation
+          - Mining & Metals
+          - Fashion & Apparel
+          - Supply Chain & Logistics
+          - Nonprofit & Philanthropy
+          - Government                 
+        minItems: 1
+        maxItems: 10
+        description: A valid North American Industry Classification System (NAICS) entry.     
+        example: 
+          - Technology
+
+  Access:
+    type: object
+    description: Pulse of access.
+    required:
+      - internal
+      - partner
+      - public        
+    properties:    
+      internal:
+        type: integer
+        description: How many internal APIs do you produce?
+        minLength: 0
+        maxLength: 50000
+        example: 2500
+      partner:
+        type: integer
+        description: How many partner APIs do you produce?
+        minLength: 0
+        maxLength: 50000
+        example: 50
+      public:
+        type: integer
+        description: How many public APIs do you produce?
+        minLength: 0
+        maxLength: 50000     
+        example: 50
+      other:
+        type: string
+        description: Other information (Access).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.            
+
+  Distribution:
+    type: object
+    description: Pulse of distribution.
+    required:
+      - publicPortal        
+    properties:    
+      publicPortal:
+        type: integer
+        description: How many public API portals do you have?
+        minLength: 0
+        maxLength: 25
+        example: 1
+      internalPortal:
+        type: integer
+        description: How many internal API portals do you have?
+        minLength: 0
+        maxLength: 25
+        example: 1
+      gateway:
+        type: integer
+        description: How many API gateways do you have?
+        minLength: 0
+        maxLength: 25     
+        example: 2    
+      other:
+        type: string
+        description: Other information (Distribution).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                  
+
+  Authentication:
+    type: object
+    description: Pulse of authentication.
+    required:
+      - basicAuth
+      - keys
+      - jwt
+      - oauth       
+    properties:    
+      basicAuth:
+        type: boolean
+        description: Do you use BasicAuth to authenticate with APIs?
+        example: true
+      keys:
+        type: boolean
+        description: Do you use API keys to authenticate with APIs?
+        example: true
+      jwt:
+        type: boolean
+        description: HDo you use JWT to authenticate with APIs?
+        example: true
+      oauth:
+        type: boolean
+        description: Do you use OAuth to authenticate with APIs?
+        example: true    
+      other:
+        type: string
+        description: Other information (Authentication).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                 
+
+  HttpApi:
+    type: object
+    description: Pulse of HTTP APIs.
+    required:
+      - producedCount
+      - producedPercentage
+      - consumeCount
+      - consumePercentage
+      - openApi
+      - designFirst
+      - openApiDocumentation
+      - openApiMockServers
+      - openApiSdks
+      - openApiTesting
+      - openApiSecurity
+      - openApiPortal
+      - openApiRespository         
+    properties:   
+      producedCount:
+        type: integer
+        description: How many HTTP APIs do you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      producedPercentage:
+        type: integer
+        description: What percentage of APIs you produce are HTTP APIs?
+        minLength: 0
+        maxLength: 100
+        example: 50
+      consumeCount:
+        type: integer
+        description: How many HTTP APIs do you consume?
+        minLength: 0
+        maxLength: 1000     
+        example: 25
+      consumePercentage:
+        type: integer
+        description: What percentage of APIs you consume are HTTP APIs?
+        minLength: 0
+        maxLength: 100     
+        example: 90
+      openApi:
+        type: boolean
+        description: Do you use OpenAPI? 
+        example: true  
+      designFirst:
+        type: boolean
+        description: Are you design-first when producing HTTP APIs?
+        example: true            
+      openApiDocumentation:
+        type: boolean
+        description: Do you use OpenAPI for Generating Documentation? 
+        example: true  
+      openApiMockServers:
+        type: boolean
+        description: Do you use OpenAPI for Generating Mock Servers? 
+        example: true                                
+      openApiSdks:
+        type: boolean
+        description: Do you use OpenAPI for Software Development Kits (SDKs)? 
+        example: true  
+      openApiTesting:
+        type: boolean
+        description: Do you use OpenAPI for Testing? 
+        example: true  
+      openApiSecurity:
+        type: boolean
+        description: Do you use OpenAPI for Security? 
+        example: true 
+      openApiPortal:
+        type: boolean
+        description: Do you publish OpenAPI to a portal?
+        example: true   
+      openApiRespository:
+        type: boolean
+        description: Do you publish OpenAPI to a repository?
+        example: true  
+      other:
+        type: string
+        description: Other information (HTTP APIs).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                                                     
+
+  GraphQlApi:
+    type: object
+    description: Pulse of GraphQL APIs.
+    required:
+      - producedCount
+      - producedPercentage
+      - consumeCount
+      - consumePercentage
+      - internally
+      - externally          
+    properties:    
+      producedCount:
+        type: integer
+        description: How many GraphQL APIs do you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      producedPercentage:
+        type: integer
+        description: What percentage of the  APIs you produce are GraphQL?
+        minLength: 0
+        maxLength: 100
+        example: 50
+      consumeCount:
+        type: integer
+        description: How many GraphQL APIs do you consume?
+        minLength: 0
+        maxLength: 1000     
+        example: 25
+      consumePercentage:
+        type: integer
+        description: What percentage of the APIs you consume are GraphQL APIs?
+        minLength: 0
+        maxLength: 100     
+        example: 90
+      internally:
+        type: boolean
+        description: Do you use GraphQL internally?
+        example: true  
+      externally:
+        type: boolean
+        description: Do you use GraphQL externally?
+        example: true  
+      other:
+        type: string
+        description: Other information (GraphQL APIs).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.            
+
+  EventDrivenApi:
+    type: object
+    description: Pulse of Event-Driven APIs.
+    required:
+      - webhooksPublish
+      - webhooksSubscribe
+      - webSocketsProduce
+      - webSocketsPublish
+      - webSocketsSubscribe
+      - kafkaProduce
+      - kafkaPublish
+      - kafkaSubscribe   
+      - asyncApi    
+      - designFirst 
+      - asyncApiDocumentation
+      - asyncApiMockServers
+      - asyncApiSdks
+      - asyncApiTesting
+      - asyncApiSecurity
+      - asyncApiPortal
+      - asyncApiRespository              
+    properties:    
+      webhooksPublish:
+        type: integer
+        description: How many Webhooks to you publish?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      webhooksSubscribe:
+        type: integer
+        description: How many Webhooks to you subscribe?
+        minLength: 0
+        maxLength: 1000     
+        example: 25
+      webSocketsProduce:
+        type: integer
+        description: How many WebSockets to you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500          
+      webSocketsPublish:
+        type: integer
+        description: How many WebSockets to you publish to?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      webSocketsSubscribe:
+        type: integer
+        description: How many WebSockets to you subscribe to?
+        minLength: 0
+        maxLength: 1000     
+        example: 25  
+      kafkaProduce:
+        type: integer
+        description: How many Kafka APIs to you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500          
+      kafkaPublish:
+        type: integer
+        description: How many Kafka APIs to you publish to?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      kafkaSubscribe:
+        type: integer
+        description: How many Kafka APIs to you subscribe to?
+        minLength: 0
+        maxLength: 1000     
+        example: 25                  
+      asyncApi:
+        type: boolean
+        description: Do you use AsyncAPI? 
+        example: true  
+      designFirst:
+        type: boolean
+        description: Are you design-first when producing event-driven APIs?
+        example: true           
+      asyncApiDocumentation:
+        type: boolean
+        description: Do you use AsyncAPI for Generating Documentation? 
+        example: true  
+      asyncApiMockServers:
+        type: boolean
+        description: Do you use AsyncAPI for Generating Mock Servers? 
+        example: true                                
+      asyncApiSdks:
+        type: boolean
+        description: Do you use AsyncAPI for Software Development Kits (SDKs)? 
+        example: true  
+      asyncApiTesting:
+        type: boolean
+        description: Do you use AsyncAPI for Testing? 
+        example: true  
+      asyncApiSecurity:
+        type: boolean
+        description: Do you use AsyncAPI for Security? 
+        example: true 
+      asyncApiPortal:
+        type: boolean
+        description: Do you publish AsyncAPI to a portal?
+        example: true   
+      asyncApiRespository:
+        type: boolean
+        description: Do you publish AsyncAPI to a repository?
+        example: true 
+      other:
+        type: string
+        description: Other information (Event-Driven APIs).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.              
+
+  Schema:
+    type: object
+    description: Pulse of schema.
+    required:
+      - data
+      - apis
+      - validation
+      - forms
+      - registry
+      - repository       
+    properties:     
+      data:
+        type: boolean
+        description: Do you use JSON Schema to define data?
+        example: true  
+      apis:
+        type: boolean
+        description: Do you use JSON Schema to define APIs?
+        example: true            
+      validation:
+        type: boolean
+        description: Do you use JSON Schema to validate data?
+        example: true            
+      forms:
+        type: boolean
+        description: Do you use JSON Schema to generate forms?
+        example: true            
+      registry:
+        type: boolean
+        description: Do you publish JSON Schema to registry?
+        example: true   
+      repository:
+        type: boolean
+        description: Do you publish JSON Schema to repository?
+        example: true 
+      other:
+        type: string
+        description: Other information (Schema).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.              
+
+  Contract:
+    type: object
+    description: Pulse of contract.
+    required:
+      - discovery
+      - portal
+      - repository         
+    properties:   
+      discovery:
+        type: boolean
+        description: Do you use APIs.json for discovery?
+        example: true                     
+      portal:
+        type: boolean
+        description: Do you publish APIs.json to portal?
+        example: true   
+      repository:
+        type: boolean
+        description: Do you publish APIs.json to repository?
+        example: true 
+      other:
+        type: string
+        description: Other information (Contract).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.            
+
+  Experience:
+    type: object
+    description: Pulse of experience.
+    required:
+      - discovery
+      - onboarding
+      - quality
+      - reliability
+      - consistency
+      - communication         
+    properties:     
+      discovery:
+        type: integer
+        description: How much of a priority is API discovery?
+        example: 10  
+        minLength: 3
+        maxLength: 3                 
+      onboarding:
+        type: integer
+        description: How much of a priority is API onboarding?
+        example: 10   
+        minLength: 3
+        maxLength: 3                     
+      quality:
+        type: integer
+        description: How much of a priority is API quality?
+        example: 10 
+        minLength: 3
+        maxLength: 3                       
+      reliability:
+        type: integer
+        description: How much of a priority is API reliability?
+        example: 10  
+        minLength: 3
+        maxLength: 3                      
+      consistency:
+        type: integer
+        description: How much of a priority is API consistency?
+        example: 10 
+        minLength: 3
+        maxLength: 3  
+      communication:
+        type: integer
+        description: How much of a priority is API communication?
+        example: 10 
+        minLength: 3
+        maxLength: 3   
+      automation:
+        type: integer
+        description: How much of a priority is API automation?
+        example: 10 
+        minLength: 3
+        maxLength: 3   
+      integration:
+        type: integer
+        description: How much of a priority is API integration?
+        example: 10 
+        minLength: 3
+        maxLength: 3                               
+      other:
+        type: string
+        description: Other information (Experience).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                                                    
+
+  Properties:
+    type: object
+    description: Pulse of API operational properties.
+    required:
+      - documentation
+      - mockServers
+      - sdks
+      - testing
+      - security         
+    properties:     
+      documentation:
+        type: integer
+        description: How much of a priority is API documentation?
+        example: 10 
+        minLength: 3
+        maxLength: 3 
+      mockServers:
+        type: integer
+        description: How much of a priority is API mock servers?
+        example: 10 
+        minLength: 3
+        maxLength: 3           
+      sdks:
+        type: integer
+        description: How much of a priority is SDKs?
+        example: 10 
+        minLength: 3
+        maxLength: 3          
+      testing:
+        type: integer
+        description: How much of a priority is API testing?
+        example: 10 
+        minLength: 3
+        maxLength: 3          
+      security:
+        type: integer
+        description: How much of a priority is API security?
+        example: 10 
+        minLength: 3
+        maxLength: 3   
+      versioning:
+        type: integer
+        description: How much of a priority is API versioning?
+        example: 10 
+        minLength: 3
+        maxLength: 3            
+      other:
+        type: string
+        description: Other information (Properties).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.             
+
+  Plan:
+    type: object
+    description: Pulse of API planning.
+    required:
+      - applications
+      - rateLimits
+      - chargeAccess
+      - usage
+      - report       
+    properties:     
+      applications:
+        type: boolean
+        description: Do you require an application to be defined to access APIs?
+        example: true  
+      rateLimits:
+        type: boolean
+        description: Do you enforce rate limits across all APIs?
+        example: true            
+      chargeAccess:
+        type: boolean
+        description: Do you charge for access to any APIs?
+        example: true            
+      usage:
+        type: boolean
+        description: Do you monitor API usage for APIs in production?
+        example: true            
+      report:
+        type: boolean
+        description: Do you report on API usage data with consumers?
+        example: true 
+      other:
+        type: string
+        description: Other information (Plan).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.            
+
+  Governance:
+    type: object
+    description: Pulse of API governance.
+    required:
+      - spectral
+      - vacuum
+      - design
+      - development
+      - pipelines
+      - gateway       
+    properties:    
+      spectral:
+        type: boolean
+        description: Do you use Spectral for governance rules?
+        example: true            
+      vacuum:
+        type: boolean
+        description: Do you use Vacuum for governance?
+        example: true            
+      design:
+        type: boolean
+        description: Do you apply rules during design of APIs?
+        example: true            
+      development:
+        type: boolean
+        description: Do you apply rules during development of APIs?
+        example: true   
+      pipelines:
+        type: boolean
+        description: Do you apply rules during pipeline builds of APIs?
+        example: true     
+      gateway:
+        type: boolean
+        description: Do you validate JSON Schema at the API gateway?
+        example: true 
+      other:
+        type: string
+        description: Other information (Governance).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.    
