@@ -9,7 +9,7 @@ organization:
     countries: 
     - US
     employees: 1 
-sectors:
+sector:
     industries: 
     - Software Delivery
 access:

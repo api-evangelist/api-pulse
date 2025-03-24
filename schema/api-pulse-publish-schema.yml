@@ -90,7 +90,7 @@ $defs:
       role:
         type: string
         description: Role of the person.
-        minLength: 10
+        minLength: 3
         maxLength: 250          
         example: Evangelist   
       linkedIn:
@@ -99,15 +99,12 @@ $defs:
         minLength: 10
         maxLength: 500          
         example: https://www.linkedin.com/in/kinlane/     
-      countries:
-        type: array
-        items:
-          type: string
-        minItems: 1
-        maxItems: 10
+      country:
+        type: string
+        minLength: 1
+        maxLength: 10   
         description: A valid ISO 3166 country for the person.
-        example: 
-          - US           
+        example: US           
       other:
         type: string
         description: Other information (People).
@@ -220,38 +217,7 @@ $defs:
         description: Other information (Access).
         minLength: 10
         maxLength: 250          
-        example: Something additional I wanted to say.            
-
-  Distribution:
-    type: object
-    description: Pulse of distribution.
-    required:
-      - publicPortal        
-    properties:    
-      publicPortal:
-        type: integer
-        description: How many public API portals do you have?
-        minLength: 0
-        maxLength: 25
-        example: 1
-      internalPortal:
-        type: integer
-        description: How many internal API portals do you have?
-        minLength: 0
-        maxLength: 25
-        example: 1
-      gateway:
-        type: integer
-        description: How many API gateways do you have?
-        minLength: 0
-        maxLength: 25     
-        example: 2    
-      other:
-        type: string
-        description: Other information (Distribution).
-        minLength: 10
-        maxLength: 250          
-        example: Something additional I wanted to say.                  
+        example: Something additional I wanted to say.                            
 
   Authentication:
     type: object
@@ -600,7 +566,41 @@ $defs:
         description: Other information (Contract).
         minLength: 10
         maxLength: 250          
-        example: Something additional I wanted to say.            
+        example: Something additional I wanted to say.    
+
+
+  Distribution:
+    type: object
+    description: Pulse of distribution.
+    required:
+      - publicPortal   
+      - internalPortal  
+      - gateway   
+    properties:    
+      publicPortal:
+        type: integer
+        description: How many public API portals do you have?
+        minLength: 0
+        maxLength: 25
+        example: 1
+      internalPortal:
+        type: integer
+        description: How many internal API portals do you have?
+        minLength: 0
+        maxLength: 25
+        example: 1
+      gateway:
+        type: integer
+        description: How many API gateways do you have?
+        minLength: 0
+        maxLength: 25     
+        example: 2    
+      other:
+        type: string
+        description: Other information (Distribution).
+        minLength: 10
+        maxLength: 250          
+        example: Something additional I wanted to say.                  
 
   Experience:
     type: object
@@ -611,7 +611,9 @@ $defs:
       - quality
       - reliability
       - consistency
-      - communication         
+      - communication   
+      - automation
+      - integration      
     properties:     
       discovery:
         type: integer
@@ -676,7 +678,8 @@ $defs:
       - mockServers
       - sdks
       - testing
-      - security         
+      - security    
+      - versioning     
     properties:     
       documentation:
         type: integer
