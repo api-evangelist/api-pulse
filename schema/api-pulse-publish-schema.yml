@@ -24,13 +24,13 @@ properties:
   created:
     type: string
     description: Date when signal was created.
-    minLength: 10
+    minLength: 0
     maxLength: 10
     example: 2025-01-01   
   validated:
     type: string
     description: Date when signal was validated.
-    minLength: 10
+    minLength: 0
     maxLength: 10
     example: 2025-01-01  
 
@@ -73,7 +73,7 @@ $defs:
       - name
       - email
       - role
-      - countries       
+      - country       
     properties:
       name:
         type: string
@@ -96,19 +96,19 @@ $defs:
       linkedIn:
         type: string
         description: Valid LinkedIn URL.
-        minLength: 10
+        minLength: 0
         maxLength: 500          
         example: https://www.linkedin.com/in/kinlane/     
       country:
         type: string
-        minLength: 1
-        maxLength: 10   
+        minLength: 2
+        maxLength: 2   
         description: A valid ISO 3166 country for the person.
         example: US           
       other:
         type: string
         description: Other information (People).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.                       
 
@@ -121,28 +121,25 @@ $defs:
       name:
         type: string
         description: The company name.
-        minLength: 1
+        minLength: 0
         maxLength: 500
         example: API Evangelist       
-      countries:
-        type: array
-        items:
-          type: string
-        minItems: 1
-        maxItems: 10
+      country:
+        type: string
+        minItems: 0
+        maxItems: 2
         description: A valid ISO 3166 country for the organization.
-        example: 
-          - US            
+        example:  US            
       employees:
         type: integer
         description: The number of employees that work at an enterprise organization.
-        minLength: 1
-        maxLength: 500000
+        minimum: 0
+        maximum: 500000
         example: 100
       other:
         type: string
         description: Other information (Organization).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.       
 
@@ -150,9 +147,9 @@ $defs:
     type: object
     description: Pulse of the sector.
     required:
-      - industries        
+      - industry        
     properties:    
-      industries:
+      industry:
         type: string
         enum:
           - Technology
@@ -183,8 +180,7 @@ $defs:
         minItems: 1
         maxItems: 10
         description: A valid North American Industry Classification System (NAICS) entry.     
-        example: 
-          - Technology
+        example:  Technology
 
   Access:
     type: object
@@ -197,25 +193,25 @@ $defs:
       internal:
         type: integer
         description: How many internal APIs do you produce?
-        minLength: 0
-        maxLength: 50000
+        minimum: 0
+        maximum: 50000
         example: 2500
       partner:
         type: integer
         description: How many partner APIs do you produce?
-        minLength: 0
-        maxLength: 50000
+        minimum: 0
+        maximum: 50000
         example: 50
       public:
         type: integer
         description: How many public APIs do you produce?
-        minLength: 0
-        maxLength: 50000     
+        minimum: 0
+        maximum: 50000     
         example: 50
       other:
         type: string
         description: Other information (Access).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.                            
 
@@ -247,7 +243,7 @@ $defs:
       other:
         type: string
         description: Other information (Authentication).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.                 
 
@@ -272,26 +268,26 @@ $defs:
       producedCount:
         type: integer
         description: How many HTTP APIs do you produce?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500
       producedPercentage:
         type: integer
         description: What percentage of APIs you produce are HTTP APIs?
-        minLength: 0
-        maxLength: 100
+        minimum: 0
+        maximum: 100
         example: 50
       consumeCount:
         type: integer
         description: How many HTTP APIs do you consume?
-        minLength: 0
-        maxLength: 1000     
+        minimum: 0
+        maximum: 1000     
         example: 25
       consumePercentage:
         type: integer
         description: What percentage of APIs you consume are HTTP APIs?
-        minLength: 0
-        maxLength: 100     
+        minimum: 0
+        maximum: 100     
         example: 90
       openApi:
         type: boolean
@@ -332,7 +328,7 @@ $defs:
       other:
         type: string
         description: Other information (HTTP APIs).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.                                                     
 
@@ -382,7 +378,7 @@ $defs:
       other:
         type: string
         description: Other information (GraphQL APIs).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.            
 
@@ -411,50 +407,50 @@ $defs:
       webhooksPublish:
         type: integer
         description: How many Webhooks to you publish?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500
       webhooksSubscribe:
         type: integer
         description: How many Webhooks to you subscribe?
-        minLength: 0
-        maxLength: 1000     
+        minimum: 0
+        maximum: 1000     
         example: 25
       webSocketsProduce:
         type: integer
         description: How many WebSockets to you produce?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500          
       webSocketsPublish:
         type: integer
         description: How many WebSockets to you publish to?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500
       webSocketsSubscribe:
         type: integer
         description: How many WebSockets to you subscribe to?
-        minLength: 0
-        maxLength: 1000     
+        minimum: 0
+        maximum: 1000     
         example: 25  
       kafkaProduce:
         type: integer
         description: How many Kafka APIs to you produce?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500          
       kafkaPublish:
         type: integer
         description: How many Kafka APIs to you publish to?
-        minLength: 0
-        maxLength: 10000
+        minimum: 0
+        maximum: 10000
         example: 500
       kafkaSubscribe:
         type: integer
         description: How many Kafka APIs to you subscribe to?
-        minLength: 0
-        maxLength: 1000     
+        minimum: 0
+        maximum: 1000     
         example: 25                  
       asyncApi:
         type: boolean
@@ -495,7 +491,7 @@ $defs:
       other:
         type: string
         description: Other information (Event-Driven APIs).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.              
 
@@ -537,7 +533,7 @@ $defs:
       other:
         type: string
         description: Other information (Schema).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.              
 
@@ -564,7 +560,7 @@ $defs:
       other:
         type: string
         description: Other information (Contract).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.    
 
@@ -580,26 +576,26 @@ $defs:
       publicPortal:
         type: integer
         description: How many public API portals do you have?
-        minLength: 0
-        maxLength: 25
+        minimum: 0
+        maximum: 25
         example: 1
       internalPortal:
         type: integer
         description: How many internal API portals do you have?
-        minLength: 0
-        maxLength: 25
+        minimum: 0
+        maximum: 25
         example: 1
       gateway:
         type: integer
         description: How many API gateways do you have?
-        minLength: 0
-        maxLength: 25     
+        minimum: 0
+        maximum: 25     
         example: 2    
       other:
         type: string
         description: Other information (Distribution).
-        minLength: 10
-        maxLength: 250          
+        minLength: 0
+        maximum: 250          
         example: Something additional I wanted to say.                  
 
   Experience:
@@ -616,57 +612,57 @@ $defs:
       - integration      
     properties:     
       discovery:
-        type: integer
+        type: string
         description: How much of a priority is API discovery?
-        example: 10  
+        example: High  
         minLength: 3
-        maxLength: 3                 
+        maxLength: 6                
       onboarding:
-        type: integer
+        type: string
         description: How much of a priority is API onboarding?
-        example: 10   
+        example: High   
         minLength: 3
-        maxLength: 3                     
+        maxLength: 6                    
       quality:
-        type: integer
+        type: string
         description: How much of a priority is API quality?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3                       
+        maxLength: 6                
       reliability:
-        type: integer
+        type: string
         description: How much of a priority is API reliability?
-        example: 10  
+        example: High  
         minLength: 3
-        maxLength: 3                      
+        maxLength: 6                    
       consistency:
-        type: integer
+        type: string
         description: How much of a priority is API consistency?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3  
+        maxLength: 6  
       communication:
-        type: integer
+        type: string
         description: How much of a priority is API communication?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3   
+        maxLength: 6  
       automation:
-        type: integer
+        type: string
         description: How much of a priority is API automation?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3   
+        maxLength: 6   
       integration:
-        type: integer
+        type: string
         description: How much of a priority is API integration?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3                               
+        maxLength: 6                              
       other:
         type: string
         description: Other information (Experience).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.                                                    
 
@@ -682,45 +678,45 @@ $defs:
       - versioning     
     properties:     
       documentation:
-        type: integer
+        type: string
         description: How much of a priority is API documentation?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3 
+        maxLength: 6 
       mockServers:
-        type: integer
+        type: string
         description: How much of a priority is API mock servers?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3           
+        maxLength: 6           
       sdks:
-        type: integer
+        type: string
         description: How much of a priority is SDKs?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3          
+        maxLength: 6         
       testing:
-        type: integer
+        type: string
         description: How much of a priority is API testing?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3          
+        maxLength: 6          
       security:
-        type: integer
+        type: string
         description: How much of a priority is API security?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3   
+        maxLength: 6 
       versioning:
-        type: integer
+        type: string
         description: How much of a priority is API versioning?
-        example: 10 
+        example: High  
         minLength: 3
-        maxLength: 3            
+        maxLength: 6           
       other:
         type: string
         description: Other information (Properties).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.             
 
@@ -757,7 +753,7 @@ $defs:
       other:
         type: string
         description: Other information (Plan).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.            
 
@@ -799,6 +795,6 @@ $defs:
       other:
         type: string
         description: Other information (Governance).
-        minLength: 10
+        minLength: 0
         maxLength: 250          
         example: Something additional I wanted to say.    
