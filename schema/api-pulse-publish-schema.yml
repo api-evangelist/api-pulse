@@ -35,11 +35,15 @@ properties:
     example: 2025-01-01  
 
   access:    
-      $ref: '#/$defs/Access'        
+      $ref: '#/$defs/Access'    
+  artificialIntelligence:    
+      $ref: '#/$defs/ArtificialIntelligence'              
   authentication:    
       $ref: '#/$defs/Authentication'     
+  clients:    
+      $ref: '#/$defs/Clients'   
   contracts:    
-      $ref: '#/$defs/Contract'   
+      $ref: '#/$defs/Contract'         
   distribution:    
       $ref: '#/$defs/Distribution'                
   eventDrivenApis:    
@@ -55,15 +59,22 @@ properties:
   organization:    
       $ref: '#/$defs/Organization'          
   people:    
-      $ref: '#/$defs/People'        
+      $ref: '#/$defs/People'      
+  pipelines:    
+      $ref: '#/$defs/Pipelines'             
   plans:    
       $ref: '#/$defs/Plan'     
   properties:    
-      $ref: '#/$defs/Properties'     
+      $ref: '#/$defs/Properties'   
+  remoteProcedureCalls:    
+      $ref: '#/$defs/RemoteProcedureCalls'          
   schema:    
       $ref: '#/$defs/Schema'                                          
   sector:    
       $ref: '#/$defs/Sector'  
+  webServices:    
+      $ref: '#/$defs/WebServices'  
+
 $defs:                                                                                 
 
   People:
@@ -495,6 +506,91 @@ $defs:
         maxLength: 250          
         example: Something additional I wanted to say.              
 
+  WebServices:
+    type: object
+    description: Pulse of web services.
+    required:
+      - producedCount
+      - consumeCount
+      - wsdl     
+    properties:    
+      producedCount:
+        type: integer
+        description: How many SOAP web services do you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      consumeCount:
+        type: integer
+        description: How many SOAP web services do you consume?
+        minLength: 0
+        maxLength: 1000     
+        example: 25
+      wsdl:
+        type: boolean
+        description: Do you use Web Services Description Language (WSDL)?
+        example: true  
+      other:
+        type: string
+        description: Other information (Web Services).
+        minLength: 0
+        maxLength: 250          
+        example: Something additional I wanted to say.  
+
+  RemoteProcedureCalls:
+    type: object
+    description: Pulse of remote procedure calls.
+    required:
+      - xmlRpcProduce
+      - xmlRpcConsume
+      - jsonRpcProduce   
+      - jsonRpcConsume 
+      - gRpcProduce 
+      - gRpcConsume
+    properties:    
+      xmlRpcProduce:
+        type: integer
+        description: How many xmlRPC APIs do you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500
+      xmlRpcConsume:
+        type: integer
+        description: How many xmlRPC APIs do you produce?
+        minLength: 0
+        maxLength: 10000
+        example: 500        
+      jsonRpcProduce:
+        type: integer
+        description: How many jsonRPC do you produce?
+        minLength: 0
+        maxLength: 1000     
+        example: 25
+      jsonRpcConsume:
+        type: integer
+        description: How many jsonRPC do you consume?
+        minLength: 0
+        maxLength: 1000     
+        example: 25        
+      gRpcProduce:
+        type: integer
+        description: How many gRPC do you produce?
+        minLength: 0
+        maxLength: 1000     
+        example: 25  
+      gRpcConsume:
+        type: integer
+        description: How many gRPC do you consume?
+        minLength: 0
+        maxLength: 1000     
+        example: 25                
+      other:
+        type: string
+        description: Other information (Remote Procedure Call).
+        minLength: 0
+        maxLength: 250          
+        example: Something additional I wanted to say.                    
+
   Schema:
     type: object
     description: Pulse of schema.
@@ -503,6 +599,10 @@ $defs:
       - apis
       - validation
       - forms
+      - protocolBuffers
+      - xmlSchemaDefinition
+      - apacheAvro
+      - apacheThrift
       - registry
       - repository       
     properties:     
@@ -521,14 +621,30 @@ $defs:
       forms:
         type: boolean
         description: Do you use JSON Schema to generate forms?
-        example: true            
+        example: true    
+      protocolBuffers:
+        type: boolean
+        description: Do you use Protocol Buffers for APIs?
+        example: true  
+      xmlSchemaDefinition:
+        type: boolean
+        description: Do you use XML Schema Definition (XSD) for APIs?
+        example: true   
+      apacheAvro:
+        type: boolean
+        description: Do you use Apache Avro for data serialization?
+        example: true  
+      apacheThrift:
+        type: boolean
+        description: Do you use Apache Thrift for APIs?
+        example: true                               
       registry:
         type: boolean
-        description: Do you publish JSON Schema to registry?
+        description: Do you publish Schema to registry?
         example: true   
       repository:
         type: boolean
-        description: Do you publish JSON Schema to repository?
+        description: Do you publish Schema to repository?
         example: true 
       other:
         type: string
@@ -537,6 +653,97 @@ $defs:
         maxLength: 250          
         example: Something additional I wanted to say.              
 
+  ArtificialIntelligence:
+    type: object
+    description: Pulse of artificial intelligence.
+    required:
+      - modelContextProtocol
+      - langChain   
+    properties:    
+      modelContextProtocol:
+        type: boolean
+        description: Do you use Model Context Protocol (MCP)?
+        example: true  
+      langChain:
+        type: boolean
+        description: Do you use LangChain?
+        example: true                       
+      other:
+        type: string
+        description: Other information (Artificial Intelligence).
+        minLength: 0
+        maxLength: 250          
+        example: Something additional I wanted to say.  
+
+  Pipelines:
+    type: object
+    description: Pulse of pipelines.
+    required:
+      - spectral
+      - vacuum  
+      - redocly
+      - apimatic
+      - testing
+      - security
+    properties:    
+      spectral:
+        type: boolean
+        description: Do you run Spectral API governance rules in your pipelines?
+        example: true  
+      vacuum:
+        type: boolean
+        description: Do you run Vacuum API governance rules in your pipelines?
+        example: true  
+      redocly:
+        type: boolean
+        description: Do you run Redocly CLI in your pipelines?
+        example: true     
+      apimatic:
+        type: boolean
+        description: Do you run APIMATIC CLI in your pipelines?
+        example: true  
+      testing:
+        type: boolean
+        description: Do you run API testing in your pipelines?
+        example: true    
+      security:
+        type: boolean
+        description: Do you run API security testing in your pipelines?
+        example: true                                                                            
+      other:
+        type: string
+        description: Other information (Artificial Intelligence).
+        minLength: 0
+        maxLength: 250          
+        example: Something additional I wanted to say.   
+
+  Clients:
+    type: object
+    description: Pulse of API clients.
+    required:
+      - postman
+      - bruno   
+      - insomnia
+    properties:    
+      postman:
+        type: boolean
+        description: Do you use Postman as an API client?
+        example: true  
+      bruno:
+        type: boolean
+        description: Do you use Bruno as an API client?
+        example: true    
+      insomnia:
+        type: boolean
+        description: Do you use Insominia as an API client?
+        example: true                                   
+      other:
+        type: string
+        description: Other information (Clients).
+        minLength: 0
+        maxLength: 250          
+        example: Something additional I wanted to say.                 
+        
   Contract:
     type: object
     description: Pulse of contract.
