@@ -4,7 +4,7 @@ info:
   title: API Pulse Publishing
   description: |
     This is the  API for publishing to the API pulse.
-  
+
   version: 0.1.0
 
   contact:
@@ -14,7 +14,7 @@ info:
 
   termsOfService: http://theapipulse.com//terms/
 
-  license: 
+  license:
     name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
     identifier: CC-BY-NC-SA-4.0
 
@@ -27,10 +27,10 @@ servers:
   - url: http://api.theapipulse.com
     description: The base URL for the API Pulse.
 
-tags:      
+tags:
 
   - name: Signals
-    description: | 
+    description: |
       The overall signal.                                                                     
 
 paths:
@@ -38,7 +38,7 @@ paths:
   /signals:
     post:
       operationId: submitSignal
-      summary: Submit Signal
+      summary: API Pulse Submit Signal
       description: Submits an entire signal.
       tags:
         - Signals
@@ -49,7 +49,6 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Signal'
-                                           
       responses:
         '201':
           description: People Pulse Submitted
@@ -59,128 +58,128 @@ paths:
                 $ref: '#/components/schemas/Submitted'
               examples:
                 Submitted:
-                  $ref: '#/components/examples/Submitted'                                           
+                  $ref: '#/components/examples/Submitted'
         '400':
           $ref: '#/components/responses/BadRequest'
         '429':
           $ref: '#/components/responses/TooManyRequests'
         '500':
-          $ref: '#/components/responses/InternalServerError'       
+          $ref: '#/components/responses/InternalServerError'
 
 components:
 
   examples:
 
     SignalOne:
-        description: Entire Signal One
-        value:
-            people:
-                name: Kin Lane
-                email: info@apievangelist.com
-                role: API Evangelist
-                countries: 
-                - US             
-            organization:
-                name: API Evangelist
-                countries: 
-                - US
-                employees: 1 
-            sectors:
-                industries: 
-                - Software Delivery
-            access:
-                internal: 500
-                partner: 50
-                public: 5
-            distribution:
-                publicPortal: 1
-                internalPortal: 2
-                gateway: 1
-            authentication:
-                basicAuth: false
-                keys: true
-                jwt: false
-                oauth: false
-            httpApis:
-                producedCount: 150
-                producedPercentage: 100
-                consumeCount: 20
-                consumePercentage: 100       
-                openApi: true   
-                designFirst: true 
-                openApiDocumentation: true    
-                openApiMockServers: true    
-                openApiSdks: true    
-                openApiTesting: true    
-                openApiSecurity: false  
-                openApiPortal: false  
-                openApiRespository: true   
-            graphQlApis:
-                producedCount: 1
-                producedPercentage: 5
-                consumeCount: 1
-                consumePercentage: 5       
-                internally: true    
-                externally: false    
-            eventDrivenApis:
-                webhooksPublish: 1
-                webhooksSubscribe: 1
-                webSocketsProduce: 1
-                webSocketsPublish: 1     
-                webSocketsSubscribe: 1     
-                kafkaProduce: 1     
-                kafkaPublish: 1            
-                kafkaSubscribe: 1 
-                asyncApi: true  
-                designFirst: true   
-                asyncApiDocumentation: true    
-                asyncApiMockServers: true    
-                asyncApiSdks: true    
-                asyncApiTesting: true    
-                asyncApiSecurity: true  
-                asyncApiPortal: true  
-                asyncApiRespository: true   
-            schema:
-                data: true
-                apis: true
-                validation: true
-                forms: true
-                registry: true     
-                repository: true    
-            contracts:
-                discovery: true
-                portal: true
-                repository: true
-            experience:
-                discovery: 10
-                onboarding: 10
-                quality: 10
-                reliability: 10   
-                consistency: 10  
-                communication: 10  
-                automation: 10  
-                integration: 10  
-            properties:
-                editor: 10
-                documentation: 10
-                mockServers: 10
-                sdks: 10
-                testing: 10   
-                security: 10  
-                versioning: 10  
-            plans:
-                applications: true
-                rateLimits: true
-                chargeAccess: true
-                usage: true
-                report: true   
-            governance:
-                spectral: true
-                vacuum: true
-                design: true
-                development: true  
-                pipelines: true  
-                gateway: true                
+      description: Entire Signal One
+      value:
+        people:
+          name: Kin Lane
+          email: info@apievangelist.com
+          role: API Evangelist
+          countries:
+            - US
+        organization:
+          name: API Evangelist
+          countries:
+            - US
+          employees: 1
+        sectors:
+          industries:
+            - Software Delivery
+        access:
+          internal: 500
+          partner: 50
+          public: 5
+        distribution:
+          publicPortal: 1
+          internalPortal: 2
+          gateway: 1
+        authentication:
+          basicAuth: false
+          keys: true
+          jwt: false
+          oauth: false
+        httpApis:
+          producedCount: 150
+          producedPercentage: 100
+          consumeCount: 20
+          consumePercentage: 100
+          openApi: true
+          designFirst: true
+          openApiDocumentation: true
+          openApiMockServers: true
+          openApiSdks: true
+          openApiTesting: true
+          openApiSecurity: false
+          openApiPortal: false
+          openApiRespository: true
+        graphQlApis:
+          producedCount: 1
+          producedPercentage: 5
+          consumeCount: 1
+          consumePercentage: 5
+          internally: true
+          externally: false
+        eventDrivenApis:
+          webhooksPublish: 1
+          webhooksSubscribe: 1
+          webSocketsProduce: 1
+          webSocketsPublish: 1
+          webSocketsSubscribe: 1
+          kafkaProduce: 1
+          kafkaPublish: 1
+          kafkaSubscribe: 1
+          asyncApi: true
+          designFirst: true
+          asyncApiDocumentation: true
+          asyncApiMockServers: true
+          asyncApiSdks: true
+          asyncApiTesting: true
+          asyncApiSecurity: true
+          asyncApiPortal: true
+          asyncApiRespository: true
+        schema:
+          data: true
+          apis: true
+          validation: true
+          forms: true
+          registry: true
+          repository: true
+        contracts:
+          discovery: true
+          portal: true
+          repository: true
+        experience:
+          discovery: 10
+          onboarding: 10
+          quality: 10
+          reliability: 10
+          consistency: 10
+          communication: 10
+          automation: 10
+          integration: 10
+        properties:
+          editor: 10
+          documentation: 10
+          mockServers: 10
+          sdks: 10
+          testing: 10
+          security: 10
+          versioning: 10
+        plans:
+          applications: true
+          rateLimits: true
+          chargeAccess: true
+          usage: true
+          report: true
+        governance:
+          spectral: true
+          vacuum: true
+          design: true
+          development: true
+          pipelines: true
+          gateway: true
 
     PeopleOne:
       description: People one.
@@ -188,21 +187,21 @@ components:
         name: Kin Lane
         email: info@apievangelist.com
         role: API Evangelist
-        countries: 
-          - US            
+        countries:
+          - US
 
     OrganizationOne:
       description: Organization one.
       value:
         name: API Evangelist
-        countries: 
+        countries:
           - US
         employees: 1
 
     SectorOne:
       description: Sector one.
       value:
-        industries: 
+        industries:
           - Software Delivery
 
     AccessOne:
@@ -233,16 +232,16 @@ components:
         producedCount: 150
         producedPercentage: 100
         consumeCount: 20
-        consumePercentage: 100       
-        openApi: true   
-        designFirst: true 
-        openApiDocumentation: true    
-        openApiMockServers: true    
-        openApiSdks: true    
-        openApiTesting: true    
-        openApiSecurity: false  
-        openApiPortal: false  
-        openApiRespository: true   
+        consumePercentage: 100
+        openApi: true
+        designFirst: true
+        openApiDocumentation: true
+        openApiMockServers: true
+        openApiSdks: true
+        openApiTesting: true
+        openApiSecurity: false
+        openApiPortal: false
+        openApiRespository: true
 
     GraphQlApisOne:
       description: GraphQL APIs one.
@@ -250,9 +249,9 @@ components:
         producedCount: 1
         producedPercentage: 5
         consumeCount: 1
-        consumePercentage: 5       
-        internally: true    
-        externally: false    
+        consumePercentage: 5
+        internally: true
+        externally: false
 
     EventDrivenApisOne:
       description: Event-Driven APIs one.
@@ -260,20 +259,20 @@ components:
         webhooksPublish: 1
         webhooksSubscribe: 1
         webSocketsProduce: 1
-        webSocketsPublish: 1     
-        webSocketsSubscribe: 1     
-        kafkaProduce: 1     
-        kafkaPublish: 1            
-        kafkaSubscribe: 1 
-        asyncApi: true  
-        designFirst: true   
-        asyncApiDocumentation: true    
-        asyncApiMockServers: true    
-        asyncApiSdks: true    
-        asyncApiTesting: true    
-        asyncApiSecurity: true  
-        asyncApiPortal: true  
-        asyncApiRespository: true   
+        webSocketsPublish: 1
+        webSocketsSubscribe: 1
+        kafkaProduce: 1
+        kafkaPublish: 1
+        kafkaSubscribe: 1
+        asyncApi: true
+        designFirst: true
+        asyncApiDocumentation: true
+        asyncApiMockServers: true
+        asyncApiSdks: true
+        asyncApiTesting: true
+        asyncApiSecurity: true
+        asyncApiPortal: true
+        asyncApiRespository: true
 
     SchemaOne:
       description: Schema one.
@@ -282,8 +281,8 @@ components:
         apis: true
         validation: true
         forms: true
-        registry: true     
-        repository: true    
+        registry: true
+        repository: true
 
     ContractOne:
       description: Contract one.
@@ -298,11 +297,11 @@ components:
         discovery: 10
         onboarding: 10
         quality: 10
-        reliability: 10   
-        consistency: 10  
-        communication: 10  
-        automation: 10  
-        integration: 10  
+        reliability: 10
+        consistency: 10
+        communication: 10
+        automation: 10
+        integration: 10
 
     PropertiesOne:
       description: Properties one.
@@ -311,9 +310,9 @@ components:
         documentation: 10
         mockServers: 10
         sdks: 10
-        testing: 10   
-        security: 10  
-        versioning: 10  
+        testing: 10
+        security: 10
+        versioning: 10
 
     PlanOne:
       description: Plan one.
@@ -322,7 +321,7 @@ components:
         rateLimits: true
         chargeAccess: true
         usage: true
-        report: true   
+        report: true
 
     GovernanceOne:
       description: Governance one.
@@ -330,16 +329,16 @@ components:
         spectral: true
         vacuum: true
         design: true
-        development: true  
-        pipelines: true  
-        gateway: true    
+        development: true
+        pipelines: true
+        gateway: true
 
     Submitted:
       description: Submitted
       value:
-        message: The people pulse was submitted.                  
+        message: The people pulse was submitted.
 
-  schemas:     
+  schemas:
 
     Signal:
       type: object
@@ -361,36 +360,36 @@ components:
         - schema
         - sector
       properties:
-        access:    
-            $ref: '#/components/schemas/Access'        
-        authentication:    
-            $ref: '#/components/schemas/Authentication'     
-        contracts:    
-            $ref: '#/components/schemas/Contract'   
-        distribution:    
-            $ref: '#/components/schemas/Distribution'                
-        eventDrivenApis:    
-            $ref: '#/components/schemas/EventDrivenApi'             
-        experience:    
-            $ref: '#/components/schemas/Experience'     
-        governance:    
-            $ref: '#/components/schemas/Governance'                                                                             
-        graphQlApis:    
-            $ref: '#/components/schemas/GraphQlApi'       
-        httpApis:    
-            $ref: '#/components/schemas/HttpApi'       
-        organization:    
-            $ref: '#/components/schemas/Organization'          
-        people:    
-            $ref: '#/components/schemas/People'        
-        plans:    
-            $ref: '#/components/schemas/Plan'     
-        properties:    
-            $ref: '#/components/schemas/Properties'     
-        schema:    
-            $ref: '#/components/schemas/Schema'                                          
-        sector:    
-            $ref: '#/components/schemas/Sector'                                                                                          
+        access:
+          $ref: '#/components/schemas/Access'
+        authentication:
+          $ref: '#/components/schemas/Authentication'
+        contracts:
+          $ref: '#/components/schemas/Contract'
+        distribution:
+          $ref: '#/components/schemas/Distribution'
+        eventDrivenApis:
+          $ref: '#/components/schemas/EventDrivenApi'
+        experience:
+          $ref: '#/components/schemas/Experience'
+        governance:
+          $ref: '#/components/schemas/Governance'
+        graphQlApis:
+          $ref: '#/components/schemas/GraphQlApi'
+        httpApis:
+          $ref: '#/components/schemas/HttpApi'
+        organization:
+          $ref: '#/components/schemas/Organization'
+        people:
+          $ref: '#/components/schemas/People'
+        plans:
+          $ref: '#/components/schemas/Plan'
+        properties:
+          $ref: '#/components/schemas/Properties'
+        schema:
+          $ref: '#/components/schemas/Schema'
+        sector:
+          $ref: '#/components/schemas/Sector'
 
     People:
       type: object
@@ -399,7 +398,7 @@ components:
         - name
         - email
         - role
-        - countries       
+        - countries
       properties:
         name:
           type: string
@@ -417,14 +416,14 @@ components:
           type: string
           description: Role of the person.
           minLength: 10
-          maxLength: 250          
-          example: Evangelist   
+          maxLength: 250
+          example: Evangelist
         linkedIn:
           type: string
           description: Valid LinkedIn URL.
           minLength: 10
-          maxLength: 500          
-          example: https://www.linkedin.com/in/kinlane/     
+          maxLength: 500
+          example: https://www.linkedin.com/in/kinlane/
         countries:
           type: array
           items:
@@ -432,27 +431,27 @@ components:
           minItems: 1
           maxItems: 10
           description: A valid ISO 3166 country for the person.
-          example: 
-            - US           
+          example:
+            - US
         other:
           type: string
           description: Other information (People).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.                       
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Organization:
       type: object
       description: Pulse of the organization.
       required:
-        - employees      
+        - employees
       properties:
         name:
           type: string
           description: The company name.
           minLength: 1
           maxLength: 500
-          example: API Evangelist       
+          example: API Evangelist
         countries:
           type: array
           items:
@@ -460,8 +459,8 @@ components:
           minItems: 1
           maxItems: 10
           description: A valid ISO 3166 country for the organization.
-          example: 
-            - US            
+          example:
+            - US
         employees:
           type: integer
           description: The number of employees that work at an enterprise organization.
@@ -472,49 +471,49 @@ components:
           type: string
           description: Other information (Organization).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.       
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Sector:
       type: object
       description: Pulse of the sector.
       required:
-        - industries        
-      properties:    
+        - industries
+      properties:
         industries:
           type: array
           items:
             type: string
             enum:
-                - Technology
-                - Healthcare & Pharmaceuticals
-                - Finance & Insurance
-                - Energy & Utilities
-                - Retail & E-Commerce
-                - Automotive & Transportation
-                - Construction & Real Estate
-                - Media & Entertainment
-                - Manufacturing & Industrial Production
-                - Telecommunications
-                - Food & Beverage
-                - Agriculture & Agribusiness
-                - Education & EdTech
-                - Aerospace & Defense
-                - Hospitality & Tourism
-                - Chemicals & Materials
-                - Biotechnology & Life Sciences
-                - Environmental & Sustainability
-                - Legal & Professional Services
-                - Sports & Recreation
-                - Mining & Metals
-                - Fashion & Apparel
-                - Supply Chain & Logistics
-                - Nonprofit & Philanthropy
-                - Government                 
+              - Technology
+              - Healthcare & Pharmaceuticals
+              - Finance & Insurance
+              - Energy & Utilities
+              - Retail & E-Commerce
+              - Automotive & Transportation
+              - Construction & Real Estate
+              - Media & Entertainment
+              - Manufacturing & Industrial Production
+              - Telecommunications
+              - Food & Beverage
+              - Agriculture & Agribusiness
+              - Education & EdTech
+              - Aerospace & Defense
+              - Hospitality & Tourism
+              - Chemicals & Materials
+              - Biotechnology & Life Sciences
+              - Environmental & Sustainability
+              - Legal & Professional Services
+              - Sports & Recreation
+              - Mining & Metals
+              - Fashion & Apparel
+              - Supply Chain & Logistics
+              - Nonprofit & Philanthropy
+              - Government
           minItems: 1
           maxItems: 10
-          description: A valid North American Industry Classification System (NAICS) entry.     
-          example: 
+          description: A valid North American Industry Classification System (NAICS) entry.
+          example:
             - Technology
 
     Access:
@@ -523,8 +522,8 @@ components:
       required:
         - internal
         - partner
-        - public        
-      properties:    
+        - public
+      properties:
         internal:
           type: integer
           description: How many internal APIs do you produce?
@@ -541,21 +540,21 @@ components:
           type: integer
           description: How many public APIs do you produce?
           minLength: 0
-          maxLength: 50000     
+          maxLength: 50000
           example: 50
         other:
           type: string
           description: Other information (Access).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.            
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Distribution:
       type: object
       description: Pulse of distribution.
       required:
-        - publicPortal        
-      properties:    
+        - publicPortal
+      properties:
         publicPortal:
           type: integer
           description: How many public API portals do you have?
@@ -572,14 +571,14 @@ components:
           type: integer
           description: How many API gateways do you have?
           minLength: 0
-          maxLength: 25     
-          example: 2    
+          maxLength: 25
+          example: 2
         other:
           type: string
           description: Other information (Distribution).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.                  
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Authentication:
       type: object
@@ -588,8 +587,8 @@ components:
         - basicAuth
         - keys
         - jwt
-        - oauth       
-      properties:    
+        - oauth
+      properties:
         basicAuth:
           type: boolean
           description: Do you use BasicAuth to authenticate with APIs?
@@ -605,13 +604,13 @@ components:
         oauth:
           type: boolean
           description: Do you use OAuth to authenticate with APIs?
-          example: true    
+          example: true
         other:
           type: string
           description: Other information (Authentication).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.                 
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     HttpApi:
       type: object
@@ -629,8 +628,8 @@ components:
         - openApiTesting
         - openApiSecurity
         - openApiPortal
-        - openApiRespository         
-      properties:   
+        - openApiRespository
+      properties:
         producedCount:
           type: integer
           description: How many HTTP APIs do you produce?
@@ -647,56 +646,56 @@ components:
           type: integer
           description: How many HTTP APIs do you consume?
           minLength: 0
-          maxLength: 1000     
+          maxLength: 1000
           example: 25
         consumePercentage:
           type: integer
           description: What percentage of APIs you consume are HTTP APIs?
           minLength: 0
-          maxLength: 100     
+          maxLength: 100
           example: 90
         openApi:
           type: boolean
-          description: Do you use OpenAPI? 
-          example: true  
+          description: Do you use OpenAPI?
+          example: true
         designFirst:
           type: boolean
           description: Are you design-first when producing HTTP APIs?
-          example: true            
+          example: true
         openApiDocumentation:
           type: boolean
-          description: Do you use OpenAPI for Generating Documentation? 
-          example: true  
+          description: Do you use OpenAPI for Generating Documentation?
+          example: true
         openApiMockServers:
           type: boolean
-          description: Do you use OpenAPI for Generating Mock Servers? 
-          example: true                                
+          description: Do you use OpenAPI for Generating Mock Servers?
+          example: true
         openApiSdks:
           type: boolean
-          description: Do you use OpenAPI for Software Development Kits (SDKs)? 
-          example: true  
+          description: Do you use OpenAPI for Software Development Kits (SDKs)?
+          example: true
         openApiTesting:
           type: boolean
-          description: Do you use OpenAPI for Testing? 
-          example: true  
+          description: Do you use OpenAPI for Testing?
+          example: true
         openApiSecurity:
           type: boolean
-          description: Do you use OpenAPI for Security? 
-          example: true 
+          description: Do you use OpenAPI for Security?
+          example: true
         openApiPortal:
           type: boolean
           description: Do you publish OpenAPI to a portal?
-          example: true   
+          example: true
         openApiRespository:
           type: boolean
           description: Do you publish OpenAPI to a repository?
-          example: true  
+          example: true
         other:
           type: string
           description: Other information (HTTP APIs).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.                                                     
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     GraphQlApi:
       type: object
@@ -707,8 +706,8 @@ components:
         - consumeCount
         - consumePercentage
         - internally
-        - externally          
-      properties:    
+        - externally
+      properties:
         producedCount:
           type: integer
           description: How many GraphQL APIs do you produce?
@@ -725,28 +724,28 @@ components:
           type: integer
           description: How many GraphQL APIs do you consume?
           minLength: 0
-          maxLength: 1000     
+          maxLength: 1000
           example: 25
         consumePercentage:
           type: integer
           description: What percentage of the APIs you consume are GraphQL APIs?
           minLength: 0
-          maxLength: 100     
+          maxLength: 100
           example: 90
         internally:
           type: boolean
           description: Do you use GraphQL internally?
-          example: true  
+          example: true
         externally:
           type: boolean
           description: Do you use GraphQL externally?
-          example: true  
+          example: true
         other:
           type: string
           description: Other information (GraphQL APIs).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.            
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     EventDrivenApi:
       type: object
@@ -759,17 +758,17 @@ components:
         - webSocketsSubscribe
         - kafkaProduce
         - kafkaPublish
-        - kafkaSubscribe   
-        - asyncApi    
-        - designFirst 
+        - kafkaSubscribe
+        - asyncApi
+        - designFirst
         - asyncApiDocumentation
         - asyncApiMockServers
         - asyncApiSdks
         - asyncApiTesting
         - asyncApiSecurity
         - asyncApiPortal
-        - asyncApiRespository              
-      properties:    
+        - asyncApiRespository
+      properties:
         webhooksPublish:
           type: integer
           description: How many Webhooks to you publish?
@@ -780,14 +779,14 @@ components:
           type: integer
           description: How many Webhooks to you subscribe?
           minLength: 0
-          maxLength: 1000     
+          maxLength: 1000
           example: 25
         webSocketsProduce:
           type: integer
           description: How many WebSockets to you produce?
           minLength: 0
           maxLength: 10000
-          example: 500          
+          example: 500
         webSocketsPublish:
           type: integer
           description: How many WebSockets to you publish to?
@@ -798,14 +797,14 @@ components:
           type: integer
           description: How many WebSockets to you subscribe to?
           minLength: 0
-          maxLength: 1000     
-          example: 25  
+          maxLength: 1000
+          example: 25
         kafkaProduce:
           type: integer
           description: How many Kafka APIs to you produce?
           minLength: 0
           maxLength: 10000
-          example: 500          
+          example: 500
         kafkaPublish:
           type: integer
           description: How many Kafka APIs to you publish to?
@@ -816,50 +815,50 @@ components:
           type: integer
           description: How many Kafka APIs to you subscribe to?
           minLength: 0
-          maxLength: 1000     
-          example: 25                  
+          maxLength: 1000
+          example: 25
         asyncApi:
           type: boolean
-          description: Do you use AsyncAPI? 
-          example: true  
+          description: Do you use AsyncAPI?
+          example: true
         designFirst:
           type: boolean
           description: Are you design-first when producing event-driven APIs?
-          example: true           
+          example: true
         asyncApiDocumentation:
           type: boolean
-          description: Do you use AsyncAPI for Generating Documentation? 
-          example: true  
+          description: Do you use AsyncAPI for Generating Documentation?
+          example: true
         asyncApiMockServers:
           type: boolean
-          description: Do you use AsyncAPI for Generating Mock Servers? 
-          example: true                                
+          description: Do you use AsyncAPI for Generating Mock Servers?
+          example: true
         asyncApiSdks:
           type: boolean
-          description: Do you use AsyncAPI for Software Development Kits (SDKs)? 
-          example: true  
+          description: Do you use AsyncAPI for Software Development Kits (SDKs)?
+          example: true
         asyncApiTesting:
           type: boolean
-          description: Do you use AsyncAPI for Testing? 
-          example: true  
+          description: Do you use AsyncAPI for Testing?
+          example: true
         asyncApiSecurity:
           type: boolean
-          description: Do you use AsyncAPI for Security? 
-          example: true 
+          description: Do you use AsyncAPI for Security?
+          example: true
         asyncApiPortal:
           type: boolean
           description: Do you publish AsyncAPI to a portal?
-          example: true   
+          example: true
         asyncApiRespository:
           type: boolean
           description: Do you publish AsyncAPI to a repository?
-          example: true 
+          example: true
         other:
           type: string
           description: Other information (Event-Driven APIs).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.              
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Schema:
       type: object
@@ -870,38 +869,38 @@ components:
         - validation
         - forms
         - registry
-        - repository       
-      properties:     
+        - repository
+      properties:
         data:
           type: boolean
           description: Do you use JSON Schema to define data?
-          example: true  
+          example: true
         apis:
           type: boolean
           description: Do you use JSON Schema to define APIs?
-          example: true            
+          example: true
         validation:
           type: boolean
           description: Do you use JSON Schema to validate data?
-          example: true            
+          example: true
         forms:
           type: boolean
           description: Do you use JSON Schema to generate forms?
-          example: true            
+          example: true
         registry:
           type: boolean
           description: Do you publish JSON Schema to registry?
-          example: true   
+          example: true
         repository:
           type: boolean
           description: Do you publish JSON Schema to repository?
-          example: true 
+          example: true
         other:
           type: string
           description: Other information (Schema).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.              
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Contract:
       type: object
@@ -909,26 +908,26 @@ components:
       required:
         - discovery
         - portal
-        - repository         
-      properties:   
+        - repository
+      properties:
         discovery:
           type: boolean
           description: Do you use APIs.json for discovery?
-          example: true                     
+          example: true
         portal:
           type: boolean
           description: Do you publish APIs.json to portal?
-          example: true   
+          example: true
         repository:
           type: boolean
           description: Do you publish APIs.json to repository?
-          example: true 
+          example: true
         other:
           type: string
           description: Other information (Contract).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.            
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Experience:
       type: object
@@ -939,62 +938,62 @@ components:
         - quality
         - reliability
         - consistency
-        - communication         
-      properties:     
+        - communication
+      properties:
         discovery:
           type: integer
           description: How much of a priority is API discovery?
-          example: 10  
+          example: 10
           minLength: 3
-          maxLength: 3                 
+          maxLength: 3
         onboarding:
           type: integer
           description: How much of a priority is API onboarding?
-          example: 10   
+          example: 10
           minLength: 3
-          maxLength: 3                     
+          maxLength: 3
         quality:
           type: integer
           description: How much of a priority is API quality?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3                       
+          maxLength: 3
         reliability:
           type: integer
           description: How much of a priority is API reliability?
-          example: 10  
+          example: 10
           minLength: 3
-          maxLength: 3                      
+          maxLength: 3
         consistency:
           type: integer
           description: How much of a priority is API consistency?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3  
+          maxLength: 3
         communication:
           type: integer
           description: How much of a priority is API communication?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3   
+          maxLength: 3
         automation:
           type: integer
           description: How much of a priority is API automation?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3   
+          maxLength: 3
         integration:
           type: integer
           description: How much of a priority is API integration?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3                               
+          maxLength: 3
         other:
           type: string
           description: Other information (Experience).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.                                                    
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Properties:
       type: object
@@ -1004,50 +1003,50 @@ components:
         - mockServers
         - sdks
         - testing
-        - security         
-      properties:     
+        - security
+      properties:
         documentation:
           type: integer
           description: How much of a priority is API documentation?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3 
+          maxLength: 3
         mockServers:
           type: integer
           description: How much of a priority is API mock servers?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3           
+          maxLength: 3
         sdks:
           type: integer
           description: How much of a priority is SDKs?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3          
+          maxLength: 3
         testing:
           type: integer
           description: How much of a priority is API testing?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3          
+          maxLength: 3
         security:
           type: integer
           description: How much of a priority is API security?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3   
+          maxLength: 3
         versioning:
           type: integer
           description: How much of a priority is API versioning?
-          example: 10 
+          example: 10
           minLength: 3
-          maxLength: 3            
+          maxLength: 3
         other:
           type: string
           description: Other information (Properties).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.             
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Plan:
       type: object
@@ -1057,34 +1056,34 @@ components:
         - rateLimits
         - chargeAccess
         - usage
-        - report       
-      properties:     
+        - report
+      properties:
         applications:
           type: boolean
           description: Do you require an application to be defined to access APIs?
-          example: true  
+          example: true
         rateLimits:
           type: boolean
           description: Do you enforce rate limits across all APIs?
-          example: true            
+          example: true
         chargeAccess:
           type: boolean
           description: Do you charge for access to any APIs?
-          example: true            
+          example: true
         usage:
           type: boolean
           description: Do you monitor API usage for APIs in production?
-          example: true            
+          example: true
         report:
           type: boolean
           description: Do you report on API usage data with consumers?
-          example: true 
+          example: true
         other:
           type: string
           description: Other information (Plan).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.            
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Governance:
       type: object
@@ -1095,51 +1094,51 @@ components:
         - design
         - development
         - pipelines
-        - gateway       
-      properties:    
+        - gateway
+      properties:
         spectral:
           type: boolean
           description: Do you use Spectral for governance rules?
-          example: true            
+          example: true
         vacuum:
           type: boolean
           description: Do you use Vacuum for governance?
-          example: true            
+          example: true
         design:
           type: boolean
           description: Do you apply rules during design of APIs?
-          example: true            
+          example: true
         development:
           type: boolean
           description: Do you apply rules during development of APIs?
-          example: true   
+          example: true
         pipelines:
           type: boolean
           description: Do you apply rules during pipeline builds of APIs?
-          example: true     
+          example: true
         gateway:
           type: boolean
           description: Do you validate JSON Schema at the API gateway?
-          example: true 
+          example: true
         other:
           type: string
           description: Other information (Governance).
           minLength: 10
-          maxLength: 250          
-          example: Something additional I wanted to say.            
+          maxLength: 250
+          example: Something additional I wanted to say.
 
     Submitted:
       type: object
       description: The submitted pulse.
       required:
-        - message       
+        - message
       properties:
         message:
           type: string
           minLength: 10
-          maxLength: 50             
+          maxLength: 50
           description: The message being returned.
-          example: The people pulse was submitted.                                              
+          example: The people pulse was submitted.
 
     Problem:
       type: object
@@ -1156,32 +1155,32 @@ components:
           description: A URI reference that identifies the problem type
           example: https://example.com/probs/out-of-credit
           minLength: 10
-          maxLength: 2048            
+          maxLength: 2048
         title:
           type: string
           description: A short, human-readable summary of the problem type
           example: You do not have enough credit.
           minLength: 5
-          maxLength: 250            
+          maxLength: 250
         detail:
           type: string
           description: A human-readable explanation specific to this occurrence of the problem
           example: A valid current balance is 30, but that costs 50.
           minLength: 10
-          maxLength: 1000            
+          maxLength: 1000
         instance:
           type: string
           description: A URI reference that identifies the specific occurrence of the problem
           example: /account/12345/msgs/abc
           minLength: 10
-          maxLength: 250            
+          maxLength: 250
         status:
           type: integer
           description: The HTTP status code
-          example: 400        
+          example: 400
           minLength: 3
-          maxLength: 3   
-          
+          maxLength: 3
+
   headers:
 
     RateLimit:
@@ -1192,11 +1191,11 @@ components:
       schema:
         type: string
         minLength: 10
-        maxLength: 250  
+        maxLength: 250
         example: limit=10, remaining=0, reset=10
 
     Retry-After:
-      description: | 
+      description: |
         The Retry-After header indicates how long the user agent should wait before making a follow-up request. 
         The value is in seconds and can be an integer or a date in the future. 
         If the value is an integer, it indicates the number of seconds to wait. 
@@ -1204,7 +1203,7 @@ components:
       schema:
         type: string
         minLength: 2
-        maxLength: 250          
+        maxLength: 250
       examples:
         integer:
           value: '120'
