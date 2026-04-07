@@ -5,9 +5,7 @@ description: |-
   This is the APIs.json for the API Pulse, defining the business and technical details for the proposed API.
 tags:
   - Application Programming Interface
-  - API
   - Pulse
-
 created: '2025-02-10'
 modified: '2025-02-17'
 
@@ -21,8 +19,8 @@ apis:
       This is the API for publishing to the API Pulse.
     humanURL: https://github.com/api-evangelist/api-pulse
     tags:
-      - Pulse
       - Publish
+      - Pulse
     properties:
       - type: OpenAPI
         url: openapi/api-pulse-publish-openapi.yml
