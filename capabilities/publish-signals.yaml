@@ -1,0 +1,77 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: API Pulse Publishing — Signals
+  description: 'API Pulse Publishing — Signals. 1 operations. Lead operation: API Pulse Submit Signal. Self-contained Naftiko
+    capability covering one Api Pulse business surface.'
+  tags:
+  - Api Pulse
+  - Signals
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    API_PULSE_API_KEY: API_PULSE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: publish-signals
+    baseUri: http://api.theapipulse.com
+    description: API Pulse Publishing — Signals business capability. Self-contained, no shared references.
+    resources:
+    - name: signals
+      path: /signals
+      operations:
+      - name: submitsignal
+        method: POST
+        description: API Pulse Submit Signal
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+  exposes:
+  - type: rest
+    namespace: publish-signals-rest
+    port: 8080
+    description: REST adapter for API Pulse Publishing — Signals. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/signals
+      name: signals
+      description: REST surface for signals.
+      operations:
+      - method: POST
+        name: submitsignal
+        description: API Pulse Submit Signal
+        call: publish-signals.submitsignal
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: publish-signals-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for API Pulse Publishing — Signals. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: api-pulse-submit-signal
+      description: API Pulse Submit Signal
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: publish-signals.submitsignal
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
