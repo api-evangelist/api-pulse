@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+  {% seo %}
+  <style>
+    :root { --ink:#1a1a1a; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --bg:#fafafa; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    header.site { background:#fff; border-bottom:1px solid var(--line); }
+    header.site .wrap { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; }
+    header.site a.brand { font-weight:700; text-decoration:none; color:var(--ink); font-size:1.15rem; }
+    nav.site a { text-decoration:none; color:var(--muted); margin-right:1rem; font-size:.95rem; }
+    nav.site a:hover { color:var(--accent); }
+    .wrap { max-width:1040px; margin:0 auto; padding:1rem 1.25rem; }
+    main.wrap { background:transparent; }
+    h1 { margin:.2rem 0 .5rem; font-size:1.9rem; }
+    .lead { color:var(--muted); font-size:1.05rem; margin-bottom:1.25rem; }
+    a { color:var(--accent); }
+    .tags { margin:.5rem 0; }
+    .tag { display:inline-block; background:#eef2ff; color:#3730a3; border-radius:999px; padding:.12rem .6rem; font-size:.78rem; margin:.1rem .25rem .1rem 0; }
+    .meta { display:flex; flex-wrap:wrap; gap:.5rem 1.5rem; color:var(--muted); font-size:.9rem; margin:.75rem 0; }
+    table.listing { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    table.listing th, table.listing td { text-align:left; padding:.6rem .8rem; border-bottom:1px solid var(--line); vertical-align:top; }
+    table.listing th { background:#f3f4f6; font-size:.8rem; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); }
+    table.listing tr:last-child td { border-bottom:none; }
+    table.listing td.count { font-variant-numeric:tabular-nums; font-weight:600; white-space:nowrap; }
+    .rank { color:var(--muted); width:3rem; }
+    th.actions-col { text-align:right; }
+    td.row-actions { text-align:right; white-space:nowrap; }
+    .btn { display:inline-block; text-decoration:none; font-size:.8rem; font-weight:600; line-height:1; padding:.4rem .7rem; border-radius:6px; border:1px solid var(--accent); background:var(--accent); color:#fff; margin-left:.4rem; }
+    .btn:hover { background:#1d4ed8; border-color:#1d4ed8; }
+    .btn.btn-ghost { background:#fff; color:var(--accent); }
+    .btn.btn-ghost:hover { background:#eff6ff; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:.75rem; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:.85rem; }
+    .card a { text-decoration:none; font-weight:600; }
+    .card p { margin:.4rem 0 0; color:var(--muted); font-size:.85rem; }
+    .pill { display:inline-block; background:#ecfdf5; color:#065f46; border-radius:6px; padding:.1rem .45rem; font-size:.78rem; font-weight:600; }
+    .home-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
+    .home-grid .card h2 { margin:.2rem 0; font-size:1.2rem; }
+    footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; margin-top:2rem; background:#fff; }
+    dl.facts { display:grid; grid-template-columns:max-content 1fr; gap:.35rem 1rem; margin:1rem 0; }
+    dl.facts dt { color:var(--muted); font-size:.85rem; }
+    dl.facts dd { margin:0; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">API Pulse</a>
+      <nav class="site">
+        <a href="{{ '/companies/' | relative_url }}">Companies</a>
+        <a href="{{ '/services/' | relative_url }}">Services</a>
+        <a href="{{ '/tools/' | relative_url }}">Tools</a>
+        <a href="{{ '/standards/' | relative_url }}">Standards</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site">
+    <div class="wrap">&copy; API Evangelist &middot; Data from Naftiko Signals</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+<h1>API Pulse</h1>
+<p class="lead">{{ site.description }}</p>
+
+<div class="home-grid">
+  <div class="card">
+    <h2><a href="{{ '/companies/' | relative_url }}">Companies</a></h2>
+    <p>{{ site.companies | size }} companies tracked by Naftiko Signals, each with its own profile.</p>
+  </div>
+  <div class="card">
+    <h2><a href="{{ '/services/' | relative_url }}">Services</a></h2>
+    <p>{{ site.services | size }} services, ranked by how many companies have adopted them.</p>
+  </div>
+  <div class="card">
+    <h2><a href="{{ '/tools/' | relative_url }}">Tools</a></h2>
+    <p>{{ site.tools | size }} tools, ranked by how many companies have adopted them.</p>
+  </div>
+  <div class="card">
+    <h2><a href="{{ '/standards/' | relative_url }}">Standards</a></h2>
+    <p>{{ site.standards | size }} standards, ranked by how many companies have adopted them.</p>
+  </div>
+</div>

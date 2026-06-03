@@ -1,0 +1,24 @@
+---
+layout: default
+title: Tools
+permalink: /tools/
+---
+<h1>Tools</h1>
+<p class="lead">All {{ site.tools | size }} tools ranked by the number of companies that have adopted them.</p>
+
+{% assign ranked = site.tools | sort: "companyCount" | reverse %}
+<table class="listing">
+  <thead>
+    <tr><th class="rank">#</th><th>Tool</th><th>Companies</th><th>Tags</th></tr>
+  </thead>
+  <tbody>
+  {% for item in ranked %}
+    <tr>
+      <td class="rank">{{ forloop.index }}</td>
+      <td><a href="{{ item.url | relative_url }}">{{ item.title }}</a></td>
+      <td class="count">{{ item.companyCount | default: 0 }}</td>
+      <td>{% if item.tags %}{% for tag in item.tags limit:4 %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,24 @@
+---
+layout: default
+title: Services
+permalink: /services/
+---
+<h1>Services</h1>
+<p class="lead">All {{ site.services | size }} services ranked by the number of companies that have adopted them.</p>
+
+{% assign ranked = site.services | sort: "companyCount" | reverse %}
+<table class="listing">
+  <thead>
+    <tr><th class="rank">#</th><th>Service</th><th>Companies</th><th>Tags</th></tr>
+  </thead>
+  <tbody>
+  {% for item in ranked %}
+    <tr>
+      <td class="rank">{{ forloop.index }}</td>
+      <td><a href="{{ item.url | relative_url }}">{{ item.title }}</a></td>
+      <td class="count">{{ item.companyCount | default: 0 }}</td>
+      <td>{% if item.tags %}{% for tag in item.tags limit:4 %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

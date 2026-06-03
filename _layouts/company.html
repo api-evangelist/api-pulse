@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+{% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+
+{% if page.tags %}
+<div class="tags">
+  {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+</div>
+{% endif %}
+
+<dl class="facts">
+  {% if page.url %}<dt>Website</dt><dd><a href="{{ page.url }}">{{ page.url }}</a></dd>{% endif %}
+  {% if page.industries %}<dt>Industries</dt><dd>{{ page.industries | join: ", " }}</dd>{% endif %}
+  {% if page.jobUrl %}<dt>Careers</dt><dd><a href="{{ page.jobUrl }}">{{ page.jobUrl }}</a></dd>{% endif %}
+  {% if page.apiEvangelistRepo %}<dt>API Evangelist</dt><dd><a href="{{ page.apiEvangelistRepo }}">{{ page.apiEvangelistRepo }}</a></dd>{% endif %}
+  {% if page.has_signals %}<dt>Has signals</dt><dd>Yes</dd>{% endif %}
+</dl>
+
+{% if page.signals %}
+<h2>Naftiko Signals</h2>
+<dl class="facts">
+  {% if page.signals.total_signal_score %}<dt>Total signal score</dt><dd>{{ page.signals.total_signal_score }}</dd>{% endif %}
+  {% if page.signals.ai_maturity %}<dt>AI maturity</dt><dd>{{ page.signals.ai_maturity }}</dd>{% endif %}
+  {% if page.signals.data_maturity %}<dt>Data maturity</dt><dd>{{ page.signals.data_maturity }}</dd>{% endif %}
+  {% if page.signals.governance_maturity %}<dt>Governance maturity</dt><dd>{{ page.signals.governance_maturity }}</dd>{% endif %}
+  {% if page.signals.activity_level %}<dt>Activity level</dt><dd>{{ page.signals.activity_level }}</dd>{% endif %}
+  {% if page.signals.jobs_count %}<dt>Open jobs</dt><dd>{{ page.signals.jobs_count }}</dd>{% endif %}
+  {% if page.signals.press_count %}<dt>Press mentions</dt><dd>{{ page.signals.press_count }}</dd>{% endif %}
+</dl>
+{% endif %}
+
+{% if page.platform %}
+<h2>Platform Affinity</h2>
+<dl class="facts">
+  {% if page.platform.cloud_primary %}<dt>Primary cloud</dt><dd>{{ page.platform.cloud_primary }}</dd>{% endif %}
+  {% if page.platform.cloud_classification %}<dt>Cloud classification</dt><dd>{{ page.platform.cloud_classification }}</dd>{% endif %}
+  {% if page.platform.productivity_stack %}<dt>Productivity stack</dt><dd>{{ page.platform.productivity_stack }}</dd>{% endif %}
+</dl>
+{% endif %}
+
+<p style="margin-top:1.5rem"><a href="{{ '/companies/' | relative_url }}">&larr; All companies</a></p>

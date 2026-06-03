@@ -1,0 +1,13 @@
+---
+title: UML
+slug: uml
+companyCount: 72
+description: UML is an artificial intelligence technology or practice that leverages machine learning, data analysis, or intelligent automation to solve complex problems. It is increasingly applied across industries to improve efficiency, accuracy, and decision-making in both technical and business contexts.
+tags:
+- UML
+radarRing: Developing
+alternativeNames:
+- Unified Modeling Language
+- Unified Modelling Language
+- UML Diagrams
+---

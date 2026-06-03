@@ -1,0 +1,27 @@
+---
+layout: default
+title: Companies
+permalink: /companies/
+---
+<h1>Companies</h1>
+<p class="lead">All {{ site.companies | size }} companies tracked by Naftiko Signals. Each has its own profile page.</p>
+
+{% assign ranked = site.companies | sort: "title" %}
+<table class="listing">
+  <thead>
+    <tr><th>Company</th><th>Industries</th><th class="actions-col">Links</th></tr>
+  </thead>
+  <tbody>
+  {% for item in ranked %}
+    <tr>
+      <td>{{ item.title }}</td>
+      <td>{% if item.industries %}{{ item.industries | join: ", " }}{% endif %}</td>
+      <td class="row-actions">
+        {% if item.apiEvangelistRepo %}{% assign repo = item.apiEvangelistRepo %}{% else %}{% assign repo = item.slug | prepend: "https://github.com/api-evangelist/" %}{% endif %}
+        <a class="btn" href="https://apis.io/providers/{{ item.slug }}/" target="_blank" rel="noopener">apis.io</a>
+        <a class="btn btn-ghost" href="{{ repo }}" target="_blank" rel="noopener">GitHub</a>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

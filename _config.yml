@@ -1,0 +1,78 @@
+title: API Pulse
+description: >-
+  API Pulse is a comprehensive survey and benchmarking platform created by API
+  Evangelist that helps organizations understand their API maturity and standing
+  within their business sector. This site catalogs the companies tracked by
+  Naftiko Signals along with the services, tools, and standards they adopt.
+lang: en
+
+baseurl: ""
+url: "https://theapipulse.com"
+
+logo: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+
+author:
+  name: Kin Lane
+  title: API Evangelist
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections generated from the Naftiko Signals data set.
+collections:
+  companies:
+    output: true
+    permalink: /companies/:path/
+  services:
+    output: true
+    permalink: /services/:path/
+  tools:
+    output: true
+    permalink: /tools/:path/
+  standards:
+    output: true
+    permalink: /standards/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: companies
+    values:
+      layout: company
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: service
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: tool
+  - scope:
+      path: ""
+      type: standards
+    values:
+      layout: standard
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - scripts
+  - openapi
+  - finops
+  - plans
+  - rate-limits
+  - schema
+  - README.md
+  - LICENSE
+  - apis.yml
+
+sass:
+  style: compressed

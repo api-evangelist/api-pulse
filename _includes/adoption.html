@@ -1,0 +1,22 @@
+{% comment %} Shared rendering for services, tools, and standards. {% endcomment %}
+<p class="lead">
+  <span class="pill">{{ page.companyCount | default: 0 }} companies</span>
+  {% if page.radarRing %}&middot; Radar: {{ page.radarRing }}{% endif %}
+</p>
+
+{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+
+{% if page.tags %}
+<div class="tags">
+  {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+</div>
+{% endif %}
+
+<dl class="facts">
+  <dt>Companies adopting</dt><dd>{{ page.companyCount | default: 0 }}</dd>
+  {% if page.founded %}<dt>Founded</dt><dd>{{ page.founded }}</dd>{% endif %}
+  {% if page.yearCreated %}<dt>Year created</dt><dd>{{ page.yearCreated }}</dd>{% endif %}
+  {% if page.radarRing %}<dt>Radar ring</dt><dd>{{ page.radarRing }}</dd>{% endif %}
+  {% if page.url %}<dt>Website</dt><dd><a href="{{ page.url }}">{{ page.url }}</a></dd>{% endif %}
+  {% if page.alternativeNames %}<dt>Also known as</dt><dd>{{ page.alternativeNames | join: ", " }}</dd>{% endif %}
+</dl>
