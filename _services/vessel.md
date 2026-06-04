@@ -1,7 +1,7 @@
 ---
 title: Vessel
 slug: vessel
-companyCount: 93
+companyCount: 83
 description: A unified API platform focused on CRM integrations that provides a single API to connect with Salesforce, HubSpot, and other CRM systems.
 tags:
 - Embedded iPaaS

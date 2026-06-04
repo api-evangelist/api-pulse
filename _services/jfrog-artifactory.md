@@ -1,7 +1,7 @@
 ---
 title: JFrog Artifactory
 slug: jfrog-artifactory
-companyCount: 75
+companyCount: 68
 description: Universal artifact repository manager supporting all major package formats and build tools for software development and DevOps workflows
 tags:
 - Artifact Management

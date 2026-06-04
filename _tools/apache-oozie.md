@@ -1,7 +1,7 @@
 ---
 title: Apache Oozie
 slug: apache-oozie
-companyCount: 9
+companyCount: 10
 description: Workflow scheduler system for managing Hadoop jobs including MapReduce, Pig, Hive, and Sqoop.
 tags:
 - Workflow Scheduler

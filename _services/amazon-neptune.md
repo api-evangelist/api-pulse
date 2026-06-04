@@ -1,7 +1,7 @@
 ---
 title: Amazon Neptune
 slug: amazon-neptune
-companyCount: 39
+companyCount: 31
 description: A fully managed graph database service that supports both property graph and RDF graph models, optimized for storing billions of relationships and querying the graph with milliseconds latency.
 tags:
 - Graph Database

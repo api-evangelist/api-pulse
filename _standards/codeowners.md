@@ -8,7 +8,6 @@ tags:
 - Repository
 - Governance
 - Automation
-radarRing: Initial
 alternativeNames:
 - Code Owners
 - CODEOWNERS File

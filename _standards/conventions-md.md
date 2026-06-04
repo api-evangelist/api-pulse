@@ -8,7 +8,6 @@ tags:
 - Documentation
 - Developer Workflow
 - Best Practices
-radarRing: Initial
 alternativeNames:
 - conventions.md
 - Project Conventions

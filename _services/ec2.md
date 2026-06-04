@@ -1,7 +1,7 @@
 ---
 title: EC2
 slug: ec2
-companyCount: 153
+companyCount: 146
 description: Amazon Elastic Compute Cloud (EC2) is a web service that provides secure, resizable compute capacity in the cloud, allowing users to run virtual servers and scale computing resources on demand.
 tags:
 - Cloud Computing

@@ -1,7 +1,7 @@
 ---
 title: Azure Networking
 slug: azure-networking
-companyCount: 37
+companyCount: 42
 description: Microsoft Azure's comprehensive suite of networking services that enables secure connectivity, traffic management, and network infrastructure for cloud and hybrid environments.
 tags:
 - Cloud Networking

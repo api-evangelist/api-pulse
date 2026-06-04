@@ -1,7 +1,7 @@
 ---
 title: Azure Functions
 slug: azure-functions
-companyCount: 82
+companyCount: 69
 description: Serverless compute service that enables running event-driven code without managing infrastructure
 tags:
 - Serverless

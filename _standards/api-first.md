@@ -1,7 +1,7 @@
 ---
 title: API-First
 slug: api-first
-companyCount: 89
+companyCount: 109
 description: A development approach where APIs are treated as first-class citizens and designed before implementation begins, ensuring consistent and well-documented interfaces across services and applications. Organizations adopt it to address specific technical or business challenges in their environments.
 tags:
 - API Design
@@ -9,7 +9,6 @@ tags:
 - Development Methodology
 url: https://swagger.io/resources/articles/adopting-an-api-first-approach/
 yearCreated: 2015
-radarRing: Initial
 alternativeNames:
 - API First
 - API-First Design

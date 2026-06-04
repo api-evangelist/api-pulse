@@ -1,7 +1,7 @@
 ---
 title: Google Workspace
 slug: google-workspace
-companyCount: 94
+companyCount: 88
 description: Cloud-based productivity and collaboration suite including Gmail, Drive, Docs, Sheets, Slides, Meet, and Calendar for businesses and organizations.
 tags:
 - Productivity

@@ -1,7 +1,7 @@
 ---
 title: SailPoint
 slug: sailpoint
-companyCount: 78
+companyCount: 72
 description: Enterprise identity governance and administration platform that provides automated access management, compliance controls, and identity lifecycle management across cloud and on-premises applications.
 tags:
 - Identity And Access Management

@@ -1,7 +1,7 @@
 ---
 title: Azure Data Factory
 slug: azure-data-factory
-companyCount: 126
+companyCount: 124
 description: Cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation
 tags:
 - ETL

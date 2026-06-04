@@ -1,7 +1,7 @@
 ---
 title: Apache Ozone
 slug: apache-ozone
-companyCount: 14
+companyCount: 9
 description: Scalable, distributed object store for Hadoop designed for analytics and cloud-native workloads.
 tags:
 - Object Store

@@ -1,7 +1,7 @@
 ---
 title: Microsoft
 slug: microsoft
-companyCount: 648
+companyCount: 636
 description: Microsoft Corporation is a multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.
 tags:
 - Cloud Computing

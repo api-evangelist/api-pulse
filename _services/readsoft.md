@@ -1,7 +1,7 @@
 ---
 title: Readsoft
 slug: readsoft
-companyCount: 2
+companyCount: 0
 description: Enterprise software solution for automating document and invoice processing, accounts payable automation, and business process management through intelligent capture and workflow capabilities.
 tags:
 - Document Management

@@ -1,7 +1,7 @@
 ---
 title: Google Search Console
 slug: google-search-console
-companyCount: 77
+companyCount: 71
 description: Free web service by Google that helps monitor, maintain, and troubleshoot website presence in Google Search results, providing insights on search performance, indexing status, and technical SEO issues.
 tags:
 - SEO

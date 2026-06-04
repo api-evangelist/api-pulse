@@ -1,7 +1,7 @@
 ---
 title: Google Apps Script
 slug: google-apps-script
-companyCount: 397
+companyCount: 23
 description: A cloud-based JavaScript platform for automating tasks across Google Workspace applications including Gmail, Sheets, Docs, and Drive
 tags:
 - JavaScript

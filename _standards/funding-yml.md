@@ -8,7 +8,6 @@ tags:
 - Sponsorship
 - Repository
 - GitHub
-radarRing: Initial
 alternativeNames:
 - Funding File
 - .github/FUNDING.yml

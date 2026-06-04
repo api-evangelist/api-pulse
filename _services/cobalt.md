@@ -1,7 +1,7 @@
 ---
 title: Cobalt
 slug: cobalt
-companyCount: 31
+companyCount: 25
 description: A co-pilot for building product integrations that provides managed infrastructure for connecting SaaS applications through a unified API layer.
 tags:
 - Embedded iPaaS

@@ -1,7 +1,7 @@
 ---
 title: Apache OpenWebBeans
 slug: apache-openwebbeans
-companyCount: 6
+companyCount: 0
 description: Implementation of the CDI specification for Java dependency injection and contextual lifecycle management.
 tags:
 - CDI

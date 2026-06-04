@@ -1,7 +1,7 @@
 ---
 title: Oracle Financials
 slug: oracle-financials
-companyCount: 31
+companyCount: 25
 description: Enterprise financial management software that provides comprehensive accounting, financial reporting, and analysis capabilities for organizations.
 tags:
 - Financial Management

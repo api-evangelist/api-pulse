@@ -1,7 +1,7 @@
 ---
 title: Fluid
 slug: fluid
-companyCount: 261
+companyCount: 246
 description: A responsive front-end framework for building flexible and adaptive web layouts
 tags:
 - CSS Framework

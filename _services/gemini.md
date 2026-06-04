@@ -1,7 +1,7 @@
 ---
 title: Gemini
 slug: gemini
-companyCount: 133
+companyCount: 115
 description: Gemini is Google's family of multimodal AI models capable of understanding and processing text, code, images, audio, and video.
 tags:
 - AI

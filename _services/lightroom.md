@@ -1,7 +1,7 @@
 ---
 title: Lightroom
 slug: lightroom
-companyCount: 28
+companyCount: 15
 description: Adobe's photo editing and organization software for photographers, offering non-destructive editing, RAW processing, and cloud synchronization across devices.
 tags:
 - Photo Editing

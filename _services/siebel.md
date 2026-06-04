@@ -1,7 +1,7 @@
 ---
 title: Siebel
 slug: siebel
-companyCount: 21
+companyCount: 20
 description: Enterprise customer relationship management (CRM) software developed by Oracle, designed for managing sales, marketing, and customer service operations across large organizations.
 tags:
 - CRM

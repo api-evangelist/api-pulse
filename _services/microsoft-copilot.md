@@ -1,7 +1,7 @@
 ---
 title: Microsoft Copilot
 slug: microsoft-copilot
-companyCount: 148
+companyCount: 297
 description: AI-powered assistant integrated across Microsoft 365 applications that helps users with writing, data analysis, coding, and productivity tasks using natural language interactions.
 tags:
 - Artificial Intelligence

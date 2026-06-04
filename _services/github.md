@@ -1,7 +1,7 @@
 ---
 title: GitHub
 slug: github
-companyCount: 345
+companyCount: 339
 description: GitHub is a cloud-based platform for software development and version control built on Git. It enables developers to host repositories, collaborate through pull requests and code reviews, and automate workflows with GitHub Actions.
 tags:
 - Code

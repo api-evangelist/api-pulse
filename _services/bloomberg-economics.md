@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Economics
 slug: bloomberg-economics
-companyCount: 10
+companyCount: 1
 description: Bloomberg Economics provides economic analysis, forecasts, and data-driven insights on global markets, monetary policy, and economic trends from Bloomberg's team of economists.
 tags:
 - Economic Analysis

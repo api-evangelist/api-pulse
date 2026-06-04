@@ -1,7 +1,7 @@
 ---
 title: Oracle Hyperion
 slug: oracle-hyperion
-companyCount: 141
+companyCount: 137
 description: Enterprise performance management software suite for financial consolidation, planning, budgeting, and reporting
 tags:
 - Financial Planning

@@ -1,7 +1,7 @@
 ---
 title: Veritas Volume Manager
 slug: veritas-volume-manager
-companyCount: 8
+companyCount: 3
 description: Enterprise storage management software that provides logical volume management, enabling dynamic storage provisioning, high availability, and disaster recovery across heterogeneous storage environments.
 tags:
 - Storage Management

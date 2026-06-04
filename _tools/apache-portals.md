@@ -1,7 +1,7 @@
 ---
 title: Apache Portals
 slug: apache-portals
-companyCount: 11
+companyCount: 233
 description: Enterprise portal framework based on the Java Portlet specification for building web portals.
 tags:
 - Portal

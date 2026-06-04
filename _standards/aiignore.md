@@ -8,7 +8,6 @@ tags:
 - Configuration
 - Security
 - Developer Workflow
-radarRing: Initial
 alternativeNames:
 - AI Ignore
 - aiignore

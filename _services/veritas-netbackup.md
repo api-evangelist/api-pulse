@@ -1,7 +1,7 @@
 ---
 title: Veritas NetBackup
 slug: veritas-netbackup
-companyCount: 23
+companyCount: 13
 description: Enterprise data protection and backup solution that provides unified backup, recovery, and deduplication across virtual, physical, and cloud environments.
 tags:
 - Backup

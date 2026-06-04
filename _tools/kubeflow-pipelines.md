@@ -1,7 +1,7 @@
 ---
 title: Kubeflow Pipelines
 slug: kubeflow-pipelines
-companyCount: 4
+companyCount: 3
 description: A platform for building and deploying portable, scalable machine learning workflows based on Docker containers
 tags:
 - Machine Learning

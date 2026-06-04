@@ -1,7 +1,7 @@
 ---
 title: Apache Druid
 slug: apache-druid
-companyCount: 11
+companyCount: 13
 description: High-performance real-time analytics database for fast slice-and-dice analytics on large datasets.
 tags:
 - Real Time Analytics

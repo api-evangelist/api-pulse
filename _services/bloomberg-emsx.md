@@ -1,7 +1,7 @@
 ---
 title: Bloomberg EMSX
 slug: bloomberg-emsx
-companyCount: 46
+companyCount: 48
 description: Bloomberg's Execution Management System for multi-asset order and execution management, providing traders with streamlined workflow tools and connectivity to global markets.
 tags:
 - Execution Management System

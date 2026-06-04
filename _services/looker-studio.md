@@ -1,7 +1,7 @@
 ---
 title: Looker Studio
 slug: looker-studio
-companyCount: 53
+companyCount: 51
 description: A free business intelligence platform that transforms data into customizable informative reports and dashboards for data visualization and sharing.
 tags:
 - Business Intelligence

@@ -1,7 +1,7 @@
 ---
 title: FactSet
 slug: factset
-companyCount: 63
+companyCount: 57
 description: FactSet provides integrated financial information and analytical applications for investment professionals, offering data on global markets, companies, and economies to support investment decision-making and research.
 tags:
 - Financial Data

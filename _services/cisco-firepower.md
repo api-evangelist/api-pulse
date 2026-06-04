@@ -1,7 +1,7 @@
 ---
 title: Cisco Firepower
 slug: cisco-firepower
-companyCount: 37
+companyCount: 30
 description: Next-generation firewall and intrusion prevention system that provides advanced threat protection, application visibility and control, and URL filtering capabilities for network security.
 tags:
 - Firewall

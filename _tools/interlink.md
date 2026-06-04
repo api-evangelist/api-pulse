@@ -1,7 +1,7 @@
 ---
 title: Interlink
 slug: interlink
-companyCount: 3
+companyCount: 2
 description: A virtual kubelet implementation that enables cross-cluster communication and resource sharing in Kubernetes, allowing pods in one cluster to access services in another cluster as if they were local.
 tags:
 - Kubernetes

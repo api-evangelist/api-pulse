@@ -8,7 +8,6 @@ tags:
 - Issue Tracking
 - Repository
 - Collaboration
-radarRing: Initial
 alternativeNames:
 - Issue Template
 - Bug Report Template

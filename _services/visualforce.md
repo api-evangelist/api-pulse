@@ -1,7 +1,7 @@
 ---
 title: Visualforce
 slug: visualforce
-companyCount: 58
+companyCount: 47
 description: A framework from Salesforce that allows developers to build custom user interfaces for mobile and desktop applications, using a tag-based markup language similar to HTML.
 tags:
 - Frontend Framework

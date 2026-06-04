@@ -1,7 +1,7 @@
 ---
 title: Event-driven Architecture
 slug: event-driven-architecture
-companyCount: 176
+companyCount: 157
 description: A software architecture pattern promoting the production, detection, consumption of, and reaction to events. Systems are designed to respond to state changes asynchronously through event messages.
 tags:
 - Architecture
@@ -12,7 +12,6 @@ tags:
 - Event Driven Architecture
 url: https://en.wikipedia.org/wiki/Event-driven_architecture
 yearCreated: 2005
-radarRing: Optimizing
 alternativeNames:
 - EDA
 - Event Driven Architecture

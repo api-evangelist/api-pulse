@@ -1,7 +1,7 @@
 ---
 title: Oracle Database 19c
 slug: oracle-database-19c
-companyCount: 19
+companyCount: 12
 description: Enterprise-grade relational database management system with advanced features for high availability, security, and performance
 tags:
 - Database

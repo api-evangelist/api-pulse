@@ -1,7 +1,7 @@
 ---
 title: Qlik
 slug: qlik
-companyCount: 91
+companyCount: 88
 description: Business intelligence and data analytics platform that provides data visualization, reporting, and self-service analytics capabilities with associative data indexing technology.
 tags:
 - Business Intelligence

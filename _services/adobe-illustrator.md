@@ -1,7 +1,7 @@
 ---
 title: Adobe Illustrator
 slug: adobe-illustrator
-companyCount: 186
+companyCount: 169
 description: Vector graphics editor and design software for creating illustrations, logos, icons, typography, and complex graphics for print, web, and mobile.
 tags:
 - Design

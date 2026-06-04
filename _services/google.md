@@ -1,7 +1,7 @@
 ---
 title: Google
 slug: google
-companyCount: 437
+companyCount: 409
 description: Google is a multinational technology company specializing in internet services, cloud computing, and advertising technology. It offers a wide range of products including Search, Gmail, Google Cloud Platform, Android, and Google Workspace.
 tags:
 - Search

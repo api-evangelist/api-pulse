@@ -1,7 +1,7 @@
 ---
 title: SAP BW
 slug: sap-bw
-companyCount: 60
+companyCount: 48
 description: SAP Business Warehouse (SAP BW) is an enterprise data warehousing solution that provides tools for data extraction, transformation, loading, and reporting to support business intelligence and analytics.
 tags:
 - Data Warehouse

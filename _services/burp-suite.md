@@ -1,7 +1,7 @@
 ---
 title: Burp Suite
 slug: burp-suite
-companyCount: 45
+companyCount: 43
 description: Integrated platform for performing security testing of web applications, featuring tools for scanning, crawling, and intercepting HTTP traffic.
 tags:
 - Security Testing

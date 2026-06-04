@@ -1,7 +1,7 @@
 ---
 title: Oracle R12
 slug: oracle-r12
-companyCount: 35
+companyCount: 23
 description: Oracle E-Business Suite Release 12, an integrated suite of business applications for enterprise resource planning, customer relationship management, and supply chain management.
 tags:
 - ERP

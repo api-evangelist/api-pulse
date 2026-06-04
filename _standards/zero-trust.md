@@ -10,7 +10,6 @@ tags:
 - Cloud Security
 url: https://www.nist.gov/publications/zero-trust-architecture
 yearCreated: 2010
-radarRing: Established
 alternativeNames:
 - Zero Trust Security
 - Zero Trust Architecture

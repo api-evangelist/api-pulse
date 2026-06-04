@@ -1,7 +1,7 @@
 ---
 title: Apache Karaf
 slug: apache-karaf
-companyCount: 2
+companyCount: 1
 description: Lightweight, powerful, enterprise-ready OSGi-based application runtime supporting multiple frameworks.
 tags:
 - OSGi

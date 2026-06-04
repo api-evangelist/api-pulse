@@ -1,7 +1,7 @@
 ---
 title: SAP Commerce Cloud
 slug: sap-commerce-cloud
-companyCount: 21
+companyCount: 20
 description: Enterprise e-commerce platform providing omnichannel customer experiences, product content management, and order management capabilities for B2B and B2C businesses.
 tags:
 - E-Commerce

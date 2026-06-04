@@ -9,7 +9,6 @@ tags:
 - Finance
 - Documentation
 yearCreated: 2005
-radarRing: Developing
 alternativeNames:
 - Tax Reporting Templates
 ---

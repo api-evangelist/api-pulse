@@ -1,7 +1,7 @@
 ---
 title: Cucumber
 slug: cucumber
-companyCount: 75
+companyCount: 57
 description: Behavior-driven development (BDD) tool that allows writing tests in plain language using Gherkin syntax, enabling collaboration between technical and non-technical team members.
 tags:
 - Testing

@@ -1,7 +1,7 @@
 ---
 title: Prisma
 slug: prisma
-companyCount: 50
+companyCount: 49
 description: Next-generation Node.js and TypeScript ORM for PostgreSQL, MySQL, SQL Server, SQLite, MongoDB, and CockroachDB. Provides type-safe database access, auto-generated queries, and intuitive data modeling.
 tags:
 - ORM

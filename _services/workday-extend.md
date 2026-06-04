@@ -1,7 +1,7 @@
 ---
 title: Workday Extend
 slug: workday-extend
-companyCount: 26
+companyCount: 25
 description: A low-code development platform that enables organizations to build custom applications on top of Workday's cloud-based enterprise management system, allowing for tailored solutions while maintaining integration with core Workday functionality.
 tags:
 - Low-Code Platform

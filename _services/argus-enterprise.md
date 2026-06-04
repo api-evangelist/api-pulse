@@ -1,7 +1,7 @@
 ---
 title: Argus Enterprise
 slug: argus-enterprise
-companyCount: 5
+companyCount: 33
 description: Argus Enterprise is a comprehensive cybersecurity platform that provides threat intelligence, vulnerability management, and security monitoring capabilities for organizations.
 tags:
 - Cybersecurity

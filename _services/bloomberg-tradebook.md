@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Tradebook
 slug: bloomberg-tradebook
-companyCount: 2
+companyCount: 0
 description: Electronic trading platform providing direct market access and algorithmic trading solutions for institutional investors across global equity markets.
 tags:
 - Trading Platform

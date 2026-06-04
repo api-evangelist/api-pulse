@@ -1,7 +1,7 @@
 ---
 title: Microsoft Xbox
 slug: microsoft-xbox
-companyCount: 10
+companyCount: 4
 description: Gaming console and entertainment system developed by Microsoft, offering high-performance gaming, streaming services, and multimedia capabilities.
 tags:
 - Gaming Console

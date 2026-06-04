@@ -1,7 +1,7 @@
 ---
 title: Bloomberg AIM
 slug: bloomberg-aim
-companyCount: 323
+companyCount: 44
 description: Bloomberg AIM (Asset and Investment Manager) is an order and portfolio management platform for buy-side firms. It provides tools for trade execution, compliance monitoring, portfolio analytics, and real-time market data integration.
 tags:
 - Artificial Intelligence

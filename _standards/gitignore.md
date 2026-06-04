@@ -8,7 +8,6 @@ tags:
 - Version Control
 - Configuration
 - Repository
-radarRing: Initial
 alternativeNames:
 - Git Ignore
 - gitignore

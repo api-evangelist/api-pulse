@@ -1,7 +1,7 @@
 ---
 title: Oracle
 slug: oracle
-companyCount: 448
+companyCount: 428
 description: A comprehensive enterprise technology platform offering database management systems, cloud solutions, and business software applications.
 tags:
 - Database

@@ -1,7 +1,7 @@
 ---
 title: Apache SDAP
 slug: apache-sdap
-companyCount: 1
+companyCount: 0
 description: Science data analytics platform for large-scale Earth science satellite and model data analysis.
 tags:
 - Earth Science

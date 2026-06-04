@@ -1,7 +1,7 @@
 ---
 title: Apache CXF
 slug: apache-cxf
-companyCount: 7
+companyCount: 3
 description: Open-source services framework for building and consuming SOAP and REST web services in Java.
 tags:
 - Web Services

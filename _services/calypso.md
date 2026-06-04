@@ -1,7 +1,7 @@
 ---
 title: Calypso
 slug: calypso
-companyCount: 27
+companyCount: 23
 description: Calypso is the next-generation web interface for WordPress.com, built entirely with JavaScript and utilizing the WordPress.com REST API. It provides a modern, fast, and beautiful interface for managing WordPress sites.
 tags:
 - JavaScript

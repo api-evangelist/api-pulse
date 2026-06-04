@@ -1,7 +1,7 @@
 ---
 title: Power Apps
 slug: power-apps
-companyCount: 146
+companyCount: 144
 description: Microsoft's low-code application development platform that enables users to build custom business applications with minimal coding, featuring drag-and-drop interfaces and integration with Microsoft 365 and Azure services.
 tags:
 - Low-Code

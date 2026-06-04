@@ -1,7 +1,7 @@
 ---
 title: Apache Mnemonic
 slug: apache-mnemonic
-companyCount: 1
+companyCount: 0
 description: Non-volatile memory library for Java and C providing transparent access to non-volatile storage.
 tags:
 - Non Volatile Memory

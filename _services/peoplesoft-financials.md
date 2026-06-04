@@ -1,7 +1,7 @@
 ---
 title: PeopleSoft Financials
 slug: peoplesoft-financials
-companyCount: 13
+companyCount: 12
 description: Enterprise financial management system by Oracle that provides comprehensive solutions for financial accounting, budgeting, grants management, and reporting for organizations.
 tags:
 - Financial Management

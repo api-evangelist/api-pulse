@@ -1,7 +1,7 @@
 ---
 title: MATLAB
 slug: matlab
-companyCount: 163
+companyCount: 136
 description: A high-level programming language and interactive environment for numerical computation, visualization, and programming.
 tags:
 - Numerical Computing

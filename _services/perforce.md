@@ -1,7 +1,7 @@
 ---
 title: Perforce
 slug: perforce
-companyCount: 39
+companyCount: 28
 description: Enterprise version control system designed for managing large-scale codebases and binary assets, commonly used in game development and other industries requiring high-performance versioning of large files.
 tags:
 - Version Control

@@ -1,7 +1,7 @@
 ---
 title: Salesforce Experience Cloud
 slug: salesforce-experience-cloud
-companyCount: 65
+companyCount: 74
 description: A platform for building branded digital experiences, portals, and communities that connect customers, partners, and employees with personalized content and data from Salesforce.
 tags:
 - Customer Portal

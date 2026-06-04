@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Enterprise
 slug: bloomberg-enterprise
-companyCount: 1
+companyCount: 0
 description: Professional financial data and analytics platform providing real-time market data, news, trading tools, and business intelligence solutions for financial institutions and corporations.
 tags:
 - Financial Data

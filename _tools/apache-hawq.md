@@ -1,7 +1,7 @@
 ---
 title: Apache HAWQ
 slug: apache-hawq
-companyCount: 1
+companyCount: 0
 description: Advanced enterprise SQL-on-Hadoop analytic engine combining MPP database technology with Hadoop scalability.
 tags:
 - SQL On Hadoop

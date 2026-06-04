@@ -1,7 +1,7 @@
 ---
 title: Qlik Sense Enterprise
 slug: qlik-sense-enterprise
-companyCount: 13
+companyCount: 9
 description: Enterprise business intelligence and analytics platform with governed self-service visualization, interactive dashboards, and associative data exploration capabilities for data-driven decision making.
 tags:
 - Business Intelligence

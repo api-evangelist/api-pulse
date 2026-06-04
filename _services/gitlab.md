@@ -1,7 +1,7 @@
 ---
 title: GitLab
 slug: gitlab
-companyCount: 222
+companyCount: 209
 description: A web-based DevOps lifecycle tool that provides a Git repository manager with wiki, issue tracking, CI/CD pipeline features, and more.
 tags:
 - Version Control

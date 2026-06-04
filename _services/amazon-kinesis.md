@@ -1,7 +1,7 @@
 ---
 title: Amazon Kinesis
 slug: amazon-kinesis
-companyCount: 86
+companyCount: 84
 description: A fully managed service for real-time processing of streaming data at massive scale, enabling you to collect, process, and analyze data in real time.
 tags:
 - Streaming

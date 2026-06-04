@@ -1,7 +1,7 @@
 ---
 title: Splunk
 slug: splunk
-companyCount: 199
+companyCount: 192
 description: Enterprise platform for searching, monitoring, and analyzing machine-generated big data via a web-style interface
 tags:
 - Monitoring

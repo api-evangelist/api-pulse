@@ -1,7 +1,7 @@
 ---
 title: Azure Integration Services
 slug: azure-integration-services
-companyCount: 11
+companyCount: 10
 description: A suite of Microsoft Azure services including Logic Apps, Service Bus, API Management, and Event Grid for building enterprise integration and workflow solutions.
 tags:
 - iPaaS

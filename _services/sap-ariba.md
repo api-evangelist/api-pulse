@@ -1,7 +1,7 @@
 ---
 title: SAP Ariba
 slug: sap-ariba
-companyCount: 159
+companyCount: 152
 description: Cloud-based procurement and supply chain collaboration platform that connects buyers and suppliers to facilitate sourcing, contract management, and procurement processes.
 tags:
 - Procurement

@@ -1,7 +1,7 @@
 ---
 title: Apache Felix
 slug: apache-felix
-companyCount: 18
+companyCount: 10
 description: Implementation of the OSGi framework and related technologies for building modular Java applications.
 tags:
 - OSGi

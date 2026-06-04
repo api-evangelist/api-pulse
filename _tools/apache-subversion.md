@@ -1,7 +1,7 @@
 ---
 title: Apache Subversion
 slug: apache-subversion
-companyCount: 102
+companyCount: 91
 description: Centralized version control system for tracking changes in files and directories over time.
 tags:
 - Version Control

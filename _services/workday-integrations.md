@@ -1,7 +1,7 @@
 ---
 title: Workday Integrations
 slug: workday-integrations
-companyCount: 40
+companyCount: 41
 description: Workday Integrations is an integration platform that enables connectivity between Workday and external systems through APIs, web services, and connectors for data synchronization and business process automation.
 tags:
 - Integration Platform

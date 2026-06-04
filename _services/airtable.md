@@ -1,7 +1,7 @@
 ---
 title: Airtable
 slug: airtable
-companyCount: 49
+companyCount: 50
 description: A cloud-based platform that combines the simplicity of a spreadsheet with the power of a database, enabling teams to organize work, manage projects, and collaborate with custom workflows and views.
 tags:
 - Database

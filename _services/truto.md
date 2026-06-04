@@ -1,7 +1,7 @@
 ---
 title: Truto
 slug: truto
-companyCount: 1
+companyCount: 0
 description: A unified API platform that provides standardized integrations to multiple SaaS applications through a single API across HRIS, ATS, CRM, and other categories.
 tags:
 - Embedded iPaaS

@@ -1,7 +1,7 @@
 ---
 title: Dex
 slug: dex
-companyCount: 32
+companyCount: 22
 description: A federated OpenID Connect provider that connects to other identity providers through connectors, enabling authentication for applications without handling passwords directly.
 tags:
 - Authentication

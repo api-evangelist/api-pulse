@@ -1,7 +1,7 @@
 ---
 title: Adobe
 slug: adobe
-companyCount: 363
+companyCount: 356
 description: A multinational software company known for creative and multimedia software products including Photoshop, Illustrator, and Acrobat PDF.
 tags:
 - Software

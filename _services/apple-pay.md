@@ -1,7 +1,7 @@
 ---
 title: Apple Pay
 slug: apple-pay
-companyCount: 15
+companyCount: 10
 description: A mobile payment and digital wallet service by Apple that allows users to make payments using compatible Apple devices
 tags:
 - Mobile Payments

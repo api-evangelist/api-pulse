@@ -1,7 +1,7 @@
 ---
 title: Playwright
 slug: playwright
-companyCount: 130
+companyCount: 129
 description: A framework for web testing and automation that enables reliable end-to-end testing for modern web apps across all browsers.
 tags:
 - Testing

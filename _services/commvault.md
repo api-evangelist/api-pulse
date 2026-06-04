@@ -1,7 +1,7 @@
 ---
 title: Commvault
 slug: commvault
-companyCount: 31
+companyCount: 26
 description: Enterprise data protection and information management platform providing backup, recovery, archival, and cloud data management solutions across hybrid and multi-cloud environments.
 tags:
 - Backup And Recovery

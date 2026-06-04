@@ -1,7 +1,7 @@
 ---
 title: SAP
 slug: sap
-companyCount: 455
+companyCount: 431
 description: Enterprise resource planning (ERP) software providing integrated business management solutions for finance, HR, supply chain, and operations
 tags:
 - ERP

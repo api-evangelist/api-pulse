@@ -1,7 +1,7 @@
 ---
 title: Microsoft PowerPoint
 slug: powerpoint
-companyCount: 563
+companyCount: 553
 description: Microsoft presentation software for creating slideshows and visual presentations
 tags:
 - Presentation Software

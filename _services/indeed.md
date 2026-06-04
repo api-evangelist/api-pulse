@@ -1,7 +1,7 @@
 ---
 title: Indeed
 slug: indeed
-companyCount: 55
+companyCount: 38
 description: Job search engine and employment platform connecting job seekers with employers through job listings, company reviews, and salary information.
 tags:
 - Job Board

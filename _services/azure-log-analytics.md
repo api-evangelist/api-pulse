@@ -1,7 +1,7 @@
 ---
 title: Azure Log Analytics
 slug: azure-log-analytics
-companyCount: 128
+companyCount: 123
 description: A cloud-based service from Microsoft Azure that collects, analyzes, and acts on telemetry data from cloud and on-premises environments to help monitor application and infrastructure performance.
 tags:
 - Monitoring

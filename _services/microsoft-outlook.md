@@ -1,7 +1,7 @@
 ---
 title: Microsoft Outlook
 slug: microsoft-outlook
-companyCount: 581
+companyCount: 512
 description: Email and calendar client from Microsoft for managing communications, scheduling, and personal information
 tags:
 - Email

@@ -1,7 +1,7 @@
 ---
 title: Citrix NetScaler
 slug: citrix-netscaler
-companyCount: 97
+companyCount: 75
 description: Application delivery controller (ADC) and load balancing solution that provides L4-L7 load balancing, traffic management, application acceleration, and security features for web applications and services.
 tags:
 - Load Balancer

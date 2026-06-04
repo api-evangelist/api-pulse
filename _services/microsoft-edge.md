@@ -1,7 +1,7 @@
 ---
 title: Microsoft Edge
 slug: microsoft-edge
-companyCount: 532
+companyCount: 378
 description: A web browser developed by Microsoft, built on the Chromium engine, offering features like Collections, vertical tabs, and integration with Microsoft services.
 tags:
 - Web Browser

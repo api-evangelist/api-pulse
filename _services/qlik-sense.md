@@ -1,7 +1,7 @@
 ---
 title: Qlik Sense
 slug: qlik-sense
-companyCount: 56
+companyCount: 38
 description: A modern data analytics and business intelligence platform that enables users to create interactive visualizations, dashboards, and guided analytics apps with an associative data engine for exploring data relationships.
 tags:
 - Business Intelligence

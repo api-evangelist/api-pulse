@@ -1,7 +1,7 @@
 ---
 title: Tradeweb
 slug: tradeweb
-companyCount: 20
+companyCount: 8
 description: Tradeweb is an operator of electronic marketplaces for trading fixed income, derivatives, and ETFs. It connects institutional investors, dealers, and other market participants with transparent pricing and efficient trade execution.
 tags:
 - Financial Services

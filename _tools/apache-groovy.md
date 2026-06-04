@@ -1,7 +1,7 @@
 ---
 title: Apache Groovy
 slug: apache-groovy
-companyCount: 100
+companyCount: 98
 description: Powerful, optionally typed, dynamic language for the JVM with static-typing and static compilation capabilities.
 tags:
 - Programming Language

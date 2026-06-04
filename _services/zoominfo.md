@@ -1,7 +1,7 @@
 ---
 title: ZoomInfo
 slug: zoominfo
-companyCount: 45
+companyCount: 35
 description: B2B contact database and sales intelligence platform that provides detailed information about companies and business professionals for sales and marketing teams.
 tags:
 - Sales Intelligence

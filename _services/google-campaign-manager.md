@@ -1,7 +1,7 @@
 ---
 title: Google Campaign Manager
 slug: google-campaign-manager
-companyCount: 61
+companyCount: 56
 description: An ad management platform that helps advertisers manage their digital campaigns across multiple channels and publishers
 tags:
 - Ad Management

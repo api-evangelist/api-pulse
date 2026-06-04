@@ -9,7 +9,6 @@ tags:
 - Developer Workflow
 - Coding Standards
 - AI Copilot
-radarRing: Initial
 alternativeNames:
 - Junie Guidelines
 - .junie/guidelines.md

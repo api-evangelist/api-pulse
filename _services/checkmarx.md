@@ -1,7 +1,7 @@
 ---
 title: Checkmarx
 slug: checkmarx
-companyCount: 24
+companyCount: 22
 description: Application security testing platform that provides static application security testing (SAST), software composition analysis (SCA), and other security scanning capabilities to identify vulnerabilities in source code and open source components.
 tags:
 - Security

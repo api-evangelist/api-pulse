@@ -1,7 +1,7 @@
 ---
 title: Workday
 slug: workday
-companyCount: 466
+companyCount: 447
 description: Cloud-based enterprise resource planning (ERP) system for human capital management, financial management, and business planning
 tags:
 - Human Resources

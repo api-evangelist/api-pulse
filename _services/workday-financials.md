@@ -1,7 +1,7 @@
 ---
 title: Workday Financials
 slug: workday-financials
-companyCount: 22
+companyCount: 20
 description: Cloud-based financial management software providing accounting, billing, and analytics capabilities for enterprise organizations.
 tags:
 - Financial Management

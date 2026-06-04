@@ -1,7 +1,7 @@
 ---
 title: Paradox
 slug: paradox
-companyCount: 22
+companyCount: 11
 description: Paradox is a video game publisher and developer known for grand strategy games like Crusader Kings, Europa Universalis, Hearts of Iron, and Stellaris, featuring complex gameplay systems and deep historical simulation.
 tags:
 - Video Games

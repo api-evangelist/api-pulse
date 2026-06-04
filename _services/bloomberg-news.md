@@ -1,7 +1,7 @@
 ---
 title: Bloomberg News
 slug: bloomberg-news
-companyCount: 13
+companyCount: 1
 description: Global business and financial news organization providing real-time market data, analysis, and journalism to professionals and consumers worldwide.
 tags:
 - News Media

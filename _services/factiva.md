@@ -1,7 +1,7 @@
 ---
 title: Factiva
 slug: factiva
-companyCount: 4
+companyCount: 2
 description: A business information and research tool providing access to global news content, company information, and market data from thousands of licensed sources
 tags:
 - Business Intelligence

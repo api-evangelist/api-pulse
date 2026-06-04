@@ -1,7 +1,7 @@
 ---
 title: Microsoft Office 365
 slug: office-365
-companyCount: 95
+companyCount: 187
 description: Microsoft's cloud-based productivity suite offering applications like Word, Excel, PowerPoint, Outlook, and Teams with collaboration and communication tools.
 tags:
 - Productivity Suite

@@ -1,7 +1,7 @@
 ---
 title: QlikView
 slug: qlikview
-companyCount: 56
+companyCount: 46
 description: A business intelligence and data visualization platform that enables users to create guided analytics applications and dashboards with associative data indexing technology for exploring relationships across data sources.
 tags:
 - Business Intelligence

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bicep
 slug: microsoft-bicep
-companyCount: 67
+companyCount: 55
 description: A declarative language for describing and deploying Azure resources using a simpler syntax than ARM templates
 tags:
 - Infrastructure As Code

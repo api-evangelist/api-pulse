@@ -1,7 +1,7 @@
 ---
 title: Apache Web Services
 slug: apache-web-services
-companyCount: 92
+companyCount: 267
 description: Umbrella project for web services related components including SOAP, WSDL, and XML processing tools.
 tags:
 - Web Services

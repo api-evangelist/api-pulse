@@ -1,7 +1,7 @@
 ---
 title: Hugging Face
 slug: huggingface
-companyCount: 114
+companyCount: 106
 description: Platform and library ecosystem for machine learning, providing tools for building, training, and deploying models with a focus on natural language processing and transformers.
 tags:
 - Machine Learning

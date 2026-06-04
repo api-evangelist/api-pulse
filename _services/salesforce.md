@@ -1,7 +1,7 @@
 ---
 title: Salesforce
 slug: salesforce
-companyCount: 435
+companyCount: 431
 description: Cloud-based customer relationship management (CRM) platform that helps businesses manage sales, service, marketing, and commerce operations with integrated tools for customer engagement and analytics.
 tags:
 - CRM

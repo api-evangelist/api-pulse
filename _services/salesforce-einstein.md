@@ -1,7 +1,7 @@
 ---
 title: Salesforce Einstein
 slug: salesforce-einstein
-companyCount: 43
+companyCount: 36
 description: AI-powered analytics and insights platform integrated into Salesforce CRM, providing predictive analytics, natural language processing, and automated recommendations for sales, service, and marketing teams.
 tags:
 - Artificial Intelligence

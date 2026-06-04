@@ -1,7 +1,7 @@
 ---
 title: MongoDB
 slug: mongodb
-companyCount: 187
+companyCount: 182
 description: A document-oriented NoSQL database program that uses JSON-like documents with optional schemas for storing and retrieving data.
 tags:
 - Database

@@ -1,11 +1,10 @@
 ---
 title: WSDL
 slug: wsdl
-companyCount: 23
+companyCount: 22
 description: WSDL is a technology or concept used in computing and information technology to address specific technical challenges. It provides capabilities that help practitioners build, manage, or improve systems and processes in their domain.
 tags:
 - WSDL
-radarRing: Initial
 alternativeNames:
 - Web Services Description Language
 - wsdl

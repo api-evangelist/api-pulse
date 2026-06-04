@@ -1,7 +1,7 @@
 ---
 title: Amazon ECS
 slug: amazon-ecs
-companyCount: 153
+companyCount: 120
 description: Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that makes it easy to deploy, manage, and scale containerized applications using Docker containers.
 tags:
 - Container Orchestration

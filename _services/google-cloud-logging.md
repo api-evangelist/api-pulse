@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Logging
 slug: google-cloud-logging
-companyCount: 20
+companyCount: 17
 description: A fully managed service that performs at scale and can ingest application and platform log data, as well as custom log data from Google Cloud and AWS environments.
 tags:
 - Logging

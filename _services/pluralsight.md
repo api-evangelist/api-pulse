@@ -1,7 +1,7 @@
 ---
 title: Pluralsight
 slug: pluralsight
-companyCount: 16
+companyCount: 3
 description: Online learning platform offering expert-authored courses in technology, creative skills, and business with skill assessments and hands-on learning paths
 tags:
 - Online Learning

@@ -1,7 +1,7 @@
 ---
 title: Oracle WebLogic
 slug: oracle-weblogic
-companyCount: 34
+companyCount: 24
 description: Oracle WebLogic Server is a Java EE application server that provides a platform for developing, deploying, and running enterprise applications with support for distributed transactions, messaging, and web services.
 tags:
 - Application Server

@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Professional Service
 slug: bloomberg-professional-service
-companyCount: 84
+companyCount: 24
 description: A comprehensive financial data and analytics platform providing real-time market data, news, trading capabilities, and analytical tools for financial professionals.
 tags:
 - Financial Data

@@ -1,7 +1,7 @@
 ---
 title: Discord
 slug: discord
-companyCount: 11
+companyCount: 13
 description: Voice, video, and text communication platform designed for creating communities and real-time conversations
 tags:
 - Communication

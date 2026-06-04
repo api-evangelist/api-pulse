@@ -1,7 +1,7 @@
 ---
 title: HAMI
 slug: hami
-companyCount: 5
+companyCount: 0
 description: A platform or tool (insufficient context to provide detailed description)
 tags:
 - Technology

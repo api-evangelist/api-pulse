@@ -1,7 +1,7 @@
 ---
 title: Azure Key Vault
 slug: azure-key-vault
-companyCount: 59
+companyCount: 51
 description: Cloud service for securely storing and accessing secrets, keys, and certificates with centralized management and access control
 tags:
 - Secrets Management

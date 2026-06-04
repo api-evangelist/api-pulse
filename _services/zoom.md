@@ -1,7 +1,7 @@
 ---
 title: Zoom
 slug: zoom
-companyCount: 170
+companyCount: 149
 description: Zoom is a video conferencing platform for virtual meetings, webinars, and team collaboration. It offers features like screen sharing, recording, breakout rooms, and chat to support remote communication for businesses and individuals.
 tags:
 - Videos

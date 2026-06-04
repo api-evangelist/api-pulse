@@ -1,7 +1,7 @@
 ---
 title: Workday Report Writer
 slug: workday-report-writer
-companyCount: 20
+companyCount: 16
 description: A reporting tool within Workday that allows users to create custom reports by selecting data sources, applying filters, and defining output formats without requiring technical expertise.
 tags:
 - Reporting

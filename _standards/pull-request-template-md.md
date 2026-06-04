@@ -8,7 +8,6 @@ tags:
 - Code Review
 - Repository
 - Collaboration
-radarRing: Initial
 alternativeNames:
 - PR Template
 - Pull Request Template

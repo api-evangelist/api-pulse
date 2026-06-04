@@ -9,7 +9,6 @@ tags:
 - Configuration
 - Developer Workflow
 - Tool Integration
-radarRing: Initial
 alternativeNames:
 - MCP Config
 - Model Context Protocol Config

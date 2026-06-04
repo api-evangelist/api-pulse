@@ -1,7 +1,7 @@
 ---
 title: Apache Flex
 slug: apache-flex
-companyCount: 302
+companyCount: 278
 description: Application framework for building expressive cross-platform rich internet applications using ActionScript.
 tags:
 - RIA

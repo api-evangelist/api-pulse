@@ -1,7 +1,7 @@
 ---
 title: Nessus
 slug: nessus
-companyCount: 39
+companyCount: 37
 description: A comprehensive vulnerability scanner that identifies security vulnerabilities, configuration issues, and malware in networks, systems, and applications.
 tags:
 - Vulnerability Scanner

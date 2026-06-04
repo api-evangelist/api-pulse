@@ -1,7 +1,7 @@
 ---
 title: Cisco
 slug: cisco
-companyCount: 216
+companyCount: 200
 description: Multinational technology company specializing in networking hardware, software, and telecommunications equipment for IT infrastructure and communications.
 tags:
 - Networking

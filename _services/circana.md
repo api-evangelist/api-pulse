@@ -1,7 +1,7 @@
 ---
 title: Circana
 slug: circana
-companyCount: 38
+companyCount: 17
 description: Circana is a leading advisor on the complexity of consumer behavior, providing actionable insights through advanced analytics and market research to help businesses understand and predict consumer purchasing patterns and trends.
 tags:
 - Market Research

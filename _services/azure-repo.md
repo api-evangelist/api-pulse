@@ -1,7 +1,7 @@
 ---
 title: Azure Repo
 slug: azure-repo
-companyCount: 5
+companyCount: 3
 description: Azure Repos provides Git and TFVC version control tools within the Azure DevOps platform for managing source code. It offers unlimited private repositories, pull request workflows, branch policies, and integration with Azure Pipelines for CI/CD.
 tags:
 - Version Control

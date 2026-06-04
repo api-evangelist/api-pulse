@@ -1,7 +1,7 @@
 ---
 title: Vitess
 slug: vitess
-companyCount: 12
+companyCount: 1
 description: A database clustering system for horizontal scaling of MySQL through generalized sharding
 tags:
 - Database

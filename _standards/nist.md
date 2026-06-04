@@ -1,7 +1,7 @@
 ---
 title: NIST
 slug: nist
-companyCount: 294
+companyCount: 284
 description: National Institute of Standards and Technology - develops and promotes measurement standards, cybersecurity frameworks, and technology guidelines
 tags:
 - Standards
@@ -10,7 +10,6 @@ tags:
 - Compliance
 url: https://www.nist.gov/
 founded: 1901
-radarRing: Optimizing
 alternativeNames:
 - National Institute of Standards and Technology
 - NIST Framework

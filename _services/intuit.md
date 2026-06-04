@@ -1,7 +1,7 @@
 ---
 title: Intuit
 slug: intuit
-companyCount: 16
+companyCount: 6
 description: Financial software company providing products like QuickBooks, TurboTax, and Mint for accounting, tax preparation, and personal finance management.
 tags:
 - Financial Software

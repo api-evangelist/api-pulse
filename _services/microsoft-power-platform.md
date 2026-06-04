@@ -1,7 +1,7 @@
 ---
 title: Microsoft Power Platform
 slug: microsoft-power-platform
-companyCount: 154
+companyCount: 150
 description: A suite of low-code/no-code tools including Power Apps, Power Automate, Power BI, and Power Virtual Agents for building business applications, automating workflows, analyzing data, and creating chatbots.
 tags:
 - Low-Code

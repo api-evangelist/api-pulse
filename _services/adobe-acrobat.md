@@ -1,7 +1,7 @@
 ---
 title: Adobe Acrobat
 slug: adobe-acrobat
-companyCount: 104
+companyCount: 85
 description: PDF creation, editing, and collaboration software for creating, viewing, manipulating, printing, and managing Portable Document Format files.
 tags:
 - PDF

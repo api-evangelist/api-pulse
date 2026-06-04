@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Government (BGOV)
 slug: bloomberg-government
-companyCount: 2
+companyCount: 1
 description: Bloomberg Government (BGOV) is a research and data platform providing comprehensive coverage of U.S. federal and state government activities. It offers tools for tracking legislation, regulations, contracts, and political developments for policy professionals.
 tags:
 - Government Relations

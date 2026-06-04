@@ -1,7 +1,7 @@
 ---
 title: Triton
 slug: triton
-companyCount: 31
+companyCount: 30
 description: An open-source programming language and compiler for writing highly efficient GPU code, developed by OpenAI for deep learning applications.
 tags:
 - Programming Language

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Graph
 slug: microsoft-graph
-companyCount: 52
+companyCount: 50
 description: Microsoft Graph is a unified API gateway that provides access to data and intelligence across Microsoft cloud services including Microsoft 365 and Azure. It enables developers to build applications that interact with users, groups, mail, calendar, files, and more.
 tags:
 - Productivity

@@ -1,7 +1,7 @@
 ---
 title: Google Maps
 slug: google-maps
-companyCount: 338
+companyCount: 308
 description: Google Maps is a web mapping platform offering satellite imagery, street views, real-time traffic, and route planning for driving, walking, and transit. Its APIs enable developers to embed maps, geocoding, and location services into applications.
 tags:
 - Mapping

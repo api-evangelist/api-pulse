@@ -1,7 +1,7 @@
 ---
 title: Photoshop
 slug: photoshop
-companyCount: 211
+companyCount: 192
 description: Adobe's industry-standard raster graphics editor for image editing, digital art, and photo manipulation
 tags:
 - Design

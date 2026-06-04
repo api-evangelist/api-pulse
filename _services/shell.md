@@ -1,7 +1,7 @@
 ---
 title: Shell
 slug: shell
-companyCount: 135
+companyCount: 382
 description: A command-line interface for interacting with operating systems through text-based commands and scripts
 tags:
 - Command Line

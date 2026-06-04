@@ -10,7 +10,6 @@ tags:
 - Backward Compatibility
 url: https://semver.org/
 yearCreated: 2005
-radarRing: Developing
 alternativeNames:
 - Version Control Protocols
 - API Versioning

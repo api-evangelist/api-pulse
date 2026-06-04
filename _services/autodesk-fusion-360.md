@@ -1,7 +1,7 @@
 ---
 title: Autodesk Fusion 360
 slug: autodesk-fusion-360
-companyCount: 19
+companyCount: 16
 description: Cloud-based 3D CAD, CAM, CAE, and PCB software platform for product design and manufacturing
 tags:
 - CAD

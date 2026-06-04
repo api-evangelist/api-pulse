@@ -8,7 +8,6 @@ tags:
 - Automation
 - CI/CD
 - Configuration
-radarRing: Initial
 alternativeNames:
 - Renovate Config
 - Renovate Bot Config

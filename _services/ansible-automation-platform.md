@@ -1,7 +1,7 @@
 ---
 title: Ansible Automation Platform
 slug: ansible-automation-platform
-companyCount: 25
+companyCount: 245
 description: Enterprise automation platform for orchestrating IT infrastructure, configuration management, and application deployment at scale
 tags:
 - Automation

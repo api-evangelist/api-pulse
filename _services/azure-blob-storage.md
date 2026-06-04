@@ -1,7 +1,7 @@
 ---
 title: Azure Blob Storage
 slug: azure-blob-storage
-companyCount: 28
+companyCount: 31
 description: Microsoft's object storage solution for the cloud, optimized for storing massive amounts of unstructured data such as text or binary data.
 tags:
 - Cloud Storage

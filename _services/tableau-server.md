@@ -1,7 +1,7 @@
 ---
 title: Tableau Server
 slug: tableau-server
-companyCount: 14
+companyCount: 16
 description: Enterprise analytics platform for sharing, collaborating, and managing Tableau visualizations and data sources across an organization with governance and security controls.
 tags:
 - Business Intelligence

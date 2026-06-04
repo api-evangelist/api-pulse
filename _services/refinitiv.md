@@ -1,7 +1,7 @@
 ---
 title: Refinitiv
 slug: refinitiv
-companyCount: 23
+companyCount: 19
 description: Refinitiv is a global provider of financial market data and infrastructure, offering real-time and historical data, analytics, trading platforms, and risk management solutions to financial institutions and businesses.
 tags:
 - Financial Data

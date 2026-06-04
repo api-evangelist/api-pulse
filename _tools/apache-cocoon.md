@@ -1,7 +1,7 @@
 ---
 title: Apache Cocoon
 slug: apache-cocoon
-companyCount: 4
+companyCount: 1
 description: Web application framework built around the areas of pipeline processing and separation of concerns using XML.
 tags:
 - Web Framework

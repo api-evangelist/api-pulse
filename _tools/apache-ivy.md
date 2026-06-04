@@ -1,7 +1,7 @@
 ---
 title: Apache Ivy
 slug: apache-ivy
-companyCount: 4
+companyCount: 9
 description: Dependency manager tightly integrated with Apache Ant for managing transitive dependencies.
 tags:
 - Dependency Management

@@ -1,7 +1,7 @@
 ---
 title: Bitbucket
 slug: bitbucket
-companyCount: 117
+companyCount: 97
 description: Git-based source code repository hosting service owned by Atlassian, offering version control, code collaboration, CI/CD pipelines, and project management features for software development teams.
 tags:
 - Version Control

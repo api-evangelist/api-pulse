@@ -9,7 +9,6 @@ tags:
 - Infrastructure
 url: https://github.com/containers/common/blob/main/docs/Containerfile.5.md
 yearCreated: 2013
-radarRing: Developing
 alternativeNames:
 - Container File
 - containerfile

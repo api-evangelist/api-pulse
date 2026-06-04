@@ -1,7 +1,7 @@
 ---
 title: Workday Payroll
 slug: workday-payroll
-companyCount: 41
+companyCount: 48
 description: Cloud-based payroll management system that handles payroll processing, tax compliance, and wage payments as part of the Workday Human Capital Management suite.
 tags:
 - Payroll

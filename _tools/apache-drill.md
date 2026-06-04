@@ -1,7 +1,7 @@
 ---
 title: Apache Drill
 slug: apache-drill
-companyCount: 143
+companyCount: 124
 description: Schema-free SQL query engine for Hadoop, NoSQL, and cloud storage enabling interactive exploration of big data.
 tags:
 - SQL

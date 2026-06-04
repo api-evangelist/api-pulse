@@ -1,7 +1,7 @@
 ---
 title: Apple
 slug: apple
-companyCount: 190
+companyCount: 145
 description: Apple is a multinational technology company that designs consumer electronics, software, and digital services. It is known for products including the iPhone, Mac, iPad, Apple Watch, and platforms like iOS, macOS, and iCloud.
 tags:
 - Consumer Electronics

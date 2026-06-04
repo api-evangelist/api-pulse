@@ -10,7 +10,6 @@ tags:
 - Templates
 - Documentation
 yearCreated: 2005
-radarRing: Developing
 alternativeNames:
 - Tax Templates
 - Tax Report Templates

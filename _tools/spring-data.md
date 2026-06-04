@@ -1,7 +1,7 @@
 ---
 title: Spring Data
 slug: spring-data
-companyCount: 31
+companyCount: 29
 description: Spring Data simplifies data access in Spring applications by providing a consistent programming model across relational and NoSQL databases. It reduces boilerplate code with repository abstractions, query derivation, and support for technologies like JPA, MongoDB, and Redis.
 tags:
 - Java

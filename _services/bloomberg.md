@@ -1,7 +1,7 @@
 ---
 title: Bloomberg
 slug: bloomberg
-companyCount: 115
+companyCount: 97
 description: Bloomberg is a global financial services, software, and media company that provides real-time and historical financial data, news, and analytics to financial professionals and institutions worldwide.
 tags:
 - Financial Data

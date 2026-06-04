@@ -1,7 +1,7 @@
 ---
 title: Concur
 slug: concur
-companyCount: 141
+companyCount: 132
 description: SAP Concur is a cloud-based travel and expense management solution that helps organizations automate and streamline travel booking, expense reporting, and invoice management processes.
 tags:
 - Expense Management

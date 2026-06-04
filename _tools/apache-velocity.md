@@ -1,7 +1,7 @@
 ---
 title: Apache Velocity
 slug: apache-velocity
-companyCount: 268
+companyCount: 252
 description: Java-based template engine for rendering dynamic web pages, emails, and code generation.
 tags:
 - Template Engine

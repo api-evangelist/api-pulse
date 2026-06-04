@@ -1,7 +1,7 @@
 ---
 title: Prosci
 slug: prosci
-companyCount: 81
+companyCount: 72
 description: Prosci is a research-based change management methodology and certification program used by organizations worldwide. It provides the ADKAR model and structured tools to help leaders drive successful organizational change and transformation initiatives.
 tags:
 - Change Management

@@ -1,7 +1,7 @@
 ---
 title: Solaris Zones
 slug: solaris-zones
-companyCount: 397
+companyCount: 345
 description: Operating system-level virtualization technology for x86 and SPARC systems that provides isolated application environments within a single Solaris instance.
 tags:
 - Virtualization

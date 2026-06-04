@@ -1,7 +1,7 @@
 ---
 title: Sonatype Nexus
 slug: sonatype-nexus
-companyCount: 11
+companyCount: 9
 description: Universal artifact repository manager that supports multiple package formats including Maven, npm, Docker, NuGet, and PyPI for managing software components and build artifacts
 tags:
 - Artifact Repository

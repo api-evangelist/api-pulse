@@ -1,7 +1,7 @@
 ---
 title: Veritas InfoScale
 slug: veritas-infoscale
-companyCount: 100
+companyCount: 9
 description: Enterprise storage management and high availability solution that provides data protection, disaster recovery, and storage virtualization across physical, virtual, and cloud environments.
 tags:
 - Storage Management

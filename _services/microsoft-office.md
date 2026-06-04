@@ -1,7 +1,7 @@
 ---
 title: Microsoft Office
 slug: microsoft-office
-companyCount: 742
+companyCount: 719
 description: A suite of productivity applications including Word, Excel, PowerPoint, and Outlook for document creation, data analysis, presentations, and email management.
 tags:
 - Productivity Software

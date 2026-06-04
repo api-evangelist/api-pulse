@@ -1,7 +1,7 @@
 ---
 title: Apache Causeway
 slug: apache-causeway
-companyCount: 18
+companyCount: 15
 description: Java framework for rapidly developing domain-driven applications with automatically generated UIs and REST APIs.
 tags:
 - Java

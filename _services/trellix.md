@@ -1,7 +1,7 @@
 ---
 title: Trellix
 slug: trellix
-companyCount: 3
+companyCount: 12
 description: Trellix is a cybersecurity company that provides extended detection and response (XDR), network security, endpoint security, and cloud security solutions to protect organizations from advanced cyber threats.
 tags:
 - Cybersecurity

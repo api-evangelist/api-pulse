@@ -1,7 +1,7 @@
 ---
 title: Oracle E-Business Suite
 slug: oracle-e-business-suite
-companyCount: 102
+companyCount: 92
 description: Oracle E-Business Suite is an integrated set of business applications for automating customer relationship management (CRM), enterprise resource planning (ERP), and supply chain management (SCM) processes within organizations.
 tags:
 - ERP

@@ -1,7 +1,7 @@
 ---
 title: SolarWinds
 slug: solarwinds
-companyCount: 73
+companyCount: 60
 description: A comprehensive IT management software platform that provides network monitoring, system management, and security tools for enterprise infrastructure and operations.
 tags:
 - Network Monitoring

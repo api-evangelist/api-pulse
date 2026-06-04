@@ -1,7 +1,7 @@
 ---
 title: Tufin
 slug: tufin
-companyCount: 11
+companyCount: 10
 description: Network security policy management platform that provides visibility, automation, and compliance for security policies across hybrid cloud and on-premises environments.
 tags:
 - Network Security

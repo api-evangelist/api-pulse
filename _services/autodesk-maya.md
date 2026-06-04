@@ -1,7 +1,7 @@
 ---
 title: Autodesk Maya
 slug: autodesk-maya
-companyCount: 34
+companyCount: 29
 description: Professional 3D computer animation, modeling, simulation, and rendering software used for creating interactive 3D applications, including video games, animated films, TV series, and visual effects.
 tags:
 - 3D Modeling

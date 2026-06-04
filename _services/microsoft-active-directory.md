@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory
 slug: microsoft-active-directory
-companyCount: 181
+companyCount: 162
 description: Enterprise directory service for Windows domain networks that provides authentication, authorization, and centralized management of users, computers, and other resources.
 tags:
 - Identity Management

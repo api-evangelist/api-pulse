@@ -1,11 +1,10 @@
 ---
 title: VNC
 slug: vnc
-companyCount: 7
+companyCount: 3
 description: VNC is a technology or concept used in computing and information technology to address specific technical challenges. It provides capabilities that help practitioners build, manage, or improve systems and processes in their domain.
 tags:
 - VNC
-radarRing: Initial
 alternativeNames:
 - Virtual Network Computing
 - vnc

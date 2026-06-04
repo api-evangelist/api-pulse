@@ -1,7 +1,7 @@
 ---
 title: Cisco Catalyst Center
 slug: cisco-catalyst-center
-companyCount: 21
+companyCount: 23
 description: Cisco Catalyst Center is a centralized network management platform that provides automation, assurance, and analytics for enterprise networks. It offers intent-based networking capabilities to simplify operations and improve network performance and security.
 tags:
 - Network Management

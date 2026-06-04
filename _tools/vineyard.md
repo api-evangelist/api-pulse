@@ -1,7 +1,7 @@
 ---
 title: Vineyard
 slug: vineyard
-companyCount: 14
+companyCount: 9
 description: An in-memory metadata service for sharing, discovering, and accessing distributed objects in Python, developed for big data analytics workflows.
 tags:
 - Distributed Systems

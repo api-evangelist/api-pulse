@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Terminal
 slug: bloomberg-terminal
-companyCount: 30
+companyCount: 31
 description: Professional financial data and analytics platform providing real-time market data, news, trading capabilities, and communication tools for financial professionals worldwide.
 tags:
 - Financial Data

@@ -1,7 +1,7 @@
 ---
 title: Azure Kubernetes Service
 slug: azure-kubernetes
-companyCount: 109
+companyCount: 99
 description: Managed Kubernetes container orchestration service that simplifies deploying, managing, and scaling containerized applications using Kubernetes on Microsoft Azure.
 tags:
 - Container Orchestration

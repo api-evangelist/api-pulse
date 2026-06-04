@@ -1,7 +1,7 @@
 ---
 title: Apache Accumulo
 slug: apache-accumulo
-companyCount: 0
+companyCount: 4
 description: Sorted, distributed key/value store based on Google's Bigtable design, built on top of Hadoop and ZooKeeper.
 tags:
 - Key Value Store

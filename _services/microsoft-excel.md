@@ -1,7 +1,7 @@
 ---
 title: Microsoft Excel
 slug: microsoft-excel
-companyCount: 12
+companyCount: 457
 description: A spreadsheet application developed by Microsoft for organizing, analyzing, and visualizing data through formulas, charts, and pivot tables.
 tags:
 - Spreadsheet

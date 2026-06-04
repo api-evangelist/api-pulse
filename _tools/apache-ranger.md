@@ -1,7 +1,7 @@
 ---
 title: Apache Ranger
 slug: apache-ranger
-companyCount: 22
+companyCount: 18
 description: Centralized security framework for managing fine-grained access control across the Hadoop ecosystem.
 tags:
 - Security

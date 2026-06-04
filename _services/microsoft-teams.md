@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
 slug: microsoft-teams
-companyCount: 738
+companyCount: 711
 description: A unified communication and collaboration platform that combines persistent workplace chat, video meetings, file storage, and application integration.
 tags:
 - Collaboration

@@ -1,7 +1,7 @@
 ---
 title: werf
 slug: werf
-companyCount: 7
+companyCount: 0
 description: A CLI tool that implements the full application lifecycle (build, deploy, cleanup) using Git as a single source of truth, with built-in support for Helm and integration with CI/CD systems.
 tags:
 - DevOps

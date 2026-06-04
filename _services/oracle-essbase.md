@@ -1,7 +1,7 @@
 ---
 title: Oracle Essbase
 slug: oracle-essbase
-companyCount: 69
+companyCount: 61
 description: Oracle Essbase is a multidimensional database management system for advanced analytical and planning applications. It enables organizations to perform complex calculations, scenario modeling, and what-if analysis for financial planning and business intelligence.
 tags:
 - OLAP

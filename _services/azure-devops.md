@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps
 slug: azure-devops
-companyCount: 262
+companyCount: 238
 description: A suite of development tools and services from Microsoft for planning, developing, testing, and deploying software with CI/CD pipelines, version control, and project management capabilities.
 tags:
 - CI/CD

@@ -1,7 +1,7 @@
 ---
 title: Dell Servers
 slug: dell-servers
-companyCount: 11
+companyCount: 10
 description: Enterprise-grade server hardware from Dell Technologies, offering PowerEdge rack, tower, and modular systems for data center and business computing needs.
 tags:
 - Hardware

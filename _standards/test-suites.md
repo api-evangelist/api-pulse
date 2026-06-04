@@ -9,7 +9,6 @@ tags:
 - Software Development
 url: https://en.wikipedia.org/wiki/Test_suite
 yearCreated: 1990
-radarRing: Established
 alternativeNames:
 - Test Suite
 - Testing Suite

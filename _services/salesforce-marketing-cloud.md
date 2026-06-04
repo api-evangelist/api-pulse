@@ -1,7 +1,7 @@
 ---
 title: Salesforce Marketing Cloud
 slug: salesforce-marketing-cloud
-companyCount: 111
+companyCount: 110
 description: Enterprise marketing automation and customer engagement platform that enables personalized customer journeys across email, mobile, social, and advertising channels with data-driven insights and AI-powered recommendations.
 tags:
 - Marketing Automation

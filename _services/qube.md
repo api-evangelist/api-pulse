@@ -1,7 +1,7 @@
 ---
 title: Qube
 slug: qube
-companyCount: 7
+companyCount: 5
 description: Qube is a cloud-based project management and collaboration platform designed for creative teams and production workflows, offering tools for review, approval, and asset management.
 tags:
 - Project Management

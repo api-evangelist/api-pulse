@@ -1,7 +1,7 @@
 ---
 title: CloudWatch
 slug: cloudwatch
-companyCount: 132
+companyCount: 124
 description: Amazon CloudWatch is a monitoring and observability service that provides data and actionable insights for AWS, hybrid, and on-premises applications and infrastructure resources.
 tags:
 - Monitoring

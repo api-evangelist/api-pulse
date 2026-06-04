@@ -1,7 +1,7 @@
 ---
 title: Apache BRPC
 slug: apache-brpc
-companyCount: 1
+companyCount: 0
 description: Industrial-grade RPC framework for building reliable and high-performance services in C++.
 tags:
 - RPC

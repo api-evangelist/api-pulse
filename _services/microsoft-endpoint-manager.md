@@ -1,7 +1,7 @@
 ---
 title: Microsoft Endpoint Manager
 slug: microsoft-endpoint-manager
-companyCount: 40
+companyCount: 16
 description: Unified endpoint management platform from Microsoft that combines Configuration Manager and Intune for managing devices, applications, and security policies across on-premises and cloud environments.
 tags:
 - Endpoint Management

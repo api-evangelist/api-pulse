@@ -1,7 +1,7 @@
 ---
 title: Apache VCL
 slug: apache-vcl
-companyCount: 3
+companyCount: 0
 description: Cloud computing platform for delivering dedicated virtual computing environments to users on demand.
 tags:
 - Cloud Computing

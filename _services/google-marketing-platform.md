@@ -1,7 +1,7 @@
 ---
 title: Google Marketing Platform
 slug: google-marketing-platform
-companyCount: 141
+companyCount: 139
 description: An integrated advertising and analytics platform that helps businesses plan, buy, measure and optimize digital media and customer experiences in one place.
 tags:
 - Marketing

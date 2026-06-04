@@ -1,7 +1,7 @@
 ---
 title: ADP
 slug: adp
-companyCount: 126
+companyCount: 120
 description: ADP (Automatic Data Processing) is a comprehensive human capital management solution that provides cloud-based software and services for payroll, HR, talent management, benefits administration, and workforce management for businesses of all sizes.
 tags:
 - Human Resources

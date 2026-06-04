@@ -1,7 +1,7 @@
 ---
 title: Bloomberg TV
 slug: bloomberg-tv
-companyCount: 4
+companyCount: 1
 description: Business and financial news television channel providing live market coverage, breaking news, and in-depth analysis of global economic trends.
 tags:
 - Business News

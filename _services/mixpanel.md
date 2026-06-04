@@ -1,7 +1,7 @@
 ---
 title: Mixpanel
 slug: mixpanel
-companyCount: 14
+companyCount: 13
 description: Product analytics platform that helps companies measure and improve user engagement, retention, and conversion through event tracking and behavioral analysis.
 tags:
 - Analytics

@@ -1,7 +1,7 @@
 ---
 title: Red Hat
 slug: red-hat
-companyCount: 129
+companyCount: 110
 description: Enterprise open source software provider known for Red Hat Enterprise Linux (RHEL), OpenShift container platform, and other infrastructure solutions for cloud, virtualization, and automation.
 tags:
 - Linux

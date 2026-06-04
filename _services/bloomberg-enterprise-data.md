@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Enterprise Data
 slug: bloomberg-enterprise-data
-companyCount: 89
+companyCount: 2
 description: Enterprise-grade financial data and analytics platform providing real-time market data, news, research, and analytics for institutional clients.
 tags:
 - Financial Data

@@ -1,7 +1,7 @@
 ---
 title: Ollama
 slug: ollama
-companyCount: 6
+companyCount: 5
 description: Ollama is an open-source tool for running large language models locally on personal computers. It simplifies model management and inference, supporting models like Llama, Mistral, and others without requiring cloud infrastructure.
 tags:
 - AI

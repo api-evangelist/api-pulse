@@ -1,7 +1,7 @@
 ---
 title: Azure Pipelines
 slug: azure-pipelines
-companyCount: 21
+companyCount: 18
 description: Cloud-based CI/CD service that automatically builds, tests, and deploys code to any platform
 tags:
 - CI/CD

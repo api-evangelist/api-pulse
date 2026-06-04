@@ -1,7 +1,7 @@
 ---
 title: Fern
 slug: fern
-companyCount: 15
+companyCount: 12
 description: Developer tools platform that generates SDKs, API documentation, and server-side code from API definitions like OpenAPI specifications.
 tags:
 - SDKs

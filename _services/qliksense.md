@@ -1,7 +1,7 @@
 ---
 title: QlikSense
 slug: qliksense
-companyCount: 48
+companyCount: 38
 description: QlikSense is a self-service data analytics and business intelligence platform that enables users to create interactive visualizations, dashboards, and reports with an associative analytics engine for data exploration.
 tags:
 - Business Intelligence

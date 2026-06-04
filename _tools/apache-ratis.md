@@ -1,7 +1,7 @@
 ---
 title: Apache Ratis
 slug: apache-ratis
-companyCount: 3
+companyCount: 0
 description: Java implementation of the Raft consensus protocol for building reliable distributed systems.
 tags:
 - Consensus

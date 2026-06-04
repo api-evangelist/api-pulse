@@ -1,7 +1,7 @@
 ---
 title: TeamCity
 slug: teamcity
-companyCount: 42
+companyCount: 31
 description: A powerful continuous integration and deployment server from JetBrains that provides out-of-the-box support for multiple platforms, build runners, and version control systems with an intuitive web interface.
 tags:
 - CI/CD

@@ -1,7 +1,7 @@
 ---
 title: Apache Submarine
 slug: apache-submarine
-companyCount: 15
+companyCount: 10
 description: End-to-end machine learning platform for running deep learning and ML workloads on Kubernetes.
 tags:
 - Machine Learning

@@ -1,7 +1,7 @@
 ---
 title: PeopleSoft
 slug: peoplesoft
-companyCount: 89
+companyCount: 77
 description: Enterprise resource planning (ERP) and human capital management (HCM) software suite from Oracle that provides comprehensive business applications for finance, HR, supply chain, and customer relationship management.
 tags:
 - ERP

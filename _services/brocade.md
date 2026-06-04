@@ -1,7 +1,7 @@
 ---
 title: Brocade
 slug: brocade
-companyCount: 22
+companyCount: 19
 description: Brocade is a networking company specializing in data center storage networking and switching solutions, now part of Broadcom. Its products include Fibre Channel switches, routers, and network management software for enterprise storage area networks.
 tags:
 - Networking

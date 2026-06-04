@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Valuation Service (BVAL)
 slug: bloomberg-valuation-service-bval
-companyCount: 2
+companyCount: 1
 description: Bloomberg's independent pricing service that provides evaluated prices and reference data for fixed income securities and derivatives using market data and proprietary valuation models.
 tags:
 - Fixed Income

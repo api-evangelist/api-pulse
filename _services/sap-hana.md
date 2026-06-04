@@ -1,7 +1,7 @@
 ---
 title: SAP HANA
 slug: sap-hana
-companyCount: 152
+companyCount: 120
 description: In-memory, column-oriented relational database management system developed by SAP for high-performance analytics and real-time data processing
 tags:
 - Database

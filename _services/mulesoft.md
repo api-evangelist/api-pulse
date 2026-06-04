@@ -1,7 +1,7 @@
 ---
 title: MuleSoft
 slug: mulesoft
-companyCount: 120
+companyCount: 117
 description: An integration platform for connecting applications, data, and devices across on-premises and cloud environments with API-led connectivity
 tags:
 - Integration Platform

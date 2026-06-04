@@ -1,7 +1,7 @@
 ---
 title: Apache Lucene
 slug: apache-lucene
-companyCount: 0
+companyCount: 15
 description: High-performance, full-featured text search engine library written in Java, powering many search platforms.
 tags:
 - Search Engine

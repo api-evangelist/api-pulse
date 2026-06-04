@@ -1,7 +1,7 @@
 ---
 title: SQL Server
 slug: sql-server
-companyCount: 301
+companyCount: 292
 description: A relational database management system developed by Microsoft that supports transaction processing, business intelligence, and analytics applications.
 tags:
 - Database

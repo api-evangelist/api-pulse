@@ -1,7 +1,7 @@
 ---
 title: VMware
 slug: vmware
-companyCount: 191
+companyCount: 184
 description: Virtualization and cloud computing software provider offering solutions for running multiple operating systems and applications on a single physical server through hypervisor technology.
 tags:
 - Virtualization

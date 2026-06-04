@@ -1,7 +1,7 @@
 ---
 title: Microsoft Windows Mobile
 slug: microsoft-windows-mobile
-companyCount: 1
+companyCount: 2
 description: A discontinued mobile operating system developed by Microsoft for smartphones and mobile devices, predecessor to Windows Phone
 tags:
 - Mobile Operating System

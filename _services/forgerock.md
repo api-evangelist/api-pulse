@@ -1,7 +1,7 @@
 ---
 title: ForgeRock
 slug: forgerock
-companyCount: 22
+companyCount: 21
 description: Enterprise-grade identity and access management platform providing authentication, authorization, and user management solutions for digital services
 tags:
 - Identity Management

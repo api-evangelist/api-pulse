@@ -1,7 +1,7 @@
 ---
 title: Apache Knox
 slug: apache-knox
-companyCount: 21
+companyCount: 12
 description: REST API and application gateway for providing secure access to Hadoop cluster services.
 tags:
 - Security

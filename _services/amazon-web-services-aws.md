@@ -1,7 +1,7 @@
 ---
 title: Amazon Web Services
 slug: amazon-web-services-aws
-companyCount: 459
+companyCount: 457
 description: Amazon Web Services (AWS) is a comprehensive cloud computing platform offering over 200 fully featured services including computing power, storage, databases, networking, analytics, machine learning, and more from data centers globally.
 tags:
 - Cloud Platform

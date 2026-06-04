@@ -1,7 +1,7 @@
 ---
 title: Apache XML Graphics
 slug: apache-xml-graphics
-companyCount: 4
+companyCount: 6
 description: Projects for creating and maintaining software for conversion of XML formats to graphical output like PDF and PostScript.
 tags:
 - XML

@@ -1,7 +1,7 @@
 ---
 title: Nutanix
 slug: nutanix
-companyCount: 53
+companyCount: 46
 description: Hyperconverged infrastructure platform that combines compute, virtualization, storage, and networking into a single solution for simplified datacenter management and scalability.
 tags:
 - Hyperconverged Infrastructure

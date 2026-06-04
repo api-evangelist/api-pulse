@@ -1,7 +1,7 @@
 ---
 title: Twilio
 slug: twilio
-companyCount: 21
+companyCount: 16
 description: Twilio is a cloud communications platform that enables developers to integrate voice, messaging, video, and email capabilities into applications via APIs. It provides programmable communication tools used by businesses for customer engagement and notifications.
 tags:
 - SMS

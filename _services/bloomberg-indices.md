@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Indices
 slug: bloomberg-indices
-companyCount: 1
+companyCount: 0
 description: Bloomberg family of indices providing benchmark coverage across asset classes including equity, fixed income, commodities, and multi-asset strategies
 tags:
 - Financial Indices

@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Platform
 slug: google-cloud-platform
-companyCount: 391
+companyCount: 375
 description: A suite of cloud computing services offered by Google that provides infrastructure, platform, and serverless computing environments for building, deploying, and scaling applications.
 tags:
 - Cloud Platform

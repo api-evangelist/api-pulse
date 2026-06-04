@@ -1,7 +1,7 @@
 ---
 title: Apache Impala
 slug: apache-impala
-companyCount: 23
+companyCount: 21
 description: Massively parallel processing SQL query engine for data stored in Hadoop-compatible file systems.
 tags:
 - SQL

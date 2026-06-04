@@ -1,7 +1,7 @@
 ---
 title: Apache Archiva
 slug: apache-archiva
-companyCount: 7
+companyCount: 3
 description: Repository management tool for managing Maven artifact repositories with proxying and governance features.
 tags:
 - Repository Management

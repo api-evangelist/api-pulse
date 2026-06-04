@@ -1,7 +1,7 @@
 ---
 title: Asana
 slug: asana
-companyCount: 84
+companyCount: 81
 description: A web and mobile work management platform designed to help teams organize, track, and manage their work and projects.
 tags:
 - Project Management

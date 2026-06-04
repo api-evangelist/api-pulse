@@ -1,7 +1,7 @@
 ---
 title: Score
 slug: score
-companyCount: 257
+companyCount: 201
 description: A framework for evaluating and scoring AI model outputs and responses
 tags:
 - Evaluation

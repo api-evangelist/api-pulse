@@ -1,7 +1,7 @@
 ---
 title: Apache Commons
 slug: apache-commons
-companyCount: 67
+companyCount: 53
 description: Collection of reusable Java components providing solutions to common programming problems.
 tags:
 - Java

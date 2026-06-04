@@ -1,7 +1,7 @@
 ---
 title: Apache Kudu
 slug: apache-kudu
-companyCount: 4
+companyCount: 3
 description: Columnar storage manager for the Hadoop ecosystem enabling fast analytics on fast-changing data.
 tags:
 - Columnar Storage

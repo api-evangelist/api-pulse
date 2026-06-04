@@ -1,7 +1,7 @@
 ---
 title: Kion
 slug: kion
-companyCount: 3
+companyCount: 2
 description: Cloud enablement platform that provides governance, financial management, and compliance automation for organizations managing multi-cloud environments.
 tags:
 - FinOps

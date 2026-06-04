@@ -1,7 +1,7 @@
 ---
 title: Tableau Desktop
 slug: tableau-desktop
-companyCount: 418
+companyCount: 412
 description: A powerful data visualization and business intelligence tool that allows users to connect to various data sources, create interactive dashboards, and share insights through visual analytics.
 tags:
 - Data Visualization

@@ -1,7 +1,7 @@
 ---
 title: Tanium
 slug: tanium
-companyCount: 27
+companyCount: 21
 description: Unified endpoint management and security platform that provides real-time visibility, control, and remediation across all endpoints in an enterprise network.
 tags:
 - Endpoint Management

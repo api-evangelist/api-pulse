@@ -1,7 +1,7 @@
 ---
 title: Cledara
 slug: cledara
-companyCount: 0
+companyCount: 1
 description: A SaaS management platform that helps companies discover, manage, and control their software subscriptions with automated purchasing workflows and spend visibility.
 tags:
 - SaaS Management

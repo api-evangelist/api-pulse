@@ -1,7 +1,7 @@
 ---
 title: SPIFFE
 slug: spiffe
-companyCount: 5
+companyCount: 1
 description: Secure Production Identity Framework for Everyone (SPIFFE) is a set of open-source standards for securely identifying software systems in dynamic and heterogeneous environments through platform-agnostic, cryptographic identities.
 tags:
 - Security

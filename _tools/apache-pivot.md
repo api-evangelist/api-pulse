@@ -1,7 +1,7 @@
 ---
 title: Apache Pivot
 slug: apache-pivot
-companyCount: 374
+companyCount: 367
 description: Platform for building rich internet applications in Java with a focus on UI components and data binding.
 tags:
 - RIA

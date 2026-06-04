@@ -1,7 +1,7 @@
 ---
 title: Apache Flink
 slug: flink
-companyCount: 29
+companyCount: 71
 description: A framework and distributed processing engine for stateful computations over unbounded and bounded data streams.
 tags:
 - Stream Processing

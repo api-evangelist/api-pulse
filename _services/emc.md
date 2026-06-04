@@ -1,7 +1,7 @@
 ---
 title: EMC
 slug: emc
-companyCount: 114
+companyCount: 87
 description: Electromagnetic Compatibility (EMC) refers to the ability of electrical and electronic equipment to operate without interfering with other devices and without being affected by electromagnetic disturbances in its environment.
 tags:
 - Electromagnetic Compatibility

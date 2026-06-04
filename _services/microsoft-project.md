@@ -1,7 +1,7 @@
 ---
 title: Microsoft Project
 slug: microsoft-project
-companyCount: 715
+companyCount: 691
 description: Project management software for planning, scheduling, and tracking projects with Gantt charts, resource management, and timeline visualization.
 tags:
 - Project Management

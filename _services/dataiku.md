@@ -1,7 +1,7 @@
 ---
 title: Dataiku
 slug: dataiku
-companyCount: 26
+companyCount: 24
 description: Enterprise AI and machine learning platform for building and deploying data science projects at scale
 tags:
 - Machine Learning

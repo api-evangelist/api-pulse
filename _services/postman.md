@@ -1,7 +1,7 @@
 ---
 title: Postman
 slug: postman
-companyCount: 139
+companyCount: 124
 description: API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
 tags:
 - API

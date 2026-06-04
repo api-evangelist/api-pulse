@@ -1,7 +1,7 @@
 ---
 title: Cisco Webex
 slug: webex
-companyCount: 76
+companyCount: 72
 description: Enterprise video conferencing and collaboration platform by Cisco for meetings, messaging, and calling
 tags:
 - Video Conferencing

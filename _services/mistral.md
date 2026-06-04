@@ -1,7 +1,7 @@
 ---
 title: Mistral
 slug: mistral
-companyCount: 30
+companyCount: 28
 description: Mistral AI is a French artificial intelligence company that develops open-weight and commercial large language models, offering high-performance AI solutions with a focus on efficiency, customization, and European AI innovation.
 tags:
 - Artificial Intelligence

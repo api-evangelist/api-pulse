@@ -1,7 +1,7 @@
 ---
 title: Salesforce Lightning
 slug: salesforce-lightning
-companyCount: 160
+companyCount: 124
 description: A component-based framework for building modern, responsive enterprise applications on the Salesforce platform with improved UI/UX and performance.
 tags:
 - Low Code

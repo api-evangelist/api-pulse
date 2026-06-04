@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions
 slug: github-actions
-companyCount: 229
+companyCount: 223
 description: CI/CD platform for automating build, test, and deployment pipelines directly from GitHub repositories
 tags:
 - CI/CD

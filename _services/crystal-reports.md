@@ -1,7 +1,7 @@
 ---
 title: Crystal Reports
 slug: crystal-reports
-companyCount: 29
+companyCount: 16
 description: A business intelligence application used to design and generate reports from a wide range of data sources
 tags:
 - Business Intelligence

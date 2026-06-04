@@ -1,7 +1,7 @@
 ---
 title: Adobe Premiere Pro
 slug: adobe-premiere
-companyCount: 121
+companyCount: 101
 description: Professional video editing software for film, TV, and web content creation with industry-standard tools and workflows.
 tags:
 - Video Editing

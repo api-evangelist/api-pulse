@@ -1,7 +1,7 @@
 ---
 title: Reuters
 slug: reuters
-companyCount: 36
+companyCount: 27
 description: Reuters is a global news organization providing breaking news, business, financial, and market information to professionals and consumers worldwide.
 tags:
 - News

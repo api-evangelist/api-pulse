@@ -1,7 +1,7 @@
 ---
 title: Vault
 slug: vault
-companyCount: 195
+companyCount: 174
 description: A tool for securely accessing secrets, managing encryption keys, and providing identity-based access across distributed infrastructure
 tags:
 - Security

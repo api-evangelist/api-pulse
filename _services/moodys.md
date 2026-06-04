@@ -1,7 +1,7 @@
 ---
 title: Moody's
 slug: moodys
-companyCount: 53
+companyCount: 25
 description: Moody's is a global integrated risk assessment firm that provides credit ratings, research, tools and analysis contributing to transparent and integrated financial markets.
 tags:
 - Financial Services

@@ -1,7 +1,7 @@
 ---
 title: Workday Recruiting
 slug: workday-recruiting
-companyCount: 32
+companyCount: 30
 description: Workday Recruiting is a cloud-based talent acquisition solution that streamlines the hiring process with applicant tracking, candidate management, and recruitment analytics capabilities.
 tags:
 - Applicant Tracking System

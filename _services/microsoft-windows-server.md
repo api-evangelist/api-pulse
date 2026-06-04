@@ -1,7 +1,7 @@
 ---
 title: Microsoft Windows Server
 slug: microsoft-windows-server
-companyCount: 4
+companyCount: 159
 description: Enterprise-grade server operating system from Microsoft providing infrastructure services, virtualization, storage, and networking capabilities for business applications and workloads.
 tags:
 - Operating System

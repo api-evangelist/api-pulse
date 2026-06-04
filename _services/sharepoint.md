@@ -1,7 +1,7 @@
 ---
 title: SharePoint
 slug: sharepoint
-companyCount: 387
+companyCount: 345
 description: A web-based collaborative platform that integrates with Microsoft Office, providing document management, storage, and enterprise content management capabilities.
 tags:
 - Collaboration

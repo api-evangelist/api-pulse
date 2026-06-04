@@ -1,7 +1,7 @@
 ---
 title: Metasploit
 slug: metasploit
-companyCount: 47
+companyCount: 45
 description: A penetration testing framework that helps security professionals find, exploit, and validate vulnerabilities in systems and applications.
 tags:
 - Security

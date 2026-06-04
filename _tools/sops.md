@@ -1,7 +1,7 @@
 ---
 title: SOPS
 slug: sops
-companyCount: 386
+companyCount: 374
 description: Secrets OPerationS - A tool for managing secrets in configuration files by encrypting values while leaving keys unencrypted, supporting multiple key management services like AWS KMS, GCP KMS, Azure Key Vault, and PGP.
 tags:
 - Security

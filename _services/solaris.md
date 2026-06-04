@@ -1,7 +1,7 @@
 ---
 title: Solaris
 slug: solaris
-companyCount: 36
+companyCount: 34
 description: A Unix operating system originally developed by Sun Microsystems, now owned by Oracle Corporation, known for its scalability, robustness, and advanced features like ZFS and DTrace.
 tags:
 - Operating System

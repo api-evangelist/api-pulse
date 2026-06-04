@@ -1,7 +1,7 @@
 ---
 title: JFrog
 slug: jfrog
-companyCount: 36
+companyCount: 35
 description: Universal artifact repository manager and DevOps platform for managing binaries and dependencies throughout the software development lifecycle
 tags:
 - DevOps

@@ -1,7 +1,7 @@
 ---
 title: Hibernate
 slug: hibernate
-companyCount: 78
+companyCount: 68
 description: Object-relational mapping framework for Java that simplifies database interactions by mapping Java objects to database tables
 tags:
 - Java

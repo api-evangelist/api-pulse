@@ -1,7 +1,7 @@
 ---
 title: Adobe Creative Suite
 slug: adobe-creative-suite
-companyCount: 179
+companyCount: 172
 description: Integrated collection of professional creative applications including Photoshop, Illustrator, InDesign, and other design tools for graphic design, video editing, and web development.
 tags:
 - Design Software

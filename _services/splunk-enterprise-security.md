@@ -1,7 +1,7 @@
 ---
 title: Splunk Enterprise Security
 slug: splunk-enterprise-security
-companyCount: 13
+companyCount: 12
 description: Security Information and Event Management (SIEM) solution that provides insights into machine data generated from security technologies
 tags:
 - SIEM

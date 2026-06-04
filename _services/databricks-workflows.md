@@ -1,7 +1,7 @@
 ---
 title: Databricks Workflows
 slug: databricks-workflows
-companyCount: 28
+companyCount: 27
 description: A fully managed orchestration service for data, analytics, and ML pipelines on the Databricks Lakehouse Platform. Enables scheduling and monitoring of jobs with integrated alerting and dependency management.
 tags:
 - Workflow Orchestration

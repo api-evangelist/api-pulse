@@ -1,7 +1,7 @@
 ---
 title: Sentry System
 slug: sentry-system
-companyCount: 30
+companyCount: 24
 description: Application monitoring and error tracking software that helps developers diagnose, fix, and optimize the performance of their code in real-time.
 tags:
 - Error Tracking

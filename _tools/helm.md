@@ -1,7 +1,7 @@
 ---
 title: Helm
 slug: helm
-companyCount: 153
+companyCount: 136
 description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes applications using charts
 tags:
 - Kubernetes

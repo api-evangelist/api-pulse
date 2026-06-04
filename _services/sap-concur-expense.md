@@ -1,7 +1,7 @@
 ---
 title: SAP Concur Expense
 slug: sap-concur-expense
-companyCount: 4
+companyCount: 13
 description: Cloud-based expense management solution that automates expense reporting, receipt capture, and reimbursement processes for businesses
 tags:
 - Expense Management

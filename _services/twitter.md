@@ -1,7 +1,7 @@
 ---
 title: Twitter
 slug: twitter
-companyCount: 198
+companyCount: 81
 description: A social media platform for sharing short messages, news, and engaging in real-time conversations with a global audience.
 tags:
 - Social Media

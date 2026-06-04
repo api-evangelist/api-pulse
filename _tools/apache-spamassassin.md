@@ -1,7 +1,7 @@
 ---
 title: Apache SpamAssassin
 slug: apache-spamassassin
-companyCount: 12
+companyCount: 0
 description: Extensible email filter used to identify and classify spam using a wide variety of tests.
 tags:
 - Email Filtering

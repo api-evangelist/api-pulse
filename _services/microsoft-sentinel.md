@@ -1,7 +1,7 @@
 ---
 title: Microsoft Sentinel
 slug: microsoft-sentinel
-companyCount: 86
+companyCount: 87
 description: Cloud-native security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution that provides intelligent security analytics and threat intelligence across the enterprise.
 tags:
 - SIEM

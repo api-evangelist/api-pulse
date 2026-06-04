@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Buyside Enterprise Solutions
 slug: bloomberg-buyside-enterprise-solutions
-companyCount: 1
+companyCount: 0
 description: Enterprise investment management platform providing portfolio management, order management, compliance, and analytics tools for institutional investors and asset managers.
 tags:
 - Investment Management

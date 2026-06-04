@@ -9,7 +9,6 @@ tags:
 - Templates
 - Governance
 yearCreated: 2010
-radarRing: Developing
 alternativeNames:
 - Compliance Templates
 - Regulatory Reporting Templates

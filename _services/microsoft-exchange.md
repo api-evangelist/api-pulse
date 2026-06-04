@@ -1,7 +1,7 @@
 ---
 title: Microsoft Exchange
 slug: microsoft-exchange
-companyCount: 62
+companyCount: 61
 description: Enterprise email and calendaring server platform that provides messaging, scheduling, and collaboration services for organizations
 tags:
 - Email

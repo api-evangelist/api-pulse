@@ -1,7 +1,7 @@
 ---
 title: Apache Phoenix
 slug: apache-phoenix
-companyCount: 271
+companyCount: 221
 description: OLTP and operational analytics SQL layer for Apache HBase delivering millisecond-latency queries.
 tags:
 - SQL

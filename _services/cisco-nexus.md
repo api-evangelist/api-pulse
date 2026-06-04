@@ -1,7 +1,7 @@
 ---
 title: Cisco Nexus
 slug: cisco-nexus
-companyCount: 130
+companyCount: 122
 description: Enterprise-grade data center network switches and fabric solutions from Cisco Systems
 tags:
 - Networking

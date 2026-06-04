@@ -9,7 +9,6 @@ tags:
 - Developer Workflow
 - Coding Standards
 - AI Copilot
-radarRing: Initial
 alternativeNames:
 - Roo Rules
 - roorules

@@ -1,7 +1,7 @@
 ---
 title: Apache Qpid
 slug: apache-qpid
-companyCount: 2
+companyCount: 1
 description: Cross-platform messaging system implementing the AMQP protocol for enterprise messaging.
 tags:
 - Messaging

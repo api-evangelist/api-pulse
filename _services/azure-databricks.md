@@ -1,7 +1,7 @@
 ---
 title: Azure Databricks
 slug: azure-databricks
-companyCount: 69
+companyCount: 72
 description: A unified analytics platform built on Apache Spark that provides collaborative notebooks, automated cluster management, and integrated workflows for data engineering, data science, and machine learning workloads on Microsoft Azure.
 tags:
 - Big Data

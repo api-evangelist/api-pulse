@@ -1,7 +1,7 @@
 ---
 title: Workday Reporting
 slug: workday-reporting
-companyCount: 54
+companyCount: 52
 description: Workday Reporting is a cloud-based business intelligence and analytics tool that enables users to create, customize, and share reports from Workday's unified data system for HR, finance, and planning insights.
 tags:
 - Business Intelligence

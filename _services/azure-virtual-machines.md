@@ -1,7 +1,7 @@
 ---
 title: Azure Virtual Machines
 slug: azure-virtual-machines
-companyCount: 14
+companyCount: 16
 description: Microsoft Azure's Infrastructure-as-a-Service (IaaS) offering that provides on-demand, scalable computing resources with support for Windows and Linux virtual machines.
 tags:
 - Cloud Computing

@@ -1,7 +1,7 @@
 ---
 title: Google Slides
 slug: google-slides
-companyCount: 29
+companyCount: 137
 description: A cloud-based presentation software that allows users to create, edit, and collaborate on presentations online in real-time.
 tags:
 - Presentation Software

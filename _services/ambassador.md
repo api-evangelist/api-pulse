@@ -1,7 +1,7 @@
 ---
 title: Ambassador
 slug: ambassador
-companyCount: 4
+companyCount: 306
 description: A Kubernetes-native API Gateway built on Envoy Proxy that provides traffic management, authentication, and observability for microservices architectures.
 tags:
 - API Gateway

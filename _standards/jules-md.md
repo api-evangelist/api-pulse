@@ -8,7 +8,6 @@ tags:
 - Google Jules
 - Developer Workflow
 - AI Copilot
-radarRing: Initial
 alternativeNames:
 - jules.md
 - Jules Config

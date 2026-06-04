@@ -1,7 +1,7 @@
 ---
 title: Databricks
 slug: databricks
-companyCount: 267
+companyCount: 254
 description: A unified analytics platform built on Apache Spark that combines data engineering, data science, and business analytics capabilities for processing and analyzing large-scale data.
 tags:
 - Big Data

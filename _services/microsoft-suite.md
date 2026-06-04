@@ -1,7 +1,7 @@
 ---
 title: Microsoft Technologies
 slug: microsoft-suite
-companyCount: 47
+companyCount: 41
 description: A comprehensive collection of productivity applications and cloud services including Word, Excel, PowerPoint, Outlook, Teams, and OneDrive for business and personal use.
 tags:
 - Productivity

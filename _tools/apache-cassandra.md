@@ -1,7 +1,7 @@
 ---
 title: Apache Cassandra
 slug: apache-cassandra
-companyCount: 85
+companyCount: 78
 description: Highly scalable, distributed NoSQL database designed for handling large amounts of data with no single point of failure.
 tags:
 - NoSQL

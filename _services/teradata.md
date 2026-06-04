@@ -1,7 +1,7 @@
 ---
 title: Teradata
 slug: teradata
-companyCount: 67
+companyCount: 55
 description: Teradata is an enterprise data warehouse and analytics platform designed for large-scale data management and business intelligence. It provides advanced analytics, multi-cloud deployment options, and tools for integrating and querying massive datasets.
 tags:
 - Data Warehouse

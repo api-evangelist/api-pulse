@@ -1,7 +1,7 @@
 ---
 title: Service Cloud
 slug: service-cloud
-companyCount: 40
+companyCount: 96
 description: Salesforce Service Cloud is a customer service and support platform that enables organizations to deliver personalized customer service across multiple channels including phone, email, chat, and social media.
 tags:
 - Customer Service

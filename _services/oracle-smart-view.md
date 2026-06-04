@@ -1,7 +1,7 @@
 ---
 title: Oracle Smart View
 slug: oracle-smart-view
-companyCount: 56
+companyCount: 44
 description: Oracle Smart View for Office provides a Microsoft Office interface for accessing Oracle EPM, BI, and database content. It enables users to view, import, manipulate, and share data from Oracle applications directly within Excel, Word, and PowerPoint.
 tags:
 - Business Intelligence

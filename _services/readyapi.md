@@ -1,7 +1,7 @@
 ---
 title: ReadyAPI
 slug: readyapi
-companyCount: 4
+companyCount: 3
 description: A SmartBear platform for comprehensive API testing including functional, security, load, and virtualization testing across REST, SOAP, and GraphQL APIs.
 tags:
 - Clients

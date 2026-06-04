@@ -1,7 +1,7 @@
 ---
 title: IBM API Connect
 slug: ibm-api-connect
-companyCount: 0
+companyCount: 1
 description: Full lifecycle API management platform from IBM that enables creation, security, management, and socialization of APIs across cloud and on-premises environments.
 tags:
 - Gateways

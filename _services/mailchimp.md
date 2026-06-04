@@ -1,7 +1,7 @@
 ---
 title: MailChimp
 slug: mailchimp
-companyCount: 21
+companyCount: 9
 description: '
 
   Mailchimp''s developer tools provide everything you need to integrate your data

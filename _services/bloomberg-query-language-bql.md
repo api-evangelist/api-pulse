@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Query Language (BQL)
 slug: bloomberg-query-language-bql
-companyCount: 5
+companyCount: 1
 description: A powerful query language for accessing and analyzing financial data from the Bloomberg Terminal, enabling users to retrieve market data, fundamentals, and analytics programmatically.
 tags:
 - Query Language

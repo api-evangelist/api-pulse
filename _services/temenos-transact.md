@@ -1,7 +1,7 @@
 ---
 title: Temenos Transact
 slug: temenos-transact
-companyCount: 11
+companyCount: 7
 description: Core banking software platform that enables banks to deliver retail, corporate, treasury, wealth, and payments services across multiple channels and geographies with real-time processing capabilities.
 tags:
 - Core Banking

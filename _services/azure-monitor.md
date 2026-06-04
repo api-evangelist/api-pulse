@@ -1,7 +1,7 @@
 ---
 title: Azure Monitor
 slug: azure-monitor
-companyCount: 80
+companyCount: 78
 description: A comprehensive monitoring solution for collecting, analyzing, and acting on telemetry data from cloud and on-premises environments to maximize application and service availability and performance.
 tags:
 - Monitoring

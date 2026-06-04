@@ -1,7 +1,7 @@
 ---
 title: Artifactory
 slug: artifactory
-companyCount: 75
+companyCount: 68
 description: Universal artifact repository manager for storing and managing binaries, build artifacts, and dependencies across the software development lifecycle
 tags:
 - Artifact Management

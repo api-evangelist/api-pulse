@@ -1,7 +1,7 @@
 ---
 title: Camtasia
 slug: camtasia
-companyCount: 41
+companyCount: 38
 description: Screen recording and video editing software for creating professional-looking instructional videos, tutorials, and presentations with built-in editing tools and effects.
 tags:
 - Screen Recording

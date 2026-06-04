@@ -10,7 +10,6 @@ tags:
 - Service-Oriented Architecture
 url: https://microservices.io/patterns/
 yearCreated: 2003
-radarRing: Developing
 alternativeNames:
 - Service Patterns
 - Service Design Patterns

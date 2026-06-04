@@ -1,7 +1,7 @@
 ---
 title: Refinitiv Eikon
 slug: refinitiv-eikon
-companyCount: 6
+companyCount: 7
 description: A comprehensive financial analysis platform providing real-time market data, news, analytics, and trading tools for financial professionals.
 tags:
 - Financial Data

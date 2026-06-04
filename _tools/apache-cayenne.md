@@ -1,7 +1,7 @@
 ---
 title: Apache Cayenne
 slug: apache-cayenne
-companyCount: 3
+companyCount: 2
 description: Open-source Java ORM framework providing object-relational mapping, remoting, and web services support.
 tags:
 - ORM

@@ -9,7 +9,6 @@ tags:
 - VS Code
 - Developer Workflow
 - Coding Standards
-radarRing: Initial
 alternativeNames:
 - Instructions File
 - Copilot Instructions File

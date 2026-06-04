@@ -1,7 +1,7 @@
 ---
 title: Cisco Secure Client
 slug: cisco-secure-client
-companyCount: 2
+companyCount: 1
 description: Enterprise VPN and network security client providing secure remote access, endpoint protection, and zero trust network access capabilities for organizations.
 tags:
 - VPN

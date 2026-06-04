@@ -1,7 +1,7 @@
 ---
 title: Membrane
 slug: membrane
-companyCount: 40
+companyCount: 35
 description: A programmable infrastructure platform that enables developers to build integrations and workflows using a graph-based runtime connecting APIs as nodes.
 tags:
 - Embedded iPaaS

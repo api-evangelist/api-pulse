@@ -1,7 +1,7 @@
 ---
 title: Lima
 slug: lima
-companyCount: 89
+companyCount: 57
 description: Linux virtual machines on macOS with automatic file sharing, port forwarding, and containerd integration for running containers
 tags:
 - Virtualization

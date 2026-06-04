@@ -1,7 +1,7 @@
 ---
 title: Azure Event Hubs
 slug: azure-event-hubs
-companyCount: 35
+companyCount: 30
 description: A fully managed, real-time data ingestion service that can stream millions of events per second from any source to build dynamic data pipelines and respond to business challenges.
 tags:
 - Event Streaming

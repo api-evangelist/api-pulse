@@ -1,7 +1,7 @@
 ---
 title: Trellix Web Gateway
 slug: trellix-web-gateway
-companyCount: 5
+companyCount: 0
 description: Enterprise web security gateway that provides advanced threat protection, URL filtering, and data loss prevention for web traffic.
 tags:
 - Web Security

@@ -1,7 +1,7 @@
 ---
 title: OpenShift
 slug: openshift
-companyCount: 129
+companyCount: 111
 description: Enterprise Kubernetes container platform by Red Hat that provides developer and operational tooling for building, deploying, and managing containerized applications at scale.
 tags:
 - Container Orchestration

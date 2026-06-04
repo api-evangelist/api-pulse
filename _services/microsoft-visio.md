@@ -1,7 +1,7 @@
 ---
 title: Microsoft Visio
 slug: microsoft-visio
-companyCount: 254
+companyCount: 233
 description: A diagramming and vector graphics application that helps users create flowcharts, organizational charts, network diagrams, floor plans, and other visual representations of information and processes.
 tags:
 - Diagramming

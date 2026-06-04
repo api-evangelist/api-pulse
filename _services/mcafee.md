@@ -1,7 +1,7 @@
 ---
 title: McAfee
 slug: mcafee
-companyCount: 19
+companyCount: 18
 description: Cybersecurity software providing antivirus, threat protection, and security solutions for individuals and enterprises.
 tags:
 - Security

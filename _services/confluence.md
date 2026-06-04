@@ -1,7 +1,7 @@
 ---
 title: Confluence
 slug: confluence
-companyCount: 262
+companyCount: 247
 description: Team collaboration and documentation software that helps teams create, organize, and share knowledge in a centralized workspace.
 tags:
 - Documentation

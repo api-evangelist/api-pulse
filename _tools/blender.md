@@ -1,7 +1,7 @@
 ---
 title: Blender
 slug: blender
-companyCount: 50
+companyCount: 48
 description: Free and open-source 3D creation suite supporting modeling, animation, rendering, compositing, motion tracking, and video editing
 tags:
 - 3D Modeling

@@ -1,7 +1,7 @@
 ---
 title: Apigee
 slug: apigee
-companyCount: 53
+companyCount: 51
 description: A full lifecycle API management platform for designing, securing, deploying, monitoring, and analyzing APIs at scale.
 tags:
 - API Management

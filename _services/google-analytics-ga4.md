@@ -1,7 +1,7 @@
 ---
 title: Google Analytics
 slug: google-analytics-ga4
-companyCount: 442
+companyCount: 381
 description: Google Analytics 4 is a web and app analytics platform that provides insights into user behavior, traffic sources, and conversion tracking across websites and mobile applications.
 tags:
 - Analytics

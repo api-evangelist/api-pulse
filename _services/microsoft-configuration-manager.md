@@ -1,7 +1,7 @@
 ---
 title: Microsoft Configuration Manager
 slug: microsoft-configuration-manager
-companyCount: 87
+companyCount: 76
 description: Microsoft Configuration Manager (formerly SCCM) is an enterprise systems management tool for managing large groups of Windows computers. It provides OS deployment, software distribution, patch management, compliance settings, and inventory reporting.
 tags:
 - Systems Management

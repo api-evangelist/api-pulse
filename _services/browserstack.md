@@ -1,7 +1,7 @@
 ---
 title: BrowserStack
 slug: browserstack
-companyCount: 18
+companyCount: 15
 description: Cloud-based cross-browser testing platform that allows developers to test their websites and mobile applications across different browsers, operating systems, and real devices without maintaining physical infrastructure.
 tags:
 - Testing

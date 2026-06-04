@@ -1,7 +1,7 @@
 ---
 title: Apache ZooKeeper
 slug: apache-zookeeper
-companyCount: 25
+companyCount: 16
 description: Centralized service for distributed coordination providing configuration management, naming, and group services.
 tags:
 - Distributed Coordination

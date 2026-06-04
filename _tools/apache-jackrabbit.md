@@ -1,7 +1,7 @@
 ---
 title: Apache Jackrabbit
 slug: apache-jackrabbit
-companyCount: 16
+companyCount: 10
 description: Implementation of the JCR content repository specification for structured and unstructured content storage.
 tags:
 - Content Repository

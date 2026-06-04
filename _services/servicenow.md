@@ -1,7 +1,7 @@
 ---
 title: ServiceNow
 slug: servicenow
-companyCount: 407
+companyCount: 337
 description: ServiceNow is a cloud-based platform for enterprise IT service management and digital workflow automation. It helps organizations streamline operations across IT, HR, customer service, and security with configurable workflows and integrations.
 tags:
 - Automation

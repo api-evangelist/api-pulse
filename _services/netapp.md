@@ -1,7 +1,7 @@
 ---
 title: NetApp
 slug: netapp
-companyCount: 56
+companyCount: 50
 description: Enterprise data management and storage solutions provider offering hybrid cloud infrastructure, data services, and intelligent data management across on-premises and cloud environments.
 tags:
 - Storage

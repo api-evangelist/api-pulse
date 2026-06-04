@@ -1,7 +1,7 @@
 ---
 title: Kinesis
 slug: kinesis
-companyCount: 86
+companyCount: 84
 description: Amazon Kinesis is a platform for streaming data on AWS, offering powerful services to load and analyze streaming data, and also providing the ability to build custom streaming data applications for specialized needs.
 tags:
 - Streaming

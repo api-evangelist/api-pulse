@@ -1,7 +1,7 @@
 ---
 title: Apache Camel
 slug: apache-camel
-companyCount: 28
+companyCount: 25
 description: Integration framework implementing enterprise integration patterns for connecting diverse systems and protocols.
 tags:
 - Integration

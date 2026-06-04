@@ -1,7 +1,7 @@
 ---
 title: Apache Kafka
 slug: apache-kafka
-companyCount: 253
+companyCount: 248
 description: Distributed event streaming platform for high-throughput, fault-tolerant, real-time data pipelines and streaming applications.
 tags:
 - Streaming

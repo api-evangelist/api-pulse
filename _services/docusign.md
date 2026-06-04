@@ -1,7 +1,7 @@
 ---
 title: DocuSign
 slug: docusign
-companyCount: 74
+companyCount: 69
 description: Cloud-based electronic signature and digital transaction management platform that enables users to send, sign, and manage documents securely online.
 tags:
 - E-Signature

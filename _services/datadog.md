@@ -1,7 +1,7 @@
 ---
 title: Datadog
 slug: datadog
-companyCount: 151
+companyCount: 145
 description: Datadog is a cloud-scale monitoring and analytics platform for infrastructure, applications, and logs. It provides real-time observability, alerting, and dashboards to help engineering teams detect and resolve performance issues.
 tags:
 - Monitoring

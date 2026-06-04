@@ -1,7 +1,7 @@
 ---
 title: GitHub Copilot
 slug: github-copilot
-companyCount: 305
+companyCount: 297
 description: AI-powered code completion tool that suggests whole lines or entire functions based on context from your code and comments
 tags:
 - AI

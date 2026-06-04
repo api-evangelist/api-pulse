@@ -1,7 +1,7 @@
 ---
 title: Cisco Control Hub
 slug: cisco-control-hub
-companyCount: 11
+companyCount: 10
 description: Cloud-based management platform for Cisco collaboration services, devices, and users
 tags:
 - Cloud Management

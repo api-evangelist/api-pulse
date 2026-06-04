@@ -1,7 +1,7 @@
 ---
 title: Amazon API Gateway
 slug: amazon-api-gateway
-companyCount: 18
+companyCount: 129
 description: A fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
 tags:
 - API Management

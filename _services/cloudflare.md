@@ -1,7 +1,7 @@
 ---
 title: Cloudflare
 slug: cloudflare
-companyCount: 40
+companyCount: 25
 description: A global network designed to make everything you connect to the Internet secure, private, fast, and reliable. Provides CDN, DNS, DDoS protection, and web security services.
 tags:
 - CDN

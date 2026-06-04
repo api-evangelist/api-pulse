@@ -1,7 +1,7 @@
 ---
 title: Oracle 11g
 slug: oracle-11g
-companyCount: 3
+companyCount: 2
 description: Oracle Database 11g is a relational database management system that introduced advanced features for data warehousing, partitioning, and automatic storage management.
 tags:
 - Database

@@ -1,7 +1,7 @@
 ---
 title: Test Specifications
 slug: test-specifications
-companyCount: 49
+companyCount: 46
 description: Documentation that defines the requirements, procedures, and expected outcomes for testing software systems. Effective use of this practice reduces bugs in production and supports a culture of quality-driven development.
 tags:
 - Testing
@@ -9,7 +9,6 @@ tags:
 - Quality Assurance
 url: https://en.wikipedia.org/wiki/Test_specification
 yearCreated: 1970
-radarRing: Established
 alternativeNames:
 - Test Spec
 - Test Specs

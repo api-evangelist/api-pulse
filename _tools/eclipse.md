@@ -1,7 +1,7 @@
 ---
 title: Eclipse
 slug: eclipse
-companyCount: 84
+companyCount: 73
 description: An integrated development environment (IDE) used in computer programming, containing a base workspace and an extensible plug-in system for customizing the environment.
 tags:
 - IDE

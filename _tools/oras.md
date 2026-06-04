@@ -1,7 +1,7 @@
 ---
 title: ORAS
 slug: oras
-companyCount: 7
+companyCount: 2
 description: OCI Registry As Storage - A way to push and pull OCI artifacts to and from OCI registries
 tags:
 - Container Registry

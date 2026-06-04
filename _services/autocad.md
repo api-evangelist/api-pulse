@@ -1,7 +1,7 @@
 ---
 title: AutoCAD
 slug: autocad
-companyCount: 230
+companyCount: 217
 description: Computer-aided design (CAD) software used for creating precise 2D and 3D drawings and models
 tags:
 - CAD

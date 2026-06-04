@@ -1,7 +1,7 @@
 ---
 title: Facebook
 slug: facebook
-companyCount: 234
+companyCount: 134
 description: A social networking platform that allows users to connect with friends and family, share content, and communicate online.
 tags:
 - Social Media

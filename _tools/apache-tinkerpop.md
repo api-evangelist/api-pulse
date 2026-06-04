@@ -1,7 +1,7 @@
 ---
 title: Apache TinkerPop
 slug: apache-tinkerpop
-companyCount: 15
+companyCount: 12
 description: Graph computing framework providing a standard API for graph databases and graph analytic systems.
 tags:
 - Graph Computing

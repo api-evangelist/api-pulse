@@ -1,7 +1,7 @@
 ---
 title: Twitch
 slug: twitch
-companyCount: 8
+companyCount: 7
 description: Live streaming platform primarily focused on video game streaming, esports competitions, and creative content broadcasting.
 tags:
 - Live Streaming

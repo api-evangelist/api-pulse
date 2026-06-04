@@ -1,7 +1,7 @@
 ---
 title: F5 Networks
 slug: f5-networks
-companyCount: 21
+companyCount: 11
 description: Application delivery networking technology company specializing in application security, load balancing, and traffic management solutions for on-premises and cloud environments.
 tags:
 - Load Balancing

@@ -1,7 +1,7 @@
 ---
 title: Appian
 slug: appian
-companyCount: 27
+companyCount: 26
 description: Low-code automation platform for building enterprise applications with process management, case management, and data orchestration capabilities.
 tags:
 - Low-Code

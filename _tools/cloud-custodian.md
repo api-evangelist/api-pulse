@@ -1,7 +1,7 @@
 ---
 title: Cloud Custodian
 slug: cloud-custodian
-companyCount: 131
+companyCount: 121
 description: Rules engine for cloud security, compliance, and cost optimization that enables users to define policies to manage cloud resources across AWS, Azure, and GCP. It helps organizations meet regulatory requirements and demonstrate accountability to stakeholders.
 tags:
 - Cloud Security

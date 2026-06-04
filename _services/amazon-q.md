@@ -1,7 +1,7 @@
 ---
 title: Amazon Q
 slug: amazon-q
-companyCount: 15
+companyCount: 14
 description: Amazon Q is an AI-powered assistant from AWS that helps with coding, troubleshooting, and cloud operations. It provides expert guidance on AWS services, generates code, debugs applications, and assists with cloud infrastructure management.
 tags:
 - AI Assistant

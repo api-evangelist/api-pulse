@@ -1,7 +1,7 @@
 ---
 title: Apache Petri
 slug: apache-petri
-companyCount: 3
+companyCount: 2
 description: Entry path for new projects and communities wishing to join the Apache Software Foundation.
 tags:
 - Incubation

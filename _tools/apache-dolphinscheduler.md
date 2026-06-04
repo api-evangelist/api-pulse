@@ -1,7 +1,7 @@
 ---
 title: Apache DolphinScheduler
 slug: apache-dolphinscheduler
-companyCount: 12
+companyCount: 0
 description: Distributed and extensible workflow scheduler platform with a visual DAG workflow interface.
 tags:
 - Workflow Scheduler

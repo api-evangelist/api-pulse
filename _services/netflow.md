@@ -1,7 +1,7 @@
 ---
 title: NetFlow
 slug: netflow
-companyCount: 25
+companyCount: 24
 description: NetFlow is a network protocol developed by Cisco for collecting and analyzing IP traffic flow data. It helps network administrators monitor bandwidth usage, detect anomalies, and troubleshoot performance issues across network infrastructure.
 tags:
 - Network Monitoring

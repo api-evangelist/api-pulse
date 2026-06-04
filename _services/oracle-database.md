@@ -1,7 +1,7 @@
 ---
 title: Oracle Database
 slug: oracle-database
-companyCount: 14
+companyCount: 82
 description: A multi-model database management system produced and marketed by Oracle Corporation, providing robust data management, high availability, and enterprise-grade security features.
 tags:
 - Database

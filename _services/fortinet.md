@@ -1,7 +1,7 @@
 ---
 title: Fortinet
 slug: fortinet
-companyCount: 66
+companyCount: 63
 description: Fortinet is a cybersecurity company that provides network security solutions including firewalls, intrusion prevention systems, endpoint protection, and secure SD-WAN technologies for enterprise and government organizations.
 tags:
 - Cybersecurity

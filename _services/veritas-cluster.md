@@ -1,7 +1,7 @@
 ---
 title: Veritas Cluster
 slug: veritas-cluster
-companyCount: 51
+companyCount: 33
 description: Enterprise high availability and disaster recovery clustering solution that provides application failover, data replication, and system monitoring across physical and virtual environments.
 tags:
 - High Availability

@@ -1,7 +1,7 @@
 ---
 title: Microsoft .NET
 slug: microsoft-dotnet
-companyCount: 35
+companyCount: 229
 description: A free, open-source, cross-platform framework for building modern applications and cloud services
 tags:
 - Framework

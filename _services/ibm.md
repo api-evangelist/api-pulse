@@ -1,7 +1,7 @@
 ---
 title: IBM
 slug: ibm
-companyCount: 210
+companyCount: 191
 description: IBM (International Business Machines Corporation) is a multinational technology company offering hardware, software, cloud computing, AI solutions, and enterprise services across various industries.
 tags:
 - Enterprise Software

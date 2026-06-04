@@ -1,7 +1,7 @@
 ---
 title: Workday Advanced Compensation
 slug: workday-advanced-compensation
-companyCount: 6
+companyCount: 5
 description: Workday Advanced Compensation is a cloud-based compensation management solution for designing and executing merit, bonus, and equity award programs. It provides modeling, budgeting, and approval workflows to help organizations manage employee compensation cycles.
 tags:
 - Compensation Management

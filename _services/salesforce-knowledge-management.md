@@ -1,7 +1,7 @@
 ---
 title: Salesforce Knowledge Management
 slug: salesforce-knowledge-management
-companyCount: 9
+companyCount: 11
 description: A knowledge base solution within Salesforce that enables organizations to create, manage, and share articles and information across service channels, helping support teams and customers find answers quickly.
 tags:
 - Knowledge Management

@@ -1,7 +1,7 @@
 ---
 title: Adobe Campaign
 slug: adobe-campaign
-companyCount: 27
+companyCount: 16
 description: Enterprise marketing automation platform for cross-channel campaign management, email marketing, and customer journey orchestration
 tags:
 - Marketing Automation

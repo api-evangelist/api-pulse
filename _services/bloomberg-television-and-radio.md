@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Television and Radio
 slug: bloomberg-television-and-radio
-companyCount: 5
+companyCount: 1
 description: Bloomberg Television and Radio provides live business news, market data, and financial analysis through television broadcasts and radio programming, delivering real-time coverage of global markets and economic events.
 tags:
 - Business News

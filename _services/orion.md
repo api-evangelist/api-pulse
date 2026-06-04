@@ -1,7 +1,7 @@
 ---
 title: Orion
 slug: orion
-companyCount: 33
+companyCount: 27
 description: A deep learning library developed by MIT for time series analysis and anomaly detection, featuring automated machine learning capabilities and pre-built primitives for common time series tasks.
 tags:
 - Machine Learning

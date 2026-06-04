@@ -1,7 +1,7 @@
 ---
 title: Workday Integration
 slug: workday-integration
-companyCount: 39
+companyCount: 38
 description: Enterprise cloud-based integration platform for connecting Workday with other business systems and applications
 tags:
 - Integration Platform

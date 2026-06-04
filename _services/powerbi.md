@@ -1,7 +1,7 @@
 ---
 title: Power BI
 slug: powerbi
-companyCount: 509
+companyCount: 495
 description: Business analytics service by Microsoft that provides interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.
 tags:
 - Business Intelligence

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Word
 slug: word
-companyCount: 10
+companyCount: 326
 description: Microsoft Word is a word processing application used for creating, editing, and formatting text documents with support for images, tables, and various formatting options.
 tags:
 - Word Processing

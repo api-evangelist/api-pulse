@@ -1,7 +1,7 @@
 ---
 title: Ansible Playbooks
 slug: ansible-playbooks
-companyCount: 27
+companyCount: 30
 description: Declarative automation framework for configuration management, application deployment, and orchestration using YAML-based playbooks
 tags:
 - Automation

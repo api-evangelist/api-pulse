@@ -8,7 +8,6 @@ tags:
 - Configuration
 - IDE
 - Formatting
-radarRing: Initial
 alternativeNames:
 - EditorConfig
 - Editor Config

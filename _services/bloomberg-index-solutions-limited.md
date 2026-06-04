@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Index Solutions Limited (BISL)
 slug: bloomberg-index-solutions-limited
-companyCount: 2
+companyCount: 0
 description: Bloomberg Index Solutions Limited (BISL) provides index creation, calculation, and administration services for financial markets.
 tags:
 - Financial Services

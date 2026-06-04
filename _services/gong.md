@@ -1,7 +1,7 @@
 ---
 title: Gong
 slug: gong
-companyCount: 30
+companyCount: 31
 description: Revenue intelligence platform that captures and analyzes customer interactions across phone, email, and web conferencing to provide insights for sales teams.
 tags:
 - Sales Enablement

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Endpoint Configuration Management
 slug: microsoft-endpoint-configuration-management
-companyCount: 2
+companyCount: 75
 description: Enterprise management solution for deploying applications, software updates, and operating systems across Windows, macOS, iOS, and Android devices with comprehensive compliance and inventory tracking capabilities.
 tags:
 - Endpoint Management

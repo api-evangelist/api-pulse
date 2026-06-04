@@ -1,7 +1,7 @@
 ---
 title: Google Sheets
 slug: google-sheets
-companyCount: 430
+companyCount: 381
 description: A cloud-based spreadsheet application that allows users to create, edit, and collaborate on spreadsheets in real-time from any device with internet access.
 tags:
 - Spreadsheet

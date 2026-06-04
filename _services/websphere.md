@@ -1,7 +1,7 @@
 ---
 title: WebSphere
 slug: websphere
-companyCount: 478
+companyCount: 65
 description: Enterprise application server platform from IBM for building and deploying Java-based web applications and services
 tags:
 - Application Server

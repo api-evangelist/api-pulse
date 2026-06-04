@@ -1,7 +1,7 @@
 ---
 title: Oracle APEX
 slug: oracle-apex
-companyCount: 167
+companyCount: 45
 description: A low-code development platform that enables you to build scalable, secure enterprise apps with world-class features that can be deployed anywhere.
 tags:
 - Low-Code

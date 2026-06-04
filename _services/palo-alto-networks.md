@@ -1,7 +1,7 @@
 ---
 title: Palo Alto Networks
 slug: palo-alto-networks
-companyCount: 140
+companyCount: 52
 description: Enterprise cybersecurity platform providing next-generation firewalls, cloud security, and threat intelligence solutions
 tags:
 - Cybersecurity

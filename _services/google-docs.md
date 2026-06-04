@@ -1,7 +1,7 @@
 ---
 title: Google Docs
 slug: google-docs
-companyCount: 163
+companyCount: 138
 description: Cloud-based word processing application that allows real-time collaboration and document creation accessible from any device with internet connection.
 tags:
 - Word Processing

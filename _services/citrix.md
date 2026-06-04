@@ -1,7 +1,7 @@
 ---
 title: Citrix
 slug: citrix
-companyCount: 86
+companyCount: 79
 description: Citrix provides virtualization, networking, and cloud computing technologies that enable secure access to applications and data across devices and platforms.
 tags:
 - Virtualization

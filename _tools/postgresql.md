@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL
 slug: postgresql
-companyCount: 262
+companyCount: 250
 description: A powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
 tags:
 - Database

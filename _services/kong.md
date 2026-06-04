@@ -1,7 +1,7 @@
 ---
 title: Kong
 slug: kong
-companyCount: 197
+companyCount: 158
 description: Kong provides the foundation that enables any company to securely adopt AI and become an API-first company  speeding up time to market, creating new business opportunities, and delivering superior products and services.
 tags:
 - Gateway

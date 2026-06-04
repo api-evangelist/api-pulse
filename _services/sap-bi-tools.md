@@ -1,7 +1,7 @@
 ---
 title: SAP BI Tools
 slug: sap-bi-tools
-companyCount: 2
+companyCount: 15
 description: SAP Business Intelligence tools provide analytics, reporting, and data visualization capabilities for enterprise decision-making and business performance management.
 tags:
 - Business Intelligence

@@ -1,7 +1,7 @@
 ---
 title: Ampersand
 slug: ampersand
-companyCount: 2
+companyCount: 1
 description: A platform for building native product integrations that handles authentication, API calls, and data syncing so developers can ship integrations faster.
 tags:
 - Embedded iPaaS

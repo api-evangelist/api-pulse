@@ -1,7 +1,7 @@
 ---
 title: Spring Boot Admin Console
 slug: spring-boot-admin-console
-companyCount: 29
+companyCount: 15
 description: A community project to manage and monitor Spring Boot applications via a simple UI, providing insights into metrics, health status, and application details.
 tags:
 - Java

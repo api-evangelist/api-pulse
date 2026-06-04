@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender
 slug: microsoft-defender
-companyCount: 107
+companyCount: 100
 description: Enterprise endpoint security platform providing threat protection, detection, and response capabilities across devices, identities, and applications
 tags:
 - Security

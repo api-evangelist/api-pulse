@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Professional
 slug: bloomberg-professional
-companyCount: 59
+companyCount: 1
 description: Financial data and analytics platform providing real-time market data, news, research, and trading tools for investment professionals
 tags:
 - Financial Data

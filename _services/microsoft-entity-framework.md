@@ -1,7 +1,7 @@
 ---
 title: Microsoft Entity Framework
 slug: microsoft-entity-framework
-companyCount: 65
+companyCount: 51
 description: Object-relational mapping (ORM) framework for .NET that enables developers to work with databases using .NET objects, eliminating the need for most data-access code.
 tags:
 - ORM

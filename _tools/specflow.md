@@ -1,7 +1,7 @@
 ---
 title: SpecFlow
 slug: specflow
-companyCount: 18
+companyCount: 14
 description: BDD framework for .NET that uses Gherkin syntax to define application behavior in plain text. It enables collaboration between developers, testers, and business stakeholders by turning specifications into automated tests.
 tags:
 - BDD

@@ -1,7 +1,7 @@
 ---
 title: Consul
 slug: consul
-companyCount: 21
+companyCount: 8
 description: Service mesh and service discovery platform that provides a full-featured control plane with service discovery, configuration, and segmentation functionality
 tags:
 - Service Mesh

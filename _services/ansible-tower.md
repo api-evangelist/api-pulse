@@ -1,7 +1,7 @@
 ---
 title: Ansible Tower
 slug: ansible-tower
-companyCount: 17
+companyCount: 10
 description: Enterprise framework for controlling, securing, and managing Ansible automation with a UI and RESTful API
 tags:
 - Automation

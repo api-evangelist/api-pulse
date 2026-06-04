@@ -1,7 +1,7 @@
 ---
 title: SimCorp Dimension
 slug: simcorp-dimension
-companyCount: 37
+companyCount: 26
 description: Enterprise investment management software platform providing portfolio management, accounting, and risk management capabilities for asset managers, wealth managers, and asset owners.
 tags:
 - Investment Management

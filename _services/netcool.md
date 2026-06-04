@@ -1,7 +1,7 @@
 ---
 title: Netcool
 slug: netcool
-companyCount: 8
+companyCount: 7
 description: IBM Netcool is an enterprise network and service management platform that provides real-time monitoring, event management, and service assurance capabilities for IT infrastructure and operations.
 tags:
 - Network Management

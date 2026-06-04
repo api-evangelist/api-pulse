@@ -1,7 +1,7 @@
 ---
 title: Adobe Captivate
 slug: adobe-captivate
-companyCount: 59
+companyCount: 57
 description: Adobe Captivate is an eLearning authoring tool for creating responsive courses, software simulations, and interactive content with screen recording and quiz capabilities.
 tags:
 - E-Learning

@@ -1,7 +1,7 @@
 ---
 title: Salesforce Sales Cloud
 slug: salesforce-sales-cloud
-companyCount: 21
+companyCount: 85
 description: Cloud-based customer relationship management (CRM) platform for sales teams to manage leads, opportunities, accounts, and customer interactions.
 tags:
 - CRM

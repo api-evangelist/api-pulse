@@ -1,7 +1,7 @@
 ---
 title: Apache Airflow
 slug: airflow
-companyCount: 197
+companyCount: 195
 description: A platform to programmatically author, schedule, and monitor workflows using directed acyclic graphs (DAGs)
 tags:
 - Workflow Orchestration

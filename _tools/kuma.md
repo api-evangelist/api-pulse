@@ -1,7 +1,7 @@
 ---
 title: Kuma
 slug: kuma
-companyCount: 1
+companyCount: 3
 description: Universal control plane for service mesh built on Envoy proxy that can run on both Kubernetes and VMs across multiple clouds and platforms
 tags:
 - Service Mesh

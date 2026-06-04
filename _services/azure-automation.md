@@ -1,7 +1,7 @@
 ---
 title: Azure Automation
 slug: azure-automation
-companyCount: 9
+companyCount: 14
 description: Cloud-based automation service for process automation, configuration management, and update management across Azure and on-premises environments
 tags:
 - Automation

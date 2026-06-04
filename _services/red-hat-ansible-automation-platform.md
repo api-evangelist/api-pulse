@@ -1,7 +1,7 @@
 ---
 title: Red Hat Ansible Automation Platform
 slug: red-hat-ansible-automation-platform
-companyCount: 256
+companyCount: 245
 description: Enterprise automation platform for orchestrating IT infrastructure, application deployment, and configuration management across hybrid cloud environments.
 tags:
 - Automation

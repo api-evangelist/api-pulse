@@ -1,7 +1,7 @@
 ---
 title: Apache Juneau
 slug: apache-juneau
-companyCount: 12
+companyCount: 9
 description: Toolkit for marshalling POJOs to various content types and building REST microservices in Java.
 tags:
 - REST

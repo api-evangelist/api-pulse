@@ -1,7 +1,7 @@
 ---
 title: Microsoft Entra
 slug: microsoft-entra
-companyCount: 139
+companyCount: 181
 description: Microsoft's cloud-based identity and access management service, formerly known as Azure Active Directory, providing secure authentication and authorization for applications and resources.
 tags:
 - Identity Management

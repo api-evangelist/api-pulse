@@ -1,7 +1,7 @@
 ---
 title: Figma
 slug: figma
-companyCount: 194
+companyCount: 199
 description: 'Figma''s mission is to make design accessible to everyone. Our two products
 
   help people from different backgrounds and roles express their ideas visually

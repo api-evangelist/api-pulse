@@ -9,7 +9,6 @@ tags:
 - Developer Workflow
 - Coding Standards
 - Repository
-radarRing: Initial
 alternativeNames:
 - Copilot Instructions
 - .github/copilot-instructions.md

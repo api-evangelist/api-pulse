@@ -1,7 +1,7 @@
 ---
 title: Apache RocketMQ
 slug: apache-rocketmq
-companyCount: 1
+companyCount: 2
 description: Distributed messaging and streaming platform with low latency, high reliability, and trillion-level capacity.
 tags:
 - Messaging

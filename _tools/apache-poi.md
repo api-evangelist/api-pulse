@@ -1,7 +1,7 @@
 ---
 title: Apache POI
 slug: apache-poi
-companyCount: 34
+companyCount: 19
 description: Java APIs for manipulating Microsoft Office file formats including Word, Excel, and PowerPoint.
 tags:
 - Java

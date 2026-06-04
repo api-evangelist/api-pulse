@@ -1,7 +1,7 @@
 ---
 title: Linkerd
 slug: linkerd
-companyCount: 35
+companyCount: 25
 description: An ultralight open-source service mesh for Kubernetes that provides runtime observability, reliability, and security for microservices communication.
 tags:
 - Service Mesh

@@ -1,7 +1,7 @@
 ---
 title: Apache Thrift
 slug: apache-thrift
-companyCount: 5
+companyCount: 4
 description: Cross-language framework for building scalable services with code generation for efficient RPC communication.
 tags:
 - RPC

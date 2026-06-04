@@ -1,7 +1,7 @@
 ---
 title: Amadeus
 slug: amadeus
-companyCount: 10
+companyCount: 8
 description: Amadeus is a travel technology platform that provides APIs and solutions for searching, booking, and managing flights, hotels, and other travel services.
 tags:
 - Travel

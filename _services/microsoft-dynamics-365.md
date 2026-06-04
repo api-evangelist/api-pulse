@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365
 slug: microsoft-dynamics-365
-companyCount: 88
+companyCount: 85
 description: A suite of enterprise resource planning (ERP) and customer relationship management (CRM) applications that helps businesses manage operations, financials, sales, and customer service.
 tags:
 - ERP

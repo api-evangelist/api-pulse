@@ -1,7 +1,7 @@
 ---
 title: TiKV
 slug: tikv
-companyCount: 2
+companyCount: 0
 description: A distributed transactional key-value database originally created to complement TiDB. It provides horizontal scalability, strong consistency, and high availability with support for ACID transactions.
 tags:
 - Database

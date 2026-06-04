@@ -1,7 +1,7 @@
 ---
 title: TIBCO
 slug: tibco
-companyCount: 28
+companyCount: 22
 description: Enterprise software company providing integration, analytics, and event processing solutions for connecting applications, data, and devices across cloud and on-premises environments.
 tags:
 - Integration

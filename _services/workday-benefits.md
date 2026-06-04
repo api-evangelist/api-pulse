@@ -1,7 +1,7 @@
 ---
 title: Workday Benefits
 slug: workday-benefits
-companyCount: 9
+companyCount: 13
 description: Workday Benefits is a comprehensive benefits administration platform that helps organizations manage employee benefits programs, including health insurance, retirement plans, and other workplace benefits through an integrated cloud-based system.
 tags:
 - Benefits Administration

@@ -1,7 +1,7 @@
 ---
 title: Apache APR
 slug: apache-apr
-companyCount: 8
+companyCount: 30
 description: Portable runtime library providing a predictable and consistent interface to platform-specific implementations.
 tags:
 - Portable Runtime

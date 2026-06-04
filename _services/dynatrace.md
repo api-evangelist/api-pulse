@@ -1,7 +1,7 @@
 ---
 title: Dynatrace
 slug: dynatrace
-companyCount: 105
+companyCount: 88
 description: Dynatrace is an AI-powered observability platform that provides automatic and intelligent monitoring for applications, infrastructure, and cloud environments with full-stack visibility and advanced analytics.
 tags:
 - Monitoring

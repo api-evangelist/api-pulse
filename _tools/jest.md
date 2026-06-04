@@ -1,7 +1,7 @@
 ---
 title: Jest
 slug: jest
-companyCount: 125
+companyCount: 119
 description: A delightful JavaScript testing framework with a focus on simplicity, featuring zero configuration, snapshot testing, and built-in code coverage.
 tags:
 - Testing

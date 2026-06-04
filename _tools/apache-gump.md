@@ -1,7 +1,7 @@
 ---
 title: Apache Gump
 slug: apache-gump
-companyCount: 3
+companyCount: 1
 description: Continuous integration tool for building and testing open-source Java projects against each other.
 tags:
 - Continuous Integration

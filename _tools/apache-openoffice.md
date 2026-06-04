@@ -1,7 +1,7 @@
 ---
 title: Apache OpenOffice
 slug: apache-openoffice
-companyCount: 10
+companyCount: 8
 description: Open-source office productivity suite for word processing, spreadsheets, presentations, and more.
 tags:
 - Office Suite

@@ -1,7 +1,7 @@
 ---
 title: Bloomberg Intelligence
 slug: bloomberg-intelligence
-companyCount: 12
+companyCount: 521
 description: Research platform providing in-depth analysis and data on industries, companies, and markets from Bloomberg's team of research analysts
 tags:
 - Financial Research

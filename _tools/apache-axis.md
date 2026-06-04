@@ -1,7 +1,7 @@
 ---
 title: Apache Axis
 slug: apache-axis
-companyCount: 5
+companyCount: 57
 description: SOAP-based web services framework for creating and deploying interoperable web service applications.
 tags:
 - Web Services

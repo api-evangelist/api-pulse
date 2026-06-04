@@ -1,7 +1,7 @@
 ---
 title: Apache CouchDB
 slug: apache-couchdb
-companyCount: 18
+companyCount: 15
 description: NoSQL document database using JSON for documents, HTTP for API, and JavaScript for MapReduce queries.
 tags:
 - NoSQL

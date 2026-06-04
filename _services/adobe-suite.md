@@ -1,7 +1,7 @@
 ---
 title: Adobe Suite
 slug: adobe-suite
-companyCount: 192
+companyCount: 185
 description: A collection of professional creative applications including Photoshop, Illustrator, InDesign, Premiere Pro, and other tools for graphic design, video editing, and digital content creation.
 tags:
 - Design Tools

@@ -11,7 +11,6 @@ tags:
 - Cybersecurity
 url: https://www.nist.gov/publications/zero-trust-architecture
 yearCreated: 2020
-radarRing: Established
 alternativeNames:
 - ZTA
 - Zero Trust

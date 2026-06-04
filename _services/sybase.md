@@ -1,7 +1,7 @@
 ---
 title: Sybase
 slug: sybase
-companyCount: 24
+companyCount: 22
 description: A relational database management system originally developed by Sybase Inc., now owned by SAP. Known for its high-performance transaction processing and enterprise data management capabilities.
 tags:
 - Database

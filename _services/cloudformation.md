@@ -1,7 +1,7 @@
 ---
 title: CloudFormation
 slug: cloudformation
-companyCount: 176
+companyCount: 159
 description: AWS CloudFormation is an infrastructure as code service that allows you to model and provision AWS resources using templates in JSON or YAML format.
 tags:
 - Infrastructure As Code

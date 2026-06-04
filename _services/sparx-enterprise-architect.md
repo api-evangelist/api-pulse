@@ -1,7 +1,7 @@
 ---
 title: Sparx Enterprise Architect
 slug: sparx-enterprise-architect
-companyCount: 112
+companyCount: 98
 description: A visual modeling and design tool based on UML for business and software engineering, supporting requirements management, project management, and code generation across the full application development lifecycle.
 tags:
 - UML

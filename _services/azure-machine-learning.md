@@ -1,7 +1,7 @@
 ---
 title: Azure Machine Learning
 slug: azure-machine-learning
-companyCount: 172
+companyCount: 148
 description: A cloud-based platform for building, training, and deploying machine learning models at scale with automated ML capabilities and comprehensive MLOps tools.
 tags:
 - Machine Learning

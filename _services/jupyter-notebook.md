@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook
 slug: jupyter-notebook
-companyCount: 49
+companyCount: 47
 description: An open-source web application that allows you to create and share documents containing live code, equations, visualizations, and narrative text.
 tags:
 - Data Science

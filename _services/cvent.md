@@ -1,7 +1,7 @@
 ---
 title: Cvent
 slug: cvent
-companyCount: 41
+companyCount: 40
 description: Cvent is a cloud-based event management and venue sourcing platform for planning meetings, conferences, and events. It provides tools for event registration, marketing, attendee engagement, and analytics to help organizations execute successful events.
 tags:
 - Conferences

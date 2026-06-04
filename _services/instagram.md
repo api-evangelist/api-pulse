@@ -1,7 +1,7 @@
 ---
 title: Instagram
 slug: instagram
-companyCount: 222
+companyCount: 146
 description: Instagram is a photo and video sharing social networking platform owned by Meta Platforms. It offers features including Stories, Reels, direct messaging, and shopping to connect over a billion users worldwide.
 tags:
 - Social Media

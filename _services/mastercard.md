@@ -1,7 +1,7 @@
 ---
 title: Mastercard
 slug: mastercard
-companyCount: 48
+companyCount: 21
 description: Global payment technology company providing credit, debit, and prepaid card services connecting consumers, financial institutions, merchants, and businesses worldwide.
 tags:
 - Payments

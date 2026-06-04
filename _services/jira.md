@@ -1,7 +1,7 @@
 ---
 title: Jira
 slug: jira
-companyCount: 362
+companyCount: 355
 description: Project management and issue tracking software developed by Atlassian for agile teams to plan, track, and release software.
 tags:
 - Project Management

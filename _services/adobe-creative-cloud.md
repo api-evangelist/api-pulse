@@ -1,7 +1,7 @@
 ---
 title: Adobe Creative Cloud
 slug: adobe-creative-cloud
-companyCount: 90
+companyCount: 76
 description: A comprehensive suite of creative applications and services for graphic design, video editing, web development, photography, and more, including Photoshop, Illustrator, Premiere Pro, and other industry-standard tools.
 tags:
 - Design

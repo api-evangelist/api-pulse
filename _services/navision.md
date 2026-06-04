@@ -1,7 +1,7 @@
 ---
 title: Navision
 slug: navision
-companyCount: 74
+companyCount: 48
 description: Enterprise resource planning (ERP) software solution developed by Microsoft (formerly Microsoft Dynamics NAV), designed for small to medium-sized businesses to manage financials, supply chain, manufacturing, and customer relationships.
 tags:
 - ERP

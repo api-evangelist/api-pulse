@@ -1,7 +1,7 @@
 ---
 title: Microsoft Windows 10
 slug: microsoft-windows-10
-companyCount: 71
+companyCount: 39
 description: A personal computer operating system developed and released by Microsoft as part of the Windows NT family of operating systems.
 tags:
 - Operating System

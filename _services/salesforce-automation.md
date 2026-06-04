@@ -1,7 +1,7 @@
 ---
 title: Salesforce Automation
 slug: salesforce-automation
-companyCount: 52
+companyCount: 40
 description: Cloud-based customer relationship management (CRM) platform that helps businesses manage sales, service, marketing, and commerce operations with automation tools and AI-powered insights.
 tags:
 - CRM

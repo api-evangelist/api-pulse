@@ -1,7 +1,7 @@
 ---
 title: Fargate
 slug: fargate
-companyCount: 38
+companyCount: 34
 description: AWS Fargate is a serverless compute engine for containers that works with Amazon ECS and EKS, allowing you to run containers without managing servers or clusters.
 tags:
 - Containers

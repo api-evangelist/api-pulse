@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune
 slug: microsoft-intune
-companyCount: 108
+companyCount: 106
 description: Cloud-based endpoint management solution for managing and securing mobile devices, desktops, and applications across an organization
 tags:
 - Mobile Device Management

@@ -1,7 +1,7 @@
 ---
 title: Oracle Siebel
 slug: oracle-siebel
-companyCount: 21
+companyCount: 20
 description: Enterprise customer relationship management (CRM) software solution for sales, marketing, and service automation
 tags:
 - CRM

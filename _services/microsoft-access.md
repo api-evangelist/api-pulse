@@ -1,7 +1,7 @@
 ---
 title: Microsoft Access
 slug: microsoft-access
-companyCount: 0
+companyCount: 99
 description: A database management system from Microsoft that combines a relational database engine with a graphical user interface and software development tools.
 tags:
 - Database

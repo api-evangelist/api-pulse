@@ -1,7 +1,7 @@
 ---
 title: Red Hat Enterprise Linux
 slug: rhel
-companyCount: 93
+companyCount: 83
 description: Red Hat Enterprise Linux (RHEL) is a commercial open-source Linux distribution developed by Red Hat for the business market, offering long-term support, stability, and enterprise-grade features.
 tags:
 - Linux

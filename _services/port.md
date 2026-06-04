@@ -1,7 +1,7 @@
 ---
 title: Port
 slug: port
-companyCount: 264
+companyCount: 238
 description: An internal developer portal platform that creates a unified catalog of services, resources, and APIs, enabling self-service actions and standards enforcement.
 tags:
 - Experience

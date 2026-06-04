@@ -1,7 +1,7 @@
 ---
 title: Murex
 slug: murex
-companyCount: 16
+companyCount: 13
 description: Enterprise trading, treasury, risk management, and post-trade operations software platform for capital markets
 tags:
 - Financial Services
