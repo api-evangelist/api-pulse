@@ -1,24 +1,36 @@
 ---
 layout: default
 title: Services
+nav: Services
 permalink: /services/
 ---
-<h1>Services</h1>
-<p class="lead">All {{ site.services | size }} services ranked by the number of companies that have adopted them.</p>
+<div class="content-area" style="max-width:none;">
+  <h1 class="mb-2">Services</h1>
+  <p class="lead">All {{ site.services | size }} services ranked by the number of companies that have adopted them.</p>
 
-{% assign ranked = site.services | sort: "companyCount" | reverse %}
-<table class="listing">
-  <thead>
-    <tr><th class="rank">#</th><th>Service</th><th>Companies</th><th>Tags</th></tr>
-  </thead>
-  <tbody>
-  {% for item in ranked %}
-    <tr>
-      <td class="rank">{{ forloop.index }}</td>
-      <td><a href="{{ item.url | relative_url }}">{{ item.title }}</a></td>
-      <td class="count">{{ item.companyCount | default: 0 }}</td>
-      <td>{% if item.tags %}{% for tag in item.tags limit:4 %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif %}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+  {% assign ranked = site.services | sort: "companyCount" | reverse %}
+  <div class="table-responsive">
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th class="text-muted" style="width:3rem;">#</th>
+          <th>Service</th>
+          <th class="text-end" style="width:8rem;">Companies</th>
+          <th class="d-none d-md-table-cell">Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for item in ranked %}
+        <tr>
+          <td class="text-muted">{{ forloop.index }}</td>
+          <td><a href="{{ item.url | relative_url }}" class="fw-semibold text-decoration-none">{{ item.title }}</a></td>
+          <td class="text-end"><span class="badge rounded-pill bg-success-subtle text-success-emphasis">{{ item.companyCount | default: 0 }}</span></td>
+          <td class="d-none d-md-table-cell">
+            {% if item.tags %}{% for tag in item.tags limit:4 %}<span class="badge bg-light text-dark border me-1 fw-normal">{{ tag }}</span>{% endfor %}{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

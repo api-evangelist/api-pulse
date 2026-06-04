@@ -37,6 +37,15 @@ def unique_slug(base, used):
     return slug
 
 
+def reset_dir(out_dir):
+    """Create out_dir if needed and remove any existing generated docs so the
+    output exactly mirrors the (live) source data — no stale slugs left behind."""
+    os.makedirs(out_dir, exist_ok=True)
+    for f in os.listdir(out_dir):
+        if f.endswith(".md"):
+            os.remove(os.path.join(out_dir, f))
+
+
 def write_doc(path, front_matter):
     """Write a Jekyll doc with a YAML front-matter block and an empty body."""
     with open(path, "w") as f:
@@ -58,7 +67,7 @@ def clean(d, keys):
 
 def generate_adoption(src_file, out_dir):
     items = yaml.safe_load(open(src_file)) or []
-    os.makedirs(out_dir, exist_ok=True)
+    reset_dir(out_dir)
     used = set()
     count = 0
     for item in items:
@@ -81,7 +90,7 @@ def generate_adoption(src_file, out_dir):
 def generate_companies(src_file, out_dir):
     data = yaml.safe_load(open(src_file)) or {}
     companies = data.get("common", [])
-    os.makedirs(out_dir, exist_ok=True)
+    reset_dir(out_dir)
     used = set()
     count = 0
     for c in companies:

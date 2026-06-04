@@ -1,0 +1,109 @@
+- name: API Pulse
+  nav:
+
+    - name: Companies
+      symbol: apartment
+      href: /companies/
+
+    - name: Services
+      symbol: cloud
+      href: /services/
+
+    - name: Tools
+      symbol: build
+      href: /tools/
+
+    - name: Standards
+      symbol: verified
+      href: /standards/
+
+
+- name: API Learnings
+  nav:
+
+    - name: Stories
+      symbol: auto_stories
+      sub:
+
+        - name: Stories
+          href: https://apievangelist.com/2026/
+
+        - name: Areas
+          href: https://apievangelist.com/areas/
+
+    - name: Conversations
+      symbol: forum
+      href: https://conversations.apievangelist.com
+
+    - name: Videos
+      symbol: video_library
+      href: https://video.apievangelist.com
+
+    - name: Timeline
+      symbol: timeline
+      sub:
+
+        - name: API
+          href: https://apievangelist.com/timeline/api/
+
+        - name: Resources
+          href: https://apievangelist.com/timeline/resources/
+
+        - name: Industry
+          href: https://apievangelist.com/timeline/industry/
+
+        - name: People
+          href: https://apievangelist.com/timeline/people/
+
+
+- name: Toolbox
+  nav:
+
+    - name: Companies
+      symbol: description
+      href: https://companies.apievangelist.com
+
+    - name: APIs
+      symbol: api
+      href: https://apis.apievangelist.com
+
+
+- name: API Evangelist LLC
+  nav:
+
+    - name: About
+      symbol: info
+      href: https://apievangelist.com/about
+      sub:
+
+        - name: API Evangelist
+          href: https://apievangelist.com/about/api-evangelist
+
+        - name: Kin Lane
+          href: https://apievangelist.com/about/kin-lane
+
+    - name: Contact
+      symbol: contact_support
+      href: https://apievangelist.com/contact
+      sub:
+
+        - name: Contact Form
+          href: https://apievangelist.com/contact
+
+        - name: LinkedIn
+          href: https://www.linkedin.com/company/api-evangelist/
+
+        - name: Bluesky
+          href: https://bsky.app/profile/apievangelist.com
+
+        - name: Mastodon
+          href: https://mastodon.apievangelist.com/web/@api
+
+        - name: Newsletter
+          href: https://buttondown.com/apievangelist
+
+        - name: GitHub
+          href: https://github.com/api-evangelist
+
+        - name: RSS Feed
+          href: https://apievangelist.com/feed.xml
