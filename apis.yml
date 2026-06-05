@@ -1,9 +1,10 @@
 aid: api-pulse
 name: API Pulse
-description: API Pulse is a comprehensive survey and benchmarking platform created by API Evangelist that helps organizations
-  understand their API maturity and standing within their business sector. It collects detailed data about how companies develop,
-  deploy, and manage APIs across technology stack, authentication, standards adoption, CI/CD integration, and organizational
-  structure.
+description: >-
+  API Pulse is a comprehensive survey and benchmarking platform created by API Evangelist that helps organizations
+  understand their API maturity and standing within their business sector. It collects detailed data about how companies
+  develop, deploy, and manage APIs across technology stack, authentication, standards adoption, CI/CD integration, and
+  organizational structure.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -19,9 +20,10 @@ specificationVersion: '0.19'
 apis:
 - aid: api-pulse:api-pulse-publish
   name: API Pulse Publish API
-  description: The API Pulse Publish API accepts survey signal submissions from organizations documenting their API practices.
-    Signals include people and organization profiling, API inventory counts, technology stack mapping, authentication methods,
-    standards adoption, CI/CD integration status, and experience prioritization dimensions.
+  description: >-
+    The API Pulse Publish API accepts survey signal submissions from organizations documenting their API practices.
+    Signals include people and organization profiling, API inventory counts, technology stack mapping, authentication
+    methods, standards adoption, CI/CD integration status, and experience prioritization dimensions.
   humanURL: http://theapipulse.com/
   tags:
   - API Benchmarking
@@ -36,8 +38,8 @@ apis:
     url: http://theapipulse.com/
   - type: GitHubRepository
     url: https://github.com/api-evangelist/api-pulse
-  - type: NaftikoCapability
-    url: capabilities/publish-signals.yaml
+  - url: graphql/api-pulse-graphql.md
+    type: GraphQL
 common:
 - type: Website
   url: http://theapipulse.com/
@@ -46,7 +48,8 @@ common:
 - type: Features
   data:
   - name: People and Organization Profiling
-    description: Gathers details about team roles, organizational structure, and geographic location to contextualize API
+    description: >-
+      Gathers details about team roles, organizational structure, and geographic location to contextualize API
       maturity.
   - name: API Inventory Assessment
     description: Documents counts of internal, partner, and public APIs to establish portfolio breadth.
