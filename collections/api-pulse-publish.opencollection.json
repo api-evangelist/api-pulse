@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "API Pulse Publishing",
+    "version": "0.1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Signals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API Pulse Submit Signal",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://api.theapipulse.com/signals",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Submits an entire signal."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

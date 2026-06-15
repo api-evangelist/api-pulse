@@ -1,0 +1,276 @@
+{
+  "item": [
+    {
+      "id": "e63349a3-8aa0-4c9c-9121-dc9d733abf22",
+      "name": "Signals",
+      "description": {
+        "content": "The overall signal.                                                                     \n",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f8439291-ae52-4ac1-ba89-c041018429de",
+          "name": "API Pulse Submit Signal",
+          "request": {
+            "name": "API Pulse Submit Signal",
+            "description": {
+              "content": "Submits an entire signal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "signals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"access\": {\n    \"internal\": \"<integer>\",\n    \"partner\": \"<integer>\",\n    \"public\": \"<integer>\",\n    \"other\": \"<string>\"\n  },\n  \"authentication\": {\n    \"basicAuth\": \"<boolean>\",\n    \"keys\": \"<boolean>\",\n    \"jwt\": \"<boolean>\",\n    \"oauth\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"contracts\": {\n    \"discovery\": \"<boolean>\",\n    \"portal\": \"<boolean>\",\n    \"repository\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"distribution\": {\n    \"publicPortal\": \"<integer>\",\n    \"internalPortal\": \"<integer>\",\n    \"gateway\": \"<integer>\",\n    \"other\": \"<string>\"\n  },\n  \"eventDrivenApis\": {\n    \"webhooksPublish\": \"<integer>\",\n    \"webhooksSubscribe\": \"<integer>\",\n    \"webSocketsProduce\": \"<integer>\",\n    \"webSocketsPublish\": \"<integer>\",\n    \"webSocketsSubscribe\": \"<integer>\",\n    \"kafkaProduce\": \"<integer>\",\n    \"kafkaPublish\": \"<integer>\",\n    \"kafkaSubscribe\": \"<integer>\",\n    \"asyncApi\": \"<boolean>\",\n    \"designFirst\": \"<boolean>\",\n    \"asyncApiDocumentation\": \"<boolean>\",\n    \"asyncApiMockServers\": \"<boolean>\",\n    \"asyncApiSdks\": \"<boolean>\",\n    \"asyncApiTesting\": \"<boolean>\",\n    \"asyncApiSecurity\": \"<boolean>\",\n    \"asyncApiPortal\": \"<boolean>\",\n    \"asyncApiRespository\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"experience\": {\n    \"discovery\": \"<integer>\",\n    \"onboarding\": \"<integer>\",\n    \"quality\": \"<integer>\",\n    \"reliability\": \"<integer>\",\n    \"consistency\": \"<integer>\",\n    \"communication\": \"<integer>\",\n    \"automation\": \"<integer>\",\n    \"integration\": \"<integer>\",\n    \"other\": \"<string>\"\n  },\n  \"governance\": {\n    \"spectral\": \"<boolean>\",\n    \"vacuum\": \"<boolean>\",\n    \"design\": \"<boolean>\",\n    \"development\": \"<boolean>\",\n    \"pipelines\": \"<boolean>\",\n    \"gateway\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"graphQlApis\": {\n    \"producedCount\": \"<integer>\",\n    \"producedPercentage\": \"<integer>\",\n    \"consumeCount\": \"<integer>\",\n    \"consumePercentage\": \"<integer>\",\n    \"internally\": \"<boolean>\",\n    \"externally\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"httpApis\": {\n    \"producedCount\": \"<integer>\",\n    \"producedPercentage\": \"<integer>\",\n    \"consumeCount\": \"<integer>\",\n    \"consumePercentage\": \"<integer>\",\n    \"openApi\": \"<boolean>\",\n    \"designFirst\": \"<boolean>\",\n    \"openApiDocumentation\": \"<boolean>\",\n    \"openApiMockServers\": \"<boolean>\",\n    \"openApiSdks\": \"<boolean>\",\n    \"openApiTesting\": \"<boolean>\",\n    \"openApiSecurity\": \"<boolean>\",\n    \"openApiPortal\": \"<boolean>\",\n    \"openApiRespository\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"organization\": {\n    \"employees\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"countries\": [\n      \"<string>\"\n    ],\n    \"other\": \"<string>\"\n  },\n  \"people\": {\n    \"name\": \"<string>\",\n    \"email\": \"<string>\",\n    \"role\": \"<string>\",\n    \"countries\": [\n      \"<string>\"\n    ],\n    \"linkedIn\": \"<string>\",\n    \"other\": \"<string>\"\n  },\n  \"plans\": {\n    \"applications\": \"<boolean>\",\n    \"rateLimits\": \"<boolean>\",\n    \"chargeAccess\": \"<boolean>\",\n    \"usage\": \"<boolean>\",\n    \"report\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"properties\": {\n    \"documentation\": \"<integer>\",\n    \"mockServers\": \"<integer>\",\n    \"sdks\": \"<integer>\",\n    \"testing\": \"<integer>\",\n    \"security\": \"<integer>\",\n    \"versioning\": \"<integer>\",\n    \"other\": \"<string>\"\n  },\n  \"schema\": {\n    \"data\": \"<boolean>\",\n    \"apis\": \"<boolean>\",\n    \"validation\": \"<boolean>\",\n    \"forms\": \"<boolean>\",\n    \"registry\": \"<boolean>\",\n    \"repository\": \"<boolean>\",\n    \"other\": \"<string>\"\n  },\n  \"sector\": {\n    \"industries\": [\n      \"<string>\"\n    ]\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "1863c57a-af02-4e63-b2f4-6a0f5f90e647",
+              "name": "People Pulse Submitted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "signals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access\": {\n    \"internal\": 2500,\n    \"partner\": 50,\n    \"public\": 50,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"authentication\": {\n    \"basicAuth\": true,\n    \"keys\": true,\n    \"jwt\": true,\n    \"oauth\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"contracts\": {\n    \"discovery\": true,\n    \"portal\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"distribution\": {\n    \"publicPortal\": 1,\n    \"internalPortal\": 1,\n    \"gateway\": 2,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"eventDrivenApis\": {\n    \"webhooksPublish\": 500,\n    \"webhooksSubscribe\": 25,\n    \"webSocketsProduce\": 500,\n    \"webSocketsPublish\": 500,\n    \"webSocketsSubscribe\": 25,\n    \"kafkaProduce\": 500,\n    \"kafkaPublish\": 500,\n    \"kafkaSubscribe\": 25,\n    \"asyncApi\": true,\n    \"designFirst\": true,\n    \"asyncApiDocumentation\": true,\n    \"asyncApiMockServers\": true,\n    \"asyncApiSdks\": true,\n    \"asyncApiTesting\": true,\n    \"asyncApiSecurity\": true,\n    \"asyncApiPortal\": true,\n    \"asyncApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"experience\": {\n    \"discovery\": 10,\n    \"onboarding\": 10,\n    \"quality\": 10,\n    \"reliability\": 10,\n    \"consistency\": 10,\n    \"communication\": 10,\n    \"automation\": 10,\n    \"integration\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"governance\": {\n    \"spectral\": true,\n    \"vacuum\": true,\n    \"design\": true,\n    \"development\": true,\n    \"pipelines\": true,\n    \"gateway\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"graphQlApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"internally\": true,\n    \"externally\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"httpApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"openApi\": true,\n    \"designFirst\": true,\n    \"openApiDocumentation\": true,\n    \"openApiMockServers\": true,\n    \"openApiSdks\": true,\n    \"openApiTesting\": true,\n    \"openApiSecurity\": true,\n    \"openApiPortal\": true,\n    \"openApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"organization\": {\n    \"employees\": 100,\n    \"name\": \"API Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"people\": {\n    \"name\": \"Kin Lane\",\n    \"email\": \"info@apievangelist.com\",\n    \"role\": \"Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"linkedIn\": \"https://www.linkedin.com/in/kinlane/\",\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"plans\": {\n    \"applications\": true,\n    \"rateLimits\": true,\n    \"chargeAccess\": true,\n    \"usage\": true,\n    \"report\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"properties\": {\n    \"documentation\": 10,\n    \"mockServers\": 10,\n    \"sdks\": 10,\n    \"testing\": 10,\n    \"security\": 10,\n    \"versioning\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"schema\": {\n    \"data\": true,\n    \"apis\": true,\n    \"validation\": true,\n    \"forms\": true,\n    \"registry\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"sector\": {\n    \"industries\": [\n      \"Technology\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"message\": \"The people pulse was submitted.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6a01096a-fedc-4abb-b71c-e59d3e0519fd",
+              "name": "Bad Request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "signals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/problem+json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access\": {\n    \"internal\": 2500,\n    \"partner\": 50,\n    \"public\": 50,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"authentication\": {\n    \"basicAuth\": true,\n    \"keys\": true,\n    \"jwt\": true,\n    \"oauth\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"contracts\": {\n    \"discovery\": true,\n    \"portal\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"distribution\": {\n    \"publicPortal\": 1,\n    \"internalPortal\": 1,\n    \"gateway\": 2,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"eventDrivenApis\": {\n    \"webhooksPublish\": 500,\n    \"webhooksSubscribe\": 25,\n    \"webSocketsProduce\": 500,\n    \"webSocketsPublish\": 500,\n    \"webSocketsSubscribe\": 25,\n    \"kafkaProduce\": 500,\n    \"kafkaPublish\": 500,\n    \"kafkaSubscribe\": 25,\n    \"asyncApi\": true,\n    \"designFirst\": true,\n    \"asyncApiDocumentation\": true,\n    \"asyncApiMockServers\": true,\n    \"asyncApiSdks\": true,\n    \"asyncApiTesting\": true,\n    \"asyncApiSecurity\": true,\n    \"asyncApiPortal\": true,\n    \"asyncApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"experience\": {\n    \"discovery\": 10,\n    \"onboarding\": 10,\n    \"quality\": 10,\n    \"reliability\": 10,\n    \"consistency\": 10,\n    \"communication\": 10,\n    \"automation\": 10,\n    \"integration\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"governance\": {\n    \"spectral\": true,\n    \"vacuum\": true,\n    \"design\": true,\n    \"development\": true,\n    \"pipelines\": true,\n    \"gateway\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"graphQlApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"internally\": true,\n    \"externally\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"httpApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"openApi\": true,\n    \"designFirst\": true,\n    \"openApiDocumentation\": true,\n    \"openApiMockServers\": true,\n    \"openApiSdks\": true,\n    \"openApiTesting\": true,\n    \"openApiSecurity\": true,\n    \"openApiPortal\": true,\n    \"openApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"organization\": {\n    \"employees\": 100,\n    \"name\": \"API Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"people\": {\n    \"name\": \"Kin Lane\",\n    \"email\": \"info@apievangelist.com\",\n    \"role\": \"Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"linkedIn\": \"https://www.linkedin.com/in/kinlane/\",\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"plans\": {\n    \"applications\": true,\n    \"rateLimits\": true,\n    \"chargeAccess\": true,\n    \"usage\": true,\n    \"report\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"properties\": {\n    \"documentation\": 10,\n    \"mockServers\": 10,\n    \"sdks\": 10,\n    \"testing\": 10,\n    \"security\": 10,\n    \"versioning\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"schema\": {\n    \"data\": true,\n    \"apis\": true,\n    \"validation\": true,\n    \"forms\": true,\n    \"registry\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"sector\": {\n    \"industries\": [\n      \"Technology\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "The RateLimit header communicates quota policies. It contains a `limit` to\nconvey the expiring limit, `remaining` to convey the remaining quota units,\nand `reset` to convey the time window reset time.\n",
+                  "key": "RateLimit",
+                  "value": "limit=10, remaining=0, reset=10"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/problem+json"
+                }
+              ],
+              "body": "{\n  \"type\": \"https://example.com/errors/bad-request\",\n  \"title\": \"Bad Request\",\n  \"status\": 400,\n  \"detail\": \"The request is invalid or missing required parameters.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0b18605e-88f2-4a69-91e1-5176ef1027a5",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "signals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/problem+json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access\": {\n    \"internal\": 2500,\n    \"partner\": 50,\n    \"public\": 50,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"authentication\": {\n    \"basicAuth\": true,\n    \"keys\": true,\n    \"jwt\": true,\n    \"oauth\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"contracts\": {\n    \"discovery\": true,\n    \"portal\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"distribution\": {\n    \"publicPortal\": 1,\n    \"internalPortal\": 1,\n    \"gateway\": 2,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"eventDrivenApis\": {\n    \"webhooksPublish\": 500,\n    \"webhooksSubscribe\": 25,\n    \"webSocketsProduce\": 500,\n    \"webSocketsPublish\": 500,\n    \"webSocketsSubscribe\": 25,\n    \"kafkaProduce\": 500,\n    \"kafkaPublish\": 500,\n    \"kafkaSubscribe\": 25,\n    \"asyncApi\": true,\n    \"designFirst\": true,\n    \"asyncApiDocumentation\": true,\n    \"asyncApiMockServers\": true,\n    \"asyncApiSdks\": true,\n    \"asyncApiTesting\": true,\n    \"asyncApiSecurity\": true,\n    \"asyncApiPortal\": true,\n    \"asyncApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"experience\": {\n    \"discovery\": 10,\n    \"onboarding\": 10,\n    \"quality\": 10,\n    \"reliability\": 10,\n    \"consistency\": 10,\n    \"communication\": 10,\n    \"automation\": 10,\n    \"integration\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"governance\": {\n    \"spectral\": true,\n    \"vacuum\": true,\n    \"design\": true,\n    \"development\": true,\n    \"pipelines\": true,\n    \"gateway\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"graphQlApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"internally\": true,\n    \"externally\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"httpApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"openApi\": true,\n    \"designFirst\": true,\n    \"openApiDocumentation\": true,\n    \"openApiMockServers\": true,\n    \"openApiSdks\": true,\n    \"openApiTesting\": true,\n    \"openApiSecurity\": true,\n    \"openApiPortal\": true,\n    \"openApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"organization\": {\n    \"employees\": 100,\n    \"name\": \"API Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"people\": {\n    \"name\": \"Kin Lane\",\n    \"email\": \"info@apievangelist.com\",\n    \"role\": \"Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"linkedIn\": \"https://www.linkedin.com/in/kinlane/\",\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"plans\": {\n    \"applications\": true,\n    \"rateLimits\": true,\n    \"chargeAccess\": true,\n    \"usage\": true,\n    \"report\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"properties\": {\n    \"documentation\": 10,\n    \"mockServers\": 10,\n    \"sdks\": 10,\n    \"testing\": 10,\n    \"security\": 10,\n    \"versioning\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"schema\": {\n    \"data\": true,\n    \"apis\": true,\n    \"validation\": true,\n    \"forms\": true,\n    \"registry\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"sector\": {\n    \"industries\": [\n      \"Technology\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "The RateLimit header communicates quota policies. It contains a `limit` to\nconvey the expiring limit, `remaining` to convey the remaining quota units,\nand `reset` to convey the time window reset time.\n",
+                  "key": "RateLimit",
+                  "value": "limit=10, remaining=0, reset=10"
+                },
+                {
+                  "disabled": false,
+                  "description": "The Retry-After header indicates how long the user agent should wait before making a follow-up request. \nThe value is in seconds and can be an integer or a date in the future. \nIf the value is an integer, it indicates the number of seconds to wait. \nIf the value is a date, it indicates the time at which the user agent should make a follow-up request. \n",
+                  "key": "Retry-After",
+                  "value": "120"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/problem+json"
+                }
+              ],
+              "body": "{\n  \"type\": \"https://example.com/errors/too-many-requests\",\n  \"title\": \"Too Many Requests\",\n  \"status\": 429,\n  \"detail\": \"You have exceeded the rate limit.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ac8e71ec-5b5a-446b-9c5e-578eed32839b",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "signals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/problem+json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access\": {\n    \"internal\": 2500,\n    \"partner\": 50,\n    \"public\": 50,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"authentication\": {\n    \"basicAuth\": true,\n    \"keys\": true,\n    \"jwt\": true,\n    \"oauth\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"contracts\": {\n    \"discovery\": true,\n    \"portal\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"distribution\": {\n    \"publicPortal\": 1,\n    \"internalPortal\": 1,\n    \"gateway\": 2,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"eventDrivenApis\": {\n    \"webhooksPublish\": 500,\n    \"webhooksSubscribe\": 25,\n    \"webSocketsProduce\": 500,\n    \"webSocketsPublish\": 500,\n    \"webSocketsSubscribe\": 25,\n    \"kafkaProduce\": 500,\n    \"kafkaPublish\": 500,\n    \"kafkaSubscribe\": 25,\n    \"asyncApi\": true,\n    \"designFirst\": true,\n    \"asyncApiDocumentation\": true,\n    \"asyncApiMockServers\": true,\n    \"asyncApiSdks\": true,\n    \"asyncApiTesting\": true,\n    \"asyncApiSecurity\": true,\n    \"asyncApiPortal\": true,\n    \"asyncApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"experience\": {\n    \"discovery\": 10,\n    \"onboarding\": 10,\n    \"quality\": 10,\n    \"reliability\": 10,\n    \"consistency\": 10,\n    \"communication\": 10,\n    \"automation\": 10,\n    \"integration\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"governance\": {\n    \"spectral\": true,\n    \"vacuum\": true,\n    \"design\": true,\n    \"development\": true,\n    \"pipelines\": true,\n    \"gateway\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"graphQlApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"internally\": true,\n    \"externally\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"httpApis\": {\n    \"producedCount\": 500,\n    \"producedPercentage\": 50,\n    \"consumeCount\": 25,\n    \"consumePercentage\": 90,\n    \"openApi\": true,\n    \"designFirst\": true,\n    \"openApiDocumentation\": true,\n    \"openApiMockServers\": true,\n    \"openApiSdks\": true,\n    \"openApiTesting\": true,\n    \"openApiSecurity\": true,\n    \"openApiPortal\": true,\n    \"openApiRespository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"organization\": {\n    \"employees\": 100,\n    \"name\": \"API Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"people\": {\n    \"name\": \"Kin Lane\",\n    \"email\": \"info@apievangelist.com\",\n    \"role\": \"Evangelist\",\n    \"countries\": [\n      \"US\"\n    ],\n    \"linkedIn\": \"https://www.linkedin.com/in/kinlane/\",\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"plans\": {\n    \"applications\": true,\n    \"rateLimits\": true,\n    \"chargeAccess\": true,\n    \"usage\": true,\n    \"report\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"properties\": {\n    \"documentation\": 10,\n    \"mockServers\": 10,\n    \"sdks\": 10,\n    \"testing\": 10,\n    \"security\": 10,\n    \"versioning\": 10,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"schema\": {\n    \"data\": true,\n    \"apis\": true,\n    \"validation\": true,\n    \"forms\": true,\n    \"registry\": true,\n    \"repository\": true,\n    \"other\": \"Something additional I wanted to say.\"\n  },\n  \"sector\": {\n    \"industries\": [\n      \"Technology\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "The RateLimit header communicates quota policies. It contains a `limit` to\nconvey the expiring limit, `remaining` to convey the remaining quota units,\nand `reset` to convey the time window reset time.\n",
+                  "key": "RateLimit",
+                  "value": "limit=10, remaining=0, reset=10"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/problem+json"
+                }
+              ],
+              "body": "{\n  \"type\": \"https://example.com/errors/internal-server-error\",\n  \"title\": \"Internal Server Error\",\n  \"status\": 500,\n  \"detail\": \"An unexpected error occurred.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://api.theapipulse.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "e01d5340-c362-4ffd-8ae2-660503b62a54",
+    "name": "API Pulse Publishing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This is the  API for publishing to the API pulse.\n\n\nContact Support:\n Name: API Evangelist\n Email: info@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}
