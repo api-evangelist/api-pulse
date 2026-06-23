@@ -82,6 +82,11 @@ def generate_adoption(src_file, out_dir):
             "description", "tags", "url", "founded", "yearCreated",
             "radarRing", "alternativeNames",
         ]))
+        # Jekyll's built-in page.url shadows a front-matter 'url', so the real
+        # website was unreachable in templates. Emit it as 'website' instead
+        # (templates read page.website). Rename in place to preserve field order.
+        if "url" in fm:
+            fm = {("website" if k == "url" else k): v for k, v in fm.items()}
         write_doc(os.path.join(out_dir, slug + ".md"), fm)
         count += 1
     return count
