@@ -41,6 +41,8 @@ apis:
   - url: graphql/api-pulse-graphql.md
     type: GraphQL
 common:
+- type: DomainSecurity
+  url: security/api-pulse-domain-security.yml
 - type: Website
   url: http://theapipulse.com/
 - type: GitHubRepository
