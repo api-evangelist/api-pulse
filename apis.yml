@@ -6,7 +6,19 @@ description: >-
   develop, deploy, and manage APIs across technology stack, authentication, standards adoption, CI/CD integration, and
   organizational structure.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/api-pulse.png
 tags:
 - API Benchmarking
 - API Evangelist
@@ -18,28 +30,21 @@ created: '2025-02-10'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: api-pulse:api-pulse-publish
-  name: API Pulse Publish API
-  description: >-
-    The API Pulse Publish API accepts survey signal submissions from organizations documenting their API practices.
-    Signals include people and organization profiling, API inventory counts, technology stack mapping, authentication
-    methods, standards adoption, CI/CD integration status, and experience prioritization dimensions.
+- aid: api-pulse:api-pulse-signals-api
+  name: API Pulse Signals API
+  description: The overall signal.
   humanURL: http://theapipulse.com/
   tags:
-  - API Benchmarking
-  - API Governance
-  - API Maturity
-  - Publishing
-  - Survey
+  - Signals
   properties:
   - type: OpenAPI
-    url: openapi/api-pulse-publish-openapi.yml
+    url: openapi/api-pulse-signals-api-openapi.yml
   - type: Documentation
     url: http://theapipulse.com/
   - type: GitHubRepository
     url: https://github.com/api-evangelist/api-pulse
-  - url: graphql/api-pulse-graphql.md
-    type: GraphQL
+  - type: GraphQL
+    url: graphql/api-pulse-graphql.md
 common:
 - type: AgenticAccess
   url: agentic-access/api-pulse-agentic-access.yml
