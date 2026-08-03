@@ -1,0 +1,14 @@
+{
+  "provider": "api-pulse",
+  "sources": [
+    "api-pulse-signals-api-openapi.yml"
+  ],
+  "outputs": [
+    "api-pulse-signals-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
