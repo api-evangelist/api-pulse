@@ -46,6 +46,11 @@ apis:
   - type: GraphQL
     url: graphql/api-pulse-graphql.md
 common:
+- type: IssueTracker
+  url: https://github.com/api-evangelist/api-pulse/issues
+- type: License
+  name: Apache-2.0
+  url: https://github.com/api-evangelist/api-pulse/blob/main/LICENSE
 - type: AgenticAccess
   url: agentic-access/api-pulse-agentic-access.yml
 - type: DomainSecurity
