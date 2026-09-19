@@ -37,6 +37,12 @@ tags:
 - API Evangelist
 - API Governance
 - API Maturity
+- Surveys
+tags_raw:
+- API Benchmarking
+- API Evangelist
+- API Governance
+- API Maturity
 - Survey
 url: https://raw.githubusercontent.com/api-evangelist/api-pulse/refs/heads/main/apis.yml
 created: '2025-02-10'
