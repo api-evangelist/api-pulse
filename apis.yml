@@ -62,8 +62,6 @@ apis:
     url: http://theapipulse.com/
   - type: GitHubRepository
     url: https://github.com/api-evangelist/api-pulse
-  - type: GraphQL
-    url: graphql/api-pulse-graphql.md
 common:
 - type: IssueTracker
   url: https://github.com/api-evangelist/api-pulse/issues

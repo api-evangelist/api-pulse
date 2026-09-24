@@ -1,1 +1,0 @@
-# API Pulse GraphQL API
