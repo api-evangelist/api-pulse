@@ -49,114 +49,173 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
 components:
-  responses:
-    InternalServerError:
-      description: Internal Server Error
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/internal-server-error
-            title: Internal Server Error
-            status: 500
-            detail: An unexpected error occurred.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/internal-server-error
-            title: Internal Server Error
-            status: 500
-            detail: An unexpected error occurred.
-    TooManyRequests:
-      description: Too Many Requests
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-        Retry-After:
-          $ref: '#/components/headers/Retry-After'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/too-many-requests
-            title: Too Many Requests
-            status: 429
-            detail: You have exceeded the rate limit.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/too-many-requests
-            title: Too Many Requests
-            status: 429
-            detail: You have exceeded the rate limit.
-    BadRequest:
-      description: Bad Request
-      headers:
-        RateLimit:
-          $ref: '#/components/headers/RateLimit'
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/bad-request
-            title: Bad Request
-            status: 400
-            detail: The request is invalid or missing required parameters.
-        application/problem+xml:
-          schema:
-            $ref: '#/components/schemas/Problem'
-          example:
-            type: https://example.com/errors/bad-request
-            title: Bad Request
-            status: 400
-            detail: The request is invalid or missing required parameters.
   schemas:
-    Schema:
+    Problem:
       type: object
-      description: Pulse of schema.
+      description: This is a Problem Details for HTTP APIs object.
       required:
-      - data
-      - apis
-      - validation
-      - forms
-      - registry
-      - repository
+      - title
+      - status
+      xml:
+        name: problem
+        namespace: urn:ietf:rfc:7807
       properties:
-        data:
+        type:
+          type: string
+          description: A URI reference that identifies the problem type
+          example: https://example.com/probs/out-of-credit
+          minLength: 10
+          maxLength: 2048
+        title:
+          type: string
+          description: A short, human-readable summary of the problem type
+          example: You do not have enough credit.
+          minLength: 5
+          maxLength: 250
+        detail:
+          type: string
+          description: A human-readable explanation specific to this occurrence of the problem
+          example: A valid current balance is 30, but that costs 50.
+          minLength: 10
+          maxLength: 1000
+        instance:
+          type: string
+          description: A URI reference that identifies the specific occurrence of the problem
+          example: /account/12345/msgs/abc
+          minLength: 10
+          maxLength: 250
+        status:
+          type: integer
+          description: The HTTP status code
+          example: 400
+          minLength: 3
+          maxLength: 3
+    GraphQlApi:
+      type: object
+      description: Pulse of GraphQL APIs.
+      required:
+      - producedCount
+      - producedPercentage
+      - consumeCount
+      - consumePercentage
+      - internally
+      - externally
+      properties:
+        producedCount:
+          type: integer
+          description: How many GraphQL APIs do you produce?
+          minLength: 0
+          maxLength: 10000
+          example: 500
+        producedPercentage:
+          type: integer
+          description: What percentage of the  APIs you produce are GraphQL?
+          minLength: 0
+          maxLength: 100
+          example: 50
+        consumeCount:
+          type: integer
+          description: How many GraphQL APIs do you consume?
+          minLength: 0
+          maxLength: 1000
+          example: 25
+        consumePercentage:
+          type: integer
+          description: What percentage of the APIs you consume are GraphQL APIs?
+          minLength: 0
+          maxLength: 100
+          example: 90
+        internally:
           type: boolean
-          description: Do you use JSON Schema to define data?
+          description: Do you use GraphQL internally?
           example: true
-        apis:
+        externally:
           type: boolean
-          description: Do you use JSON Schema to define APIs?
-          example: true
-        validation:
-          type: boolean
-          description: Do you use JSON Schema to validate data?
-          example: true
-        forms:
-          type: boolean
-          description: Do you use JSON Schema to generate forms?
-          example: true
-        registry:
-          type: boolean
-          description: Do you publish JSON Schema to registry?
-          example: true
-        repository:
-          type: boolean
-          description: Do you publish JSON Schema to repository?
+          description: Do you use GraphQL externally?
           example: true
         other:
           type: string
-          description: Other information (Schema).
+          description: Other information (GraphQL APIs).
+          minLength: 10
+          maxLength: 250
+          example: Something additional I wanted to say.
+    Plan:
+      type: object
+      description: Pulse of API planning.
+      required:
+      - applications
+      - rateLimits
+      - chargeAccess
+      - usage
+      - report
+      properties:
+        applications:
+          type: boolean
+          description: Do you require an application to be defined to access APIs?
+          example: true
+        rateLimits:
+          type: boolean
+          description: Do you enforce rate limits across all APIs?
+          example: true
+        chargeAccess:
+          type: boolean
+          description: Do you charge for access to any APIs?
+          example: true
+        usage:
+          type: boolean
+          description: Do you monitor API usage for APIs in production?
+          example: true
+        report:
+          type: boolean
+          description: Do you report on API usage data with consumers?
+          example: true
+        other:
+          type: string
+          description: Other information (Plan).
+          minLength: 10
+          maxLength: 250
+          example: Something additional I wanted to say.
+    Submitted:
+      type: object
+      description: The submitted pulse.
+      required:
+      - message
+      properties:
+        message:
+          type: string
+          minLength: 10
+          maxLength: 50
+          description: The message being returned.
+          example: The people pulse was submitted.
+    Access:
+      type: object
+      description: Pulse of access.
+      required:
+      - internal
+      - partner
+      - public
+      properties:
+        internal:
+          type: integer
+          description: How many internal APIs do you produce?
+          minLength: 0
+          maxLength: 50000
+          example: 2500
+        partner:
+          type: integer
+          description: How many partner APIs do you produce?
+          minLength: 0
+          maxLength: 50000
+          example: 50
+        public:
+          type: integer
+          description: How many public APIs do you produce?
+          minLength: 0
+          maxLength: 50000
+          example: 50
+        other:
+          type: string
+          description: Other information (Access).
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
@@ -275,129 +334,6 @@ components:
           $ref: '#/components/schemas/Schema'
         sector:
           $ref: '#/components/schemas/Sector'
-    GraphQlApi:
-      type: object
-      description: Pulse of GraphQL APIs.
-      required:
-      - producedCount
-      - producedPercentage
-      - consumeCount
-      - consumePercentage
-      - internally
-      - externally
-      properties:
-        producedCount:
-          type: integer
-          description: How many GraphQL APIs do you produce?
-          minLength: 0
-          maxLength: 10000
-          example: 500
-        producedPercentage:
-          type: integer
-          description: What percentage of the  APIs you produce are GraphQL?
-          minLength: 0
-          maxLength: 100
-          example: 50
-        consumeCount:
-          type: integer
-          description: How many GraphQL APIs do you consume?
-          minLength: 0
-          maxLength: 1000
-          example: 25
-        consumePercentage:
-          type: integer
-          description: What percentage of the APIs you consume are GraphQL APIs?
-          minLength: 0
-          maxLength: 100
-          example: 90
-        internally:
-          type: boolean
-          description: Do you use GraphQL internally?
-          example: true
-        externally:
-          type: boolean
-          description: Do you use GraphQL externally?
-          example: true
-        other:
-          type: string
-          description: Other information (GraphQL APIs).
-          minLength: 10
-          maxLength: 250
-          example: Something additional I wanted to say.
-    Organization:
-      type: object
-      description: Pulse of the organization.
-      required:
-      - employees
-      properties:
-        name:
-          type: string
-          description: The company name.
-          minLength: 1
-          maxLength: 500
-          example: API Evangelist
-        countries:
-          type: array
-          items:
-            type: string
-          minItems: 1
-          maxItems: 10
-          description: A valid ISO 3166 country for the organization.
-          example:
-          - US
-        employees:
-          type: integer
-          description: The number of employees that work at an enterprise organization.
-          minLength: 1
-          maxLength: 500000
-          example: 100
-        other:
-          type: string
-          description: Other information (Organization).
-          minLength: 10
-          maxLength: 250
-          example: Something additional I wanted to say.
-    Governance:
-      type: object
-      description: Pulse of API governance.
-      required:
-      - spectral
-      - vacuum
-      - design
-      - development
-      - pipelines
-      - gateway
-      properties:
-        spectral:
-          type: boolean
-          description: Do you use Spectral for governance rules?
-          example: true
-        vacuum:
-          type: boolean
-          description: Do you use Vacuum for governance?
-          example: true
-        design:
-          type: boolean
-          description: Do you apply rules during design of APIs?
-          example: true
-        development:
-          type: boolean
-          description: Do you apply rules during development of APIs?
-          example: true
-        pipelines:
-          type: boolean
-          description: Do you apply rules during pipeline builds of APIs?
-          example: true
-        gateway:
-          type: boolean
-          description: Do you validate JSON Schema at the API gateway?
-          example: true
-        other:
-          type: string
-          description: Other information (Governance).
-          minLength: 10
-          maxLength: 250
-          example: Something additional I wanted to say.
     EventDrivenApi:
       type: object
       description: Pulse of Event-Driven APIs.
@@ -510,82 +446,44 @@ components:
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
-    People:
+    Governance:
       type: object
-      description: Pulse of the people.
+      description: Pulse of API governance.
       required:
-      - name
-      - email
-      - role
-      - countries
+      - spectral
+      - vacuum
+      - design
+      - development
+      - pipelines
+      - gateway
       properties:
-        name:
-          type: string
-          description: A name.
-          minLength: 5
-          maxLength: 250
-          example: Kin Lane
-        email:
-          type: string
-          description: Valid email address.
-          minLength: 1
-          maxLength: 500
-          example: info@apievangelist.com
-        role:
-          type: string
-          description: Role of the person.
-          minLength: 10
-          maxLength: 250
-          example: Evangelist
-        linkedIn:
-          type: string
-          description: Valid LinkedIn URL.
-          minLength: 10
-          maxLength: 500
-          example: https://www.linkedin.com/in/kinlane/
-        countries:
-          type: array
-          items:
-            type: string
-          minItems: 1
-          maxItems: 10
-          description: A valid ISO 3166 country for the person.
-          example:
-          - US
-        other:
-          type: string
-          description: Other information (People).
-          minLength: 10
-          maxLength: 250
-          example: Something additional I wanted to say.
-    Authentication:
-      type: object
-      description: Pulse of authentication.
-      required:
-      - basicAuth
-      - keys
-      - jwt
-      - oauth
-      properties:
-        basicAuth:
+        spectral:
           type: boolean
-          description: Do you use BasicAuth to authenticate with APIs?
+          description: Do you use Spectral for governance rules?
           example: true
-        keys:
+        vacuum:
           type: boolean
-          description: Do you use API keys to authenticate with APIs?
+          description: Do you use Vacuum for governance?
           example: true
-        jwt:
+        design:
           type: boolean
-          description: HDo you use JWT to authenticate with APIs?
+          description: Do you apply rules during design of APIs?
           example: true
-        oauth:
+        development:
           type: boolean
-          description: Do you use OAuth to authenticate with APIs?
+          description: Do you apply rules during development of APIs?
+          example: true
+        pipelines:
+          type: boolean
+          description: Do you apply rules during pipeline builds of APIs?
+          example: true
+        gateway:
+          type: boolean
+          description: Do you validate JSON Schema at the API gateway?
           example: true
         other:
           type: string
-          description: Other information (Authentication).
+          description: Other information (Governance).
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
@@ -619,135 +517,108 @@ components:
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
-    Access:
+    Sector:
       type: object
-      description: Pulse of access.
+      description: Pulse of the sector.
       required:
-      - internal
-      - partner
-      - public
+      - industries
       properties:
-        internal:
+        industries:
+          type: array
+          items:
+            type: string
+            enum:
+            - Technology
+            - Healthcare & Pharmaceuticals
+            - Finance & Insurance
+            - Energy & Utilities
+            - Retail & E-Commerce
+            - Automotive & Transportation
+            - Construction & Real Estate
+            - Media & Entertainment
+            - Manufacturing & Industrial Production
+            - Telecommunications
+            - Food & Beverage
+            - Agriculture & Agribusiness
+            - Education & EdTech
+            - Aerospace & Defense
+            - Hospitality & Tourism
+            - Chemicals & Materials
+            - Biotechnology & Life Sciences
+            - Environmental & Sustainability
+            - Legal & Professional Services
+            - Sports & Recreation
+            - Mining & Metals
+            - Fashion & Apparel
+            - Supply Chain & Logistics
+            - Nonprofit & Philanthropy
+            - Government
+          minItems: 1
+          maxItems: 10
+          description: A valid North American Industry Classification System (NAICS) entry.
+          example:
+          - Technology
+    Organization:
+      type: object
+      description: Pulse of the organization.
+      required:
+      - employees
+      properties:
+        name:
+          type: string
+          description: The company name.
+          minLength: 1
+          maxLength: 500
+          example: API Evangelist
+        countries:
+          type: array
+          items:
+            type: string
+          minItems: 1
+          maxItems: 10
+          description: A valid ISO 3166 country for the organization.
+          example:
+          - US
+        employees:
           type: integer
-          description: How many internal APIs do you produce?
-          minLength: 0
-          maxLength: 50000
-          example: 2500
-        partner:
-          type: integer
-          description: How many partner APIs do you produce?
-          minLength: 0
-          maxLength: 50000
-          example: 50
-        public:
-          type: integer
-          description: How many public APIs do you produce?
-          minLength: 0
-          maxLength: 50000
-          example: 50
+          description: The number of employees that work at an enterprise organization.
+          minLength: 1
+          maxLength: 500000
+          example: 100
         other:
           type: string
-          description: Other information (Access).
+          description: Other information (Organization).
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
-    Submitted:
+    Authentication:
       type: object
-      description: The submitted pulse.
+      description: Pulse of authentication.
       required:
-      - message
+      - basicAuth
+      - keys
+      - jwt
+      - oauth
       properties:
-        message:
-          type: string
-          minLength: 10
-          maxLength: 50
-          description: The message being returned.
-          example: The people pulse was submitted.
-    Plan:
-      type: object
-      description: Pulse of API planning.
-      required:
-      - applications
-      - rateLimits
-      - chargeAccess
-      - usage
-      - report
-      properties:
-        applications:
+        basicAuth:
           type: boolean
-          description: Do you require an application to be defined to access APIs?
+          description: Do you use BasicAuth to authenticate with APIs?
           example: true
-        rateLimits:
+        keys:
           type: boolean
-          description: Do you enforce rate limits across all APIs?
+          description: Do you use API keys to authenticate with APIs?
           example: true
-        chargeAccess:
+        jwt:
           type: boolean
-          description: Do you charge for access to any APIs?
+          description: HDo you use JWT to authenticate with APIs?
           example: true
-        usage:
+        oauth:
           type: boolean
-          description: Do you monitor API usage for APIs in production?
-          example: true
-        report:
-          type: boolean
-          description: Do you report on API usage data with consumers?
+          description: Do you use OAuth to authenticate with APIs?
           example: true
         other:
           type: string
-          description: Other information (Plan).
-          minLength: 10
-          maxLength: 250
-          example: Something additional I wanted to say.
-    Properties:
-      type: object
-      description: Pulse of API operational properties.
-      required:
-      - documentation
-      - mockServers
-      - sdks
-      - testing
-      - security
-      properties:
-        documentation:
-          type: integer
-          description: How much of a priority is API documentation?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        mockServers:
-          type: integer
-          description: How much of a priority is API mock servers?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        sdks:
-          type: integer
-          description: How much of a priority is SDKs?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        testing:
-          type: integer
-          description: How much of a priority is API testing?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        security:
-          type: integer
-          description: How much of a priority is API security?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        versioning:
-          type: integer
-          description: How much of a priority is API versioning?
-          example: 10
-          minLength: 3
-          maxLength: 3
-        other:
-          type: string
-          description: Other information (Properties).
+          description: Other information (Authentication).
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
@@ -835,47 +706,147 @@ components:
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
-    Sector:
+    Properties:
       type: object
-      description: Pulse of the sector.
+      description: Pulse of API operational properties.
       required:
-      - industries
+      - documentation
+      - mockServers
+      - sdks
+      - testing
+      - security
       properties:
-        industries:
+        documentation:
+          type: integer
+          description: How much of a priority is API documentation?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        mockServers:
+          type: integer
+          description: How much of a priority is API mock servers?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        sdks:
+          type: integer
+          description: How much of a priority is SDKs?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        testing:
+          type: integer
+          description: How much of a priority is API testing?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        security:
+          type: integer
+          description: How much of a priority is API security?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        versioning:
+          type: integer
+          description: How much of a priority is API versioning?
+          example: 10
+          minLength: 3
+          maxLength: 3
+        other:
+          type: string
+          description: Other information (Properties).
+          minLength: 10
+          maxLength: 250
+          example: Something additional I wanted to say.
+    Schema:
+      type: object
+      description: Pulse of schema.
+      required:
+      - data
+      - apis
+      - validation
+      - forms
+      - registry
+      - repository
+      properties:
+        data:
+          type: boolean
+          description: Do you use JSON Schema to define data?
+          example: true
+        apis:
+          type: boolean
+          description: Do you use JSON Schema to define APIs?
+          example: true
+        validation:
+          type: boolean
+          description: Do you use JSON Schema to validate data?
+          example: true
+        forms:
+          type: boolean
+          description: Do you use JSON Schema to generate forms?
+          example: true
+        registry:
+          type: boolean
+          description: Do you publish JSON Schema to registry?
+          example: true
+        repository:
+          type: boolean
+          description: Do you publish JSON Schema to repository?
+          example: true
+        other:
+          type: string
+          description: Other information (Schema).
+          minLength: 10
+          maxLength: 250
+          example: Something additional I wanted to say.
+    People:
+      type: object
+      description: Pulse of the people.
+      required:
+      - name
+      - email
+      - role
+      - countries
+      properties:
+        name:
+          type: string
+          description: A name.
+          minLength: 5
+          maxLength: 250
+          example: Kin Lane
+        email:
+          type: string
+          description: Valid email address.
+          minLength: 1
+          maxLength: 500
+          example: info@apievangelist.com
+        role:
+          type: string
+          description: Role of the person.
+          minLength: 10
+          maxLength: 250
+          example: Evangelist
+        linkedIn:
+          type: string
+          description: Valid LinkedIn URL.
+          minLength: 10
+          maxLength: 500
+          example: https://www.linkedin.com/in/kinlane/
+        countries:
           type: array
           items:
             type: string
-            enum:
-            - Technology
-            - Healthcare & Pharmaceuticals
-            - Finance & Insurance
-            - Energy & Utilities
-            - Retail & E-Commerce
-            - Automotive & Transportation
-            - Construction & Real Estate
-            - Media & Entertainment
-            - Manufacturing & Industrial Production
-            - Telecommunications
-            - Food & Beverage
-            - Agriculture & Agribusiness
-            - Education & EdTech
-            - Aerospace & Defense
-            - Hospitality & Tourism
-            - Chemicals & Materials
-            - Biotechnology & Life Sciences
-            - Environmental & Sustainability
-            - Legal & Professional Services
-            - Sports & Recreation
-            - Mining & Metals
-            - Fashion & Apparel
-            - Supply Chain & Logistics
-            - Nonprofit & Philanthropy
-            - Government
           minItems: 1
           maxItems: 10
-          description: A valid North American Industry Classification System (NAICS) entry.
+          description: A valid ISO 3166 country for the person.
           example:
-          - Technology
+          - US
+        other:
+          type: string
+          description: Other information (People).
+          minLength: 10
+          maxLength: 250
+          example: Something additional I wanted to say.
     Contract:
       type: object
       description: Pulse of contract.
@@ -902,46 +873,75 @@ components:
           minLength: 10
           maxLength: 250
           example: Something additional I wanted to say.
-    Problem:
-      type: object
-      description: This is a Problem Details for HTTP APIs object.
-      required:
-      - title
-      - status
-      xml:
-        name: problem
-        namespace: urn:ietf:rfc:7807
-      properties:
-        type:
-          type: string
-          description: A URI reference that identifies the problem type
-          example: https://example.com/probs/out-of-credit
-          minLength: 10
-          maxLength: 2048
-        title:
-          type: string
-          description: A short, human-readable summary of the problem type
-          example: You do not have enough credit.
-          minLength: 5
-          maxLength: 250
-        detail:
-          type: string
-          description: A human-readable explanation specific to this occurrence of the problem
-          example: A valid current balance is 30, but that costs 50.
-          minLength: 10
-          maxLength: 1000
-        instance:
-          type: string
-          description: A URI reference that identifies the specific occurrence of the problem
-          example: /account/12345/msgs/abc
-          minLength: 10
-          maxLength: 250
-        status:
-          type: integer
-          description: The HTTP status code
-          example: 400
-          minLength: 3
-          maxLength: 3
+  responses:
+    TooManyRequests:
+      description: Too Many Requests
+      headers:
+        RateLimit:
+          $ref: '#/components/headers/RateLimit'
+        Retry-After:
+          $ref: '#/components/headers/Retry-After'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/too-many-requests
+            title: Too Many Requests
+            status: 429
+            detail: You have exceeded the rate limit.
+        application/problem+xml:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/too-many-requests
+            title: Too Many Requests
+            status: 429
+            detail: You have exceeded the rate limit.
+    BadRequest:
+      description: Bad Request
+      headers:
+        RateLimit:
+          $ref: '#/components/headers/RateLimit'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/bad-request
+            title: Bad Request
+            status: 400
+            detail: The request is invalid or missing required parameters.
+        application/problem+xml:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/bad-request
+            title: Bad Request
+            status: 400
+            detail: The request is invalid or missing required parameters.
+    InternalServerError:
+      description: Internal Server Error
+      headers:
+        RateLimit:
+          $ref: '#/components/headers/RateLimit'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/internal-server-error
+            title: Internal Server Error
+            status: 500
+            detail: An unexpected error occurred.
+        application/problem+xml:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: https://example.com/errors/internal-server-error
+            title: Internal Server Error
+            status: 500
+            detail: An unexpected error occurred.
   headers:
     RateLimit:
       description: 'The RateLimit header communicates quota policies. It contains a `limit` to
