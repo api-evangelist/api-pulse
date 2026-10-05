@@ -1,0 +1,12 @@
+{
+ "url": "http://theapipulse.com/openapi.yml",
+ "requested_url": "http://theapipulse.com/openapi.yml",
+ "status": 200,
+ "content_type": "text/yaml",
+ "bytes": 35762,
+ "sha256": "46e9d8a27566df9f3e553f97f4a3c72447cddc7a1534df88b9897827a042d587",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 1.0), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
